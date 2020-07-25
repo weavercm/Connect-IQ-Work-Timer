@@ -1,6 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Graphics;
 using Toybox.System;
+using Toybox.Math;
 using Toybox.Lang;
 using Toybox.Graphics as Gfx;
 using Toybox.Attention as Attention;
@@ -94,7 +95,7 @@ class BreakButton extends WatchUi.Selectable
 	function performAction()
 	{
 		myTime.setState(ON_BREAK);
-		myTime.printHistory();
+		myTime.printEntireHistory();
 	}
 }
 
@@ -155,13 +156,134 @@ class MyTime
 		timeHistoryDict.put(currentDictKey, new MyTimeHistoryUnit(OFF_CLOCK, System.getClockTime()));
 	}
 	
-	function printHistory()
+	function getTimeWorked()
+	{
+		var timeWorked = new System.ClockTime();
+		timeWorked.hour = 0;
+		timeWorked.min = 0;
+		timeWorked.sec = 0;
+		var i;
+
+		var currentHist;
+		var lastState;
+		var lastTime;
+		
+		var curState;
+		var curTime;
+		
+		if(currentDictKey >= 0)
+		{
+			currentHist = timeHistoryDict.get(0);
+			lastState = currentHist.state;
+			lastTime = currentHist.time;
+			
+			for (i = 1; i <= currentDictKey; i++)
+			{
+				currentHist = timeHistoryDict.get(i);
+				curState = currentHist.state;
+				curTime = currentHist.time;
+				
+				switch(lastState)
+				{
+					case ON_CLOCK:
+						if(curState == OFF_CLOCK || curState == ON_BREAK)
+						{
+							timeWorked = addTimes(subtractTimes(curTime, lastTime), timeWorked);
+							lastState = curState;
+							lastTime = curTime;
+						}
+						break;
+					case OFF_CLOCK:
+					case ON_BREAK:
+						if(curState == ON_CLOCK)
+						{
+							lastState = curState;
+							lastTime = curTime;
+						}
+						break;
+				}
+			}
+			
+			if(curState == ON_CLOCK)
+			{
+				timeWorked = addTimes(subtractTimes(System.getClockTime(), curTime), timeWorked);
+			}
+		}
+		
+		return timeWorked;
+	}
+	
+//	function getTimeOnBreak()
+//	{
+//	}
+	
+	function secToClockTime(seconds)
+	{
+		var clockTime = new System.ClockTime();
+		clockTime.hour = Math.round(seconds / 3600);
+		clockTime.min = Math.round((seconds % 3600) / 60);
+		clockTime.sec = Math.round(seconds % 60);
+		
+		return clockTime;
+	}
+	
+	function clockTimeToSec(clockTime)
+	{
+		return clockTime.hour * 3600 + clockTime.min * 60 + clockTime.sec;
+	}
+	
+	function subtractTimes(time1, time2)
+	{
+		var timeInSec1 = clockTimeToSec(time1);
+		var timeInSec2 = clockTimeToSec(time2);
+		var timeDifference = timeInSec1 - timeInSec2;
+		
+		return secToClockTime(timeDifference);
+	}
+	
+	function addTimes(time1, time2)
+	{
+		var timeInSec1 = clockTimeToSec(time1);
+		var timeInSec2 = clockTimeToSec(time2);
+		var timeSum = timeInSec1 + timeInSec2;
+		
+		return secToClockTime(timeSum);
+	}
+	
+	function printEntireHistory()
 	{
 		var i = 0;
 		System.println("History:");
 		for(i = 0; i <= currentDictKey; i++)
 		{
-			System.println("\t" + timeHistoryDict.get(i).time.hour + ":" + timeHistoryDict.get(i).time.min + " " + timeHistoryDict.get(i).state);
+			System.print("\t");
+			printOneHistory(i);
+		}
+	}
+	
+	function printOneHistory(key)
+	{
+		if(key <= currentDictKey)
+		{
+			System.print("History_" + key + ": ");
+			var clockTime = timeHistoryDict.get(key).time;
+			var timeString = Lang.format("$1$:$2$:$3$", [clockTime.hour, clockTime.min.format("%02d"), clockTime.sec.format("%02d")]);		
+			System.print("Time: " + timeString);
+			
+			var stateString;
+			switch(timeHistoryDict.get(key).state)
+			{
+				case ON_CLOCK:
+					stateString = "ON_CLOCK";
+					break;
+				case OFF_CLOCK:
+					stateString = "OFF_CLOCK";
+					break;
+				case ON_BREAK:
+					stateString = "ON_BREAK";
+					break;
+			}
+			System.println(", State: " + stateString);
 		}
 	}
 	
@@ -254,7 +376,7 @@ class MyView extends WatchUi.View
 	{
 		myTime = new MyTime(0);
 	
-		updateTimer = new Timer.Timer();
+		updateTimer = new System.Timer.Timer();
 		updateTimer.start(method(:requestUpdate), 500, true);
 		
 		myButtons = new MyButtons(dc);
@@ -275,8 +397,9 @@ class MyView extends WatchUi.View
 	
 	function onUpdate(dc)
 	{
-		System.println("Current time is: " + myTime.getTime());
-		myTime.increment();
+		//System.println("Current time is: " + myTime.getTime());
+		//myTime.increment();
+		System.println("WorkTime: " + getTimeReadable(myTime.getTimeWorked()));
 		
 		View.onUpdate(dc);
 	}
@@ -292,13 +415,14 @@ class ClockInView extends WatchUi.View
         WatchFace.initialize();
         counter = 1;
         currentView = self;
+        View.initialize();
     }
 	
 	function onLayout(dc)
 	{
 		
         
-		updateTimer = new Timer.Timer();
+		updateTimer = new System.Timer.Timer();
 		updateTimer.start(method(:requestUpdate), 500, true);
 		
 		setLayout(Rez.Layouts.myButtonLayout(dc));
@@ -329,4 +453,10 @@ class ClockInView extends WatchUi.View
 	{
 		System.println("Updating");
 	}
+}
+
+function getTimeReadable(clockTime)
+{
+	var timeString = Lang.format("$1$:$2$:$3$", [clockTime.hour, clockTime.min.format("%02d"), clockTime.sec.format("%02d")]);		
+	return timeString;
 }

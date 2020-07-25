@@ -17,28 +17,28 @@ class MyViewDelegate extends WatchUi.BehaviorDelegate
 			switch(instance.getState())
 			{
 				case :stateDefault:
-					System.println("Default");
-					System.println("\tThe previous state was " + event.getPreviousState());
-					System.println("\tThe current state is " + instance.getState());
+//					System.println("Default");
+//					System.println("\tThe previous state was " + event.getPreviousState());
+//					System.println("\tThe current state is " + instance.getState());
 					break;
 				case :stateHighlighted:
-					System.println("Highlighted");
-					System.println("\tThe previous state was " + event.getPreviousState());
-					System.println("\tThe current state is " + instance.getState());
+//					System.println("Highlighted");
+//					System.println("\tThe previous state was " + event.getPreviousState());
+//					System.println("\tThe current state is " + instance.getState());
 					break;
 				case :stateSelected:
-					System.println("Selected");
-					System.println("\tThe previous state was " + event.getPreviousState());
-					System.println("\tThe current state is " + instance.getState());
+//					System.println("Selected");
+//					System.println("\tThe previous state was " + event.getPreviousState());
+//					System.println("\tThe current state is " + instance.getState());
 					instance.performAction();
 					break;
 				case :stateDisabled:
-					System.println("Disabled");
-					System.println("\tThe previous state was " + event.getPreviousState());
-					System.println("\tThe current state is " + instance.getState());
+//					System.println("Disabled");
+//					System.println("\tThe previous state was " + event.getPreviousState());
+//					System.println("\tThe current state is " + instance.getState());
 					break;
 				default:
-					System.println("null");
+//					System.println("null");
 				
 			}
 		}
@@ -48,20 +48,20 @@ class MyViewDelegate extends WatchUi.BehaviorDelegate
 			switch(instance.getState())
 			{
 				case :stateDefault:
-					System.println("\tDefault");
+//					System.println("\tDefault");
 					break;
 				case :stateHighlighted:
-					System.println("\tHighlighted");
+//					System.println("\tHighlighted");
 					break;
 				case :stateSelected:
-					System.println("\tSelected");
+//					System.println("\tSelected");
 					instance.performAction();
 					break;
 				case :stateDisabled:
-					System.println("\tDisabled");
+//					System.println("\tDisabled");
 					break;
 				default:
-					System.println("\tnull");
+//					System.println("\tnull");
 			}
 		}
 		else if(instance instanceof BreakButton)
@@ -70,20 +70,20 @@ class MyViewDelegate extends WatchUi.BehaviorDelegate
 			switch(instance.getState())
 			{
 				case :stateDefault:
-					System.println("\tDefault");
+//					System.println("\tDefault");
 					break;
 				case :stateHighlighted:
-					System.println("\tHighlighted");
+//					System.println("\tHighlighted");
 					break;
 				case :stateSelected:
-					System.println("\tSelected");
+//					System.println("\tSelected");
 					instance.performAction();
 					break;
 				case :stateDisabled:
-					System.println("\tDisabled");
+//					System.println("\tDisabled");
 					break;
 				default:
-					System.println("\tnull");
+//					System.println("\tnull");
 			}
 		}
 		else

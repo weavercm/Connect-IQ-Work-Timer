@@ -14,337 +14,391 @@
 <entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerView.mc" id="6" lineNum="29" pc="268435663" symbol="onUpdate"/>
 <entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerView.mc" id="6" lineNum="32" pc="268435686" symbol="onUpdate"/>
 <entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerView.mc" id="7" lineNum="38" pc="268435707" symbol="onHide"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="13" pc="268435712" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="15" pc="268435716" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="16" pc="268435778" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="17" pc="268435840" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="18" pc="268435902" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="20" pc="268435964" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="31" pc="268436064" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="10" lineNum="34" pc="268436085" symbol="performAction"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="10" lineNum="36" pc="268436089" symbol="performAction"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="44" pc="268436116" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="46" pc="268436120" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="47" pc="268436182" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="48" pc="268436244" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="49" pc="268436306" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="51" pc="268436368" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="62" pc="268436468" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="13" lineNum="65" pc="268436489" symbol="performAction"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="13" lineNum="67" pc="268436493" symbol="performAction"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="73" pc="268436520" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="75" pc="268436524" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="76" pc="268436586" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="77" pc="268436648" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="78" pc="268436710" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="80" pc="268436772" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="91" pc="268436872" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="16" lineNum="94" pc="268436893" symbol="performAction"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="16" lineNum="96" pc="268436897" symbol="performAction"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="16" lineNum="97" pc="268436923" symbol="performAction"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="18" lineNum="105" pc="268436942" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="18" lineNum="107" pc="268436946" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="19" lineNum="110" pc="268436965" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="19" lineNum="112" pc="268436969" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="19" lineNum="113" pc="268436992" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="19" lineNum="115" pc="268437078" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="20" lineNum="118" pc="268437099" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="20" lineNum="120" pc="268437103" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="22" lineNum="137" pc="268437124" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="22" lineNum="139" pc="268437128" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="22" lineNum="140" pc="268437138" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="24" lineNum="152" pc="268437149" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="24" lineNum="154" pc="268437153" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="24" lineNum="155" pc="268437163" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="158" pc="268437235" symbol="printHistory"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="160" pc="268437239" symbol="printHistory"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="161" pc="268437246" symbol="printHistory"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="162" pc="268437267" symbol="printHistory"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="164" pc="268437288" symbol="printHistory"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="168" pc="268437425" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="170" pc="268437429" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="183" pc="268437513" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="173" pc="268437519" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="174" pc="268437540" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="176" pc="268437543" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="177" pc="268437564" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="178" pc="268437583" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="180" pc="268437586" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="181" pc="268437607" symbol="increment"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="27" lineNum="187" pc="268437614" symbol="setTime"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="27" lineNum="189" pc="268437618" symbol="setTime"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="28" lineNum="192" pc="268437629" symbol="getTime"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="28" lineNum="194" pc="268437633" symbol="getTime"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="197" pc="268437643" symbol="setState"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="199" pc="268437647" symbol="setState"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="201" pc="268437661" symbol="setState"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="204" pc="268437665" symbol="setState"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="205" pc="268437684" symbol="setState"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="207" pc="268437749" symbol="setState"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="30" lineNum="210" pc="268437760" symbol="getState"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="30" lineNum="212" pc="268437764" symbol="getState"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="223" pc="268437774" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="225" pc="268437778" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="226" pc="268437808" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="227" pc="268437838" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="228" pc="268437868" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="33" lineNum="231" pc="268437899" symbol="getButtons"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="33" lineNum="233" pc="268437903" symbol="getButtons"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="35" lineNum="244" pc="268437959" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="35" lineNum="248" pc="268437963" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="253" pc="268437982" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="255" pc="268437986" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="257" pc="268438021" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="258" pc="268438057" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="260" pc="268438098" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="261" pc="268438130" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="264" pc="268438159" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="268" pc="268438195" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="269" pc="268438287" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="270" pc="268438306" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="271" pc="268438342" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="273" pc="268438393" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="37" lineNum="276" pc="268438414" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="37" lineNum="278" pc="268438418" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="37" lineNum="279" pc="268438457" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="37" lineNum="281" pc="268438475" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="39" lineNum="291" pc="268438496" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="39" lineNum="292" pc="268438500" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="39" lineNum="293" pc="268438518" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="39" lineNum="294" pc="268438531" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="40" lineNum="297" pc="268438542" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="40" lineNum="301" pc="268438546" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="40" lineNum="302" pc="268438582" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="40" lineNum="304" pc="268438623" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="41" lineNum="307" pc="268438661" symbol="onShow"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="310" pc="268438666" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="313" pc="268438670" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="315" pc="268438687" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="317" pc="268438717" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="318" pc="268438729" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="319" pc="268438765" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="322" pc="268438819" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="323" pc="268438839" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="43" lineNum="328" pc="268438859" symbol="onPartialUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="43" lineNum="330" pc="268438863" symbol="onPartialUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="45" lineNum="6" pc="268438885" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="45" lineNum="7" pc="268438889" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="46" lineNum="10" pc="268438908" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="46" lineNum="12" pc="268438912" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="46" lineNum="14" pc="268438933" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="46" lineNum="15" pc="268438944" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="46" lineNum="16" pc="268438968" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="46" lineNum="17" pc="268438979" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="48" lineNum="5" pc="268439004" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="48" lineNum="6" pc="268439008" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="49" lineNum="9" pc="268439027" symbol="onMenu"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="49" lineNum="10" pc="268439031" symbol="onMenu"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="49" lineNum="12" pc="268439115" symbol="onMenu"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="51" lineNum="6" pc="268439119" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="51" lineNum="8" pc="268439123" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="11" pc="268439142" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="13" pc="268439146" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="15" pc="268439159" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="17" pc="268439173" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="41" pc="268439270" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="20" pc="268439296" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="21" pc="268439319" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="22" pc="268439354" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="23" pc="268439389" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="25" pc="268439392" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="26" pc="268439415" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="27" pc="268439450" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="28" pc="268439485" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="30" pc="268439488" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="31" pc="268439511" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="32" pc="268439546" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="33" pc="268439581" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="34" pc="268439593" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="36" pc="268439596" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="37" pc="268439619" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="38" pc="268439654" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="39" pc="268439689" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="45" pc="268439698" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="47" pc="268439712" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="48" pc="268439735" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="64" pc="268439832" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="51" pc="268439858" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="52" pc="268439881" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="54" pc="268439884" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="55" pc="268439907" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="57" pc="268439910" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="58" pc="268439933" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="59" pc="268439945" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="61" pc="268439948" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="62" pc="268439971" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="67" pc="268439980" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="69" pc="268439994" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="70" pc="268440017" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="86" pc="268440114" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="73" pc="268440140" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="74" pc="268440163" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="76" pc="268440166" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="77" pc="268440189" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="79" pc="268440192" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="80" pc="268440215" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="81" pc="268440227" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="83" pc="268440230" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="84" pc="268440253" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="52" lineNum="91" pc="268440262" symbol="onSelectable"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="54" lineNum="99" pc="268440286" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="54" lineNum="101" pc="268440290" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="55" lineNum="111" pc="268440309" symbol="onClockIn"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="55" lineNum="115" pc="268440313" symbol="onClockIn"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="56" lineNum="118" pc="268440352" symbol="onClockOut"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="56" lineNum="120" pc="268440356" symbol="onClockOut"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="57" lineNum="123" pc="268440380" symbol="onBreak"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="57" lineNum="125" pc="268440384" symbol="onBreak"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="59" lineNum="6" pc="268440408" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="59" lineNum="7" pc="268440412" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="60" lineNum="11" pc="268440431" symbol="onStart"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="61" lineNum="15" pc="268440436" symbol="onStop"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="62" lineNum="19" pc="268440441" symbol="getInitialView"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="62" lineNum="20" pc="268440445" symbol="getInitialView"/>
-<entry filename="Rez" id="66" lineNum="19" pc="268440513" symbol="initialize"/>
-<entry filename="Rez" id="66" lineNum="20" pc="268440517" symbol="initialize"/>
-<entry filename="Rez" id="67" lineNum="23" pc="268440542" symbol="draw"/>
-<entry filename="Rez" id="67" lineNum="25" pc="268440546" symbol="draw"/>
-<entry filename="Rez" id="67" lineNum="26" pc="268440582" symbol="draw"/>
-<entry filename="Rez" id="69" lineNum="39" pc="268440620" symbol="initialize"/>
-<entry filename="Rez" id="69" lineNum="40" pc="268440624" symbol="initialize"/>
-<entry filename="Rez" id="70" lineNum="43" pc="268440649" symbol="draw"/>
-<entry filename="Rez" id="70" lineNum="45" pc="268440653" symbol="draw"/>
-<entry filename="Rez" id="70" lineNum="46" pc="268440689" symbol="draw"/>
-<entry filename="Rez" id="74" lineNum="63" pc="268440727" symbol="myButtonLayout"/>
-<entry filename="Rez" id="74" lineNum="65" pc="268440739" symbol="myButtonLayout"/>
-<entry filename="Rez" id="74" lineNum="66" pc="268440982" symbol="myButtonLayout"/>
-<entry filename="Rez" id="74" lineNum="67" pc="268441225" symbol="myButtonLayout"/>
-<entry filename="Rez" id="74" lineNum="69" pc="268441540" symbol="myButtonLayout"/>
-<entry filename="Rez" id="75" lineNum="78" pc="268441578" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="80" pc="268441590" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="81" pc="268441703" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="82" pc="268441829" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="83" pc="268441869" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="84" pc="268441882" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="86" pc="268441898" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="87" pc="268442031" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="88" pc="268442071" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="89" pc="268442084" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="91" pc="268442100" symbol="MainLayout"/>
-<entry filename="Rez" id="75" lineNum="93" pc="268442233" symbol="MainLayout"/>
-<entry filename="Rez" id="78" lineNum="106" pc="268442301" symbol="initialize"/>
-<entry filename="Rez" id="78" lineNum="107" pc="268442305" symbol="initialize"/>
-<entry filename="Rez" id="78" lineNum="108" pc="268442323" symbol="initialize"/>
-<entry filename="Rez" id="78" lineNum="109" pc="268442379" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="14" pc="268435712" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="16" pc="268435716" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="17" pc="268435778" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="18" pc="268435840" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="19" pc="268435902" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="21" pc="268435964" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="9" lineNum="32" pc="268436064" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="10" lineNum="35" pc="268436085" symbol="performAction"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="10" lineNum="37" pc="268436089" symbol="performAction"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="45" pc="268436116" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="47" pc="268436120" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="48" pc="268436182" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="49" pc="268436244" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="50" pc="268436306" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="52" pc="268436368" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="12" lineNum="63" pc="268436468" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="13" lineNum="66" pc="268436489" symbol="performAction"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="13" lineNum="68" pc="268436493" symbol="performAction"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="74" pc="268436520" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="76" pc="268436524" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="77" pc="268436586" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="78" pc="268436648" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="79" pc="268436710" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="81" pc="268436772" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="15" lineNum="92" pc="268436872" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="16" lineNum="95" pc="268436893" symbol="performAction"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="16" lineNum="97" pc="268436897" symbol="performAction"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="16" lineNum="98" pc="268436923" symbol="performAction"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="18" lineNum="106" pc="268436942" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="18" lineNum="108" pc="268436946" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="19" lineNum="111" pc="268436965" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="19" lineNum="113" pc="268436969" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="19" lineNum="114" pc="268436992" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="19" lineNum="116" pc="268437078" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="20" lineNum="119" pc="268437099" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="20" lineNum="121" pc="268437103" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="22" lineNum="138" pc="268437124" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="22" lineNum="140" pc="268437128" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="22" lineNum="141" pc="268437138" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="24" lineNum="153" pc="268437149" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="24" lineNum="155" pc="268437153" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="24" lineNum="156" pc="268437163" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="159" pc="268437235" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="161" pc="268437239" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="162" pc="268437267" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="163" pc="268437280" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="164" pc="268437293" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="165" pc="268437306" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="167" pc="268437306" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="168" pc="268437306" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="169" pc="268437306" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="171" pc="268437306" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="172" pc="268437306" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="174" pc="268437306" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="176" pc="268437323" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="177" pc="268437347" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="178" pc="268437357" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="180" pc="268437367" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="182" pc="268437388" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="183" pc="268437409" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="184" pc="268437419" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="186" pc="268437429" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="189" pc="268437510" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="191" pc="268437541" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="192" pc="268437571" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="193" pc="268437575" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="195" pc="268437582" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="198" pc="268437585" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="200" pc="268437599" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="201" pc="268437603" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="203" pc="268437610" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="207" pc="268437626" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="209" pc="268437640" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="25" lineNum="213" pc="268437689" symbol="getTimeWorked"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="220" pc="268437693" symbol="secToClockTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="222" pc="268437697" symbol="secToClockTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="223" pc="268437725" symbol="secToClockTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="224" pc="268437756" symbol="secToClockTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="225" pc="268437793" symbol="secToClockTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="26" lineNum="227" pc="268437824" symbol="secToClockTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="27" lineNum="230" pc="268437828" symbol="clockTimeToSec"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="27" lineNum="232" pc="268437832" symbol="clockTimeToSec"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="28" lineNum="235" pc="268437872" symbol="subtractTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="28" lineNum="237" pc="268437876" symbol="subtractTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="28" lineNum="238" pc="268437891" symbol="subtractTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="28" lineNum="239" pc="268437906" symbol="subtractTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="28" lineNum="241" pc="268437913" symbol="subtractTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="244" pc="268437928" symbol="addTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="246" pc="268437932" symbol="addTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="247" pc="268437947" symbol="addTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="248" pc="268437962" symbol="addTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="29" lineNum="250" pc="268437969" symbol="addTimes"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="30" lineNum="253" pc="268437984" symbol="printEntireHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="30" lineNum="255" pc="268437988" symbol="printEntireHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="30" lineNum="256" pc="268437995" symbol="printEntireHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="30" lineNum="257" pc="268438016" symbol="printEntireHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="30" lineNum="259" pc="268438037" symbol="printEntireHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="30" lineNum="260" pc="268438058" symbol="printEntireHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="264" pc="268438086" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="266" pc="268438090" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="268" pc="268438104" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="269" pc="268438134" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="270" pc="268438161" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="271" pc="268438265" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="273" pc="268438289" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="274" pc="268438289" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="277" pc="268438393" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="278" pc="268438400" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="280" pc="268438403" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="281" pc="268438410" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="283" pc="268438413" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="284" pc="268438420" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="31" lineNum="286" pc="268438423" symbol="printOneHistory"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="290" pc="268438451" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="292" pc="268438455" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="305" pc="268438539" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="295" pc="268438545" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="296" pc="268438566" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="298" pc="268438569" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="299" pc="268438590" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="300" pc="268438609" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="302" pc="268438612" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="32" lineNum="303" pc="268438633" symbol="increment"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="33" lineNum="309" pc="268438640" symbol="setTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="33" lineNum="311" pc="268438644" symbol="setTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="34" lineNum="314" pc="268438655" symbol="getTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="34" lineNum="316" pc="268438659" symbol="getTime"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="35" lineNum="319" pc="268438669" symbol="setState"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="35" lineNum="321" pc="268438673" symbol="setState"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="35" lineNum="323" pc="268438687" symbol="setState"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="35" lineNum="326" pc="268438691" symbol="setState"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="35" lineNum="327" pc="268438710" symbol="setState"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="35" lineNum="329" pc="268438775" symbol="setState"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="332" pc="268438786" symbol="getState"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="36" lineNum="334" pc="268438790" symbol="getState"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="38" lineNum="345" pc="268438800" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="38" lineNum="347" pc="268438804" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="38" lineNum="348" pc="268438834" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="38" lineNum="349" pc="268438864" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="38" lineNum="350" pc="268438894" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="39" lineNum="353" pc="268438925" symbol="getButtons"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="39" lineNum="355" pc="268438929" symbol="getButtons"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="41" lineNum="366" pc="268438985" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="41" lineNum="370" pc="268438989" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="375" pc="268439008" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="377" pc="268439012" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="379" pc="268439047" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="380" pc="268439087" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="382" pc="268439128" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="383" pc="268439160" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="386" pc="268439189" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="390" pc="268439225" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="391" pc="268439317" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="392" pc="268439336" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="393" pc="268439372" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="42" lineNum="395" pc="268439423" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="43" lineNum="398" pc="268439444" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="43" lineNum="402" pc="268439448" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="43" lineNum="404" pc="268439498" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="45" lineNum="414" pc="268439519" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="45" lineNum="415" pc="268439523" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="45" lineNum="416" pc="268439541" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="45" lineNum="417" pc="268439554" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="45" lineNum="418" pc="268439564" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="46" lineNum="421" pc="268439583" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="46" lineNum="425" pc="268439587" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="46" lineNum="426" pc="268439627" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="46" lineNum="428" pc="268439668" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="47" lineNum="431" pc="268439706" symbol="onShow"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="48" lineNum="434" pc="268439711" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="48" lineNum="437" pc="268439715" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="48" lineNum="439" pc="268439732" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="48" lineNum="441" pc="268439762" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="48" lineNum="442" pc="268439774" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="48" lineNum="443" pc="268439810" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="48" lineNum="446" pc="268439864" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="48" lineNum="447" pc="268439884" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="49" lineNum="452" pc="268439904" symbol="onPartialUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="49" lineNum="454" pc="268439908" symbol="onPartialUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="50" lineNum="458" pc="268439930" symbol="getTimeReadable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="50" lineNum="460" pc="268439942" symbol="getTimeReadable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInView.mc" id="50" lineNum="461" pc="268440046" symbol="getTimeReadable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="52" lineNum="6" pc="268440050" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="52" lineNum="7" pc="268440054" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="53" lineNum="10" pc="268440073" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="53" lineNum="12" pc="268440077" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="53" lineNum="14" pc="268440098" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="53" lineNum="15" pc="268440109" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="53" lineNum="16" pc="268440133" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerMenuDelegate.mc" id="53" lineNum="17" pc="268440144" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="55" lineNum="5" pc="268440169" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="55" lineNum="6" pc="268440173" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="56" lineNum="9" pc="268440192" symbol="onMenu"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="56" lineNum="10" pc="268440196" symbol="onMenu"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerDelegate.mc" id="56" lineNum="12" pc="268440280" symbol="onMenu"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="58" lineNum="6" pc="268440284" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="58" lineNum="8" pc="268440288" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="11" pc="268440307" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="13" pc="268440311" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="15" pc="268440324" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="17" pc="268440338" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="23" pc="268440438" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="28" pc="268440441" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="33" pc="268440444" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="34" pc="268440456" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="39" pc="268440459" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="45" pc="268440468" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="47" pc="268440482" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="48" pc="268440505" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="52" pc="268440605" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="55" pc="268440608" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="58" pc="268440611" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="59" pc="268440623" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="62" pc="268440626" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="67" pc="268440635" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="69" pc="268440649" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="70" pc="268440672" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="74" pc="268440772" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="77" pc="268440775" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="80" pc="268440778" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="81" pc="268440790" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="84" pc="268440793" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="59" lineNum="91" pc="268440802" symbol="onSelectable"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="61" lineNum="99" pc="268440826" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="61" lineNum="101" pc="268440830" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="62" lineNum="111" pc="268440849" symbol="onClockIn"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="62" lineNum="115" pc="268440853" symbol="onClockIn"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="63" lineNum="118" pc="268440892" symbol="onClockOut"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="63" lineNum="120" pc="268440896" symbol="onClockOut"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="64" lineNum="123" pc="268440920" symbol="onBreak"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\ClockInDelegate.mc" id="64" lineNum="125" pc="268440924" symbol="onBreak"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="66" lineNum="6" pc="268440948" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="66" lineNum="7" pc="268440952" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="67" lineNum="11" pc="268440971" symbol="onStart"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="68" lineNum="15" pc="268440976" symbol="onStop"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="69" lineNum="19" pc="268440981" symbol="getInitialView"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="69" lineNum="20" pc="268440985" symbol="getInitialView"/>
+<entry filename="Rez" id="73" lineNum="19" pc="268441053" symbol="initialize"/>
+<entry filename="Rez" id="73" lineNum="20" pc="268441057" symbol="initialize"/>
+<entry filename="Rez" id="74" lineNum="23" pc="268441082" symbol="draw"/>
+<entry filename="Rez" id="74" lineNum="25" pc="268441086" symbol="draw"/>
+<entry filename="Rez" id="74" lineNum="26" pc="268441122" symbol="draw"/>
+<entry filename="Rez" id="76" lineNum="39" pc="268441160" symbol="initialize"/>
+<entry filename="Rez" id="76" lineNum="40" pc="268441164" symbol="initialize"/>
+<entry filename="Rez" id="77" lineNum="43" pc="268441189" symbol="draw"/>
+<entry filename="Rez" id="77" lineNum="45" pc="268441193" symbol="draw"/>
+<entry filename="Rez" id="77" lineNum="46" pc="268441229" symbol="draw"/>
+<entry filename="Rez" id="81" lineNum="63" pc="268441267" symbol="myButtonLayout"/>
+<entry filename="Rez" id="81" lineNum="65" pc="268441279" symbol="myButtonLayout"/>
+<entry filename="Rez" id="81" lineNum="66" pc="268441522" symbol="myButtonLayout"/>
+<entry filename="Rez" id="81" lineNum="67" pc="268441765" symbol="myButtonLayout"/>
+<entry filename="Rez" id="81" lineNum="69" pc="268442080" symbol="myButtonLayout"/>
+<entry filename="Rez" id="82" lineNum="78" pc="268442118" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="80" pc="268442130" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="81" pc="268442243" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="82" pc="268442369" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="83" pc="268442409" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="84" pc="268442422" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="86" pc="268442438" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="87" pc="268442571" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="88" pc="268442611" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="89" pc="268442624" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="91" pc="268442640" symbol="MainLayout"/>
+<entry filename="Rez" id="82" lineNum="93" pc="268442773" symbol="MainLayout"/>
+<entry filename="Rez" id="85" lineNum="106" pc="268442841" symbol="initialize"/>
+<entry filename="Rez" id="85" lineNum="107" pc="268442845" symbol="initialize"/>
+<entry filename="Rez" id="85" lineNum="108" pc="268442863" symbol="initialize"/>
+<entry filename="Rez" id="85" lineNum="109" pc="268442919" symbol="initialize"/>
 </pcToLineNum>
 <symbolTable>
-<entry id="8388644" module="true" symbol="System"/>
-<entry field="true" id="41" symbol="clockOut_default"/>
-<entry field="true" id="17" symbol="ON_CLOCK"/>
-<entry field="true" id="64" symbol="myClockInButton"/>
-<entry field="true" id="42" symbol="clockOut_highlighted"/>
-<entry id="8389124" method="true" symbol="onUpdate"/>
-<entry id="8389349" symbol="justification"/>
-<entry id="13" object="true" symbol="ClockOutButton"/>
-<entry id="61" method="true" symbol="increment"/>
-<entry id="8390097" method="true" symbol="onPartialUpdate"/>
-<entry id="55" method="true" symbol="onClockOut"/>
-<entry id="14" object="true" symbol="BreakButton"/>
-<entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry id="60" method="true" symbol="printHistory"/>
-<entry id="47" object="true" symbol="MainMenu"/>
-<entry field="true" id="11" symbol="myTime"/>
-<entry id="8388770" module="true" object="true" symbol="Strings"/>
-<entry field="true" id="8389897" symbol="stateDefault"/>
-<entry field="true" id="44" symbol="break_highlighted"/>
-<entry id="56" method="true" symbol="onBreak"/>
-<entry field="true" id="34" symbol="clockLayer"/>
-<entry id="8389280" method="true" symbol="getInitialView"/>
-<entry id="24" object="true" symbol="WorkTimerMenuDelegate"/>
-<entry id="8389068" method="true" symbol="draw"/>
-<entry field="true" id="65" symbol="myClockOutButton"/>
-<entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8388639" module="true" symbol="Graphics"/>
-<entry id="49" method="true" symbol="MainLayout"/>
-<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="36" symbol="myButtons"/>
+<entry id="8389346" symbol="text"/>
 <entry field="true" id="10" symbol="currentView"/>
-<entry id="8389123" method="true" symbol="onShow"/>
-<entry id="22" object="true" symbol="MyView"/>
-<entry id="15" object="true" symbol="MyTimeDisplay"/>
-<entry id="26" object="true" symbol="MyViewDelegate"/>
-<entry id="21" object="true" symbol="MyButtons"/>
+<entry id="50" method="true" symbol="MainLayout"/>
+<entry id="19" object="true" symbol="MyTimeHistoryUnit"/>
+<entry id="56" method="true" symbol="onClockOut"/>
+<entry field="true" id="40" symbol="clockIn_highlighted"/>
 <entry field="true" id="8389103" symbol="behavior"/>
-<entry id="8388636" module="true" symbol="Attention"/>
-<entry field="true" id="8389900" symbol="stateDisabled"/>
-<entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="53" symbol="AppName"/>
-<entry field="true" id="8389898" symbol="stateHighlighted"/>
-<entry id="63" method="true" symbol="getTime"/>
-<entry field="true" id="8389899" symbol="stateSelected"/>
-<entry id="8389902" method="true" symbol="getState"/>
-<entry id="48" method="true" symbol="myButtonLayout"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="73" symbol="myBreakButton"/>
+<entry field="true" id="54" symbol="AppName"/>
+<entry id="27" object="true" symbol="MyViewDelegate"/>
 <entry id="8389080" method="true" symbol="onMenu"/>
-<entry id="12" object="true" symbol="ClockInButton"/>
-<entry id="71" symbol="item_2"/>
-<entry id="70" symbol="item_1"/>
-<entry field="true" id="46" symbol="LauncherIcon"/>
-<entry field="true" id="16" symbol="OFF_CLOCK"/>
-<entry field="true" id="51" symbol="menu_label_2"/>
-<entry field="true" id="50" symbol="menu_label_1"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry field="true" id="8389898" symbol="stateHighlighted"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="29" object="true" symbol="WorkTimerApp"/>
+<entry id="25" object="true" symbol="WorkTimerMenuDelegate"/>
+<entry id="76" symbol="rezID"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
-<entry id="8389281" method="true" symbol="onStop"/>
-<entry field="true" id="66" symbol="myBreakButton"/>
+<entry id="8390097" method="true" symbol="onPartialUpdate"/>
+<entry id="64" method="true" symbol="subtractTimes"/>
+<entry id="26" object="true" symbol="WorkTimerDelegate"/>
+<entry id="65" method="true" symbol="addTimes"/>
+<entry id="15" object="true" symbol="MyTimeDisplay"/>
+<entry field="true" id="53" symbol="prompt"/>
+<entry id="20" object="true" symbol="MyTime"/>
+<entry id="66" method="true" symbol="printEntireHistory"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
-<entry id="8388771" module="true" object="true" symbol="Drawables"/>
-<entry id="68" method="true" symbol="getButtons"/>
-<entry field="true" id="43" symbol="break_default"/>
-<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="59" symbol="timeHistoryDict"/>
+<entry field="true" id="8389899" symbol="stateSelected"/>
+<entry field="true" id="42" symbol="clockOut_default"/>
 <entry id="8389026" method="true" symbol="requestUpdate"/>
-<entry id="8389279" method="true" symbol="onStart"/>
-<entry field="true" id="31" symbol="updateTimer"/>
-<entry id="20" object="true" symbol="MyTime"/>
-<entry field="true" id="59" symbol="currentDictKey"/>
-<entry id="25" object="true" symbol="WorkTimerDelegate"/>
-<entry field="true" id="67" symbol="myTimeDisplay"/>
-<entry field="true" id="30" symbol="counter"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389348" symbol="font"/>
-<entry id="8389347" symbol="color"/>
-<entry id="8389903" method="true" symbol="setState"/>
-<entry field="true" id="18" symbol="ON_BREAK"/>
 <entry field="true" id="8389067" symbol="height"/>
-<entry field="true" id="40" symbol="clockIn_disabled"/>
-<entry id="28" object="true" symbol="WorkTimerApp"/>
-<entry id="8389109" method="true" symbol="onMenuItem"/>
-<entry field="true" id="32" symbol="time"/>
-<entry field="true" id="45" symbol="break_disabled"/>
-<entry id="62" method="true" symbol="setTime"/>
-<entry field="true" id="57" symbol="timeToDisplay"/>
-<entry id="19" object="true" symbol="MyTimeHistoryUnit"/>
-<entry field="true" id="35" symbol="myButtons"/>
-<entry id="8389890" method="true" symbol="onSelectable"/>
-<entry id="36" module="true" symbol="Layouts"/>
-<entry field="true" id="52" symbol="prompt"/>
-<entry id="29" method="true" symbol="performAction"/>
-<entry id="8389125" method="true" symbol="onHide"/>
-<entry field="true" id="33" symbol="drawLayer"/>
-<entry id="8389345" symbol="rezId"/>
-<entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry id="69" symbol="rezID"/>
-<entry id="9" object="true" symbol="WorkTimerView"/>
-<entry id="8389346" symbol="text"/>
+<entry field="true" id="58" symbol="timeToDisplay"/>
+<entry id="78" symbol="item_2"/>
+<entry id="77" symbol="item_1"/>
+<entry id="38" module="true" symbol="Menus"/>
+<entry id="63" method="true" symbol="clockTimeToSec"/>
+<entry id="55" method="true" symbol="onClockIn"/>
 <entry field="true" id="8389066" symbol="width"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="68" method="true" symbol="increment"/>
+<entry field="true" id="45" symbol="break_highlighted"/>
 <entry field="true" id="8389063" symbol="identifier"/>
-<entry id="37" module="true" symbol="Menus"/>
-<entry field="true" id="58" symbol="timeHistoryDict"/>
-<entry id="54" method="true" symbol="onClockIn"/>
-<entry field="true" id="38" symbol="clockIn_default"/>
-<entry id="8388772" module="true" object="true" symbol="Fonts"/>
-<entry id="27" object="true" symbol="ClockInDelegate"/>
-<entry field="true" id="8389487" symbol="state"/>
-<entry field="true" id="39" symbol="clockIn_highlighted"/>
-<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="33" symbol="time"/>
+<entry id="24" method="true" symbol="getTimeReadable"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="28" object="true" symbol="ClockInDelegate"/>
+<entry field="true" id="46" symbol="break_disabled"/>
+<entry id="21" object="true" symbol="MyButtons"/>
+<entry field="true" id="39" symbol="clockIn_default"/>
+<entry id="49" method="true" symbol="myButtonLayout"/>
+<entry field="true" id="35" symbol="clockLayer"/>
+<entry field="true" id="41" symbol="clockIn_disabled"/>
+<entry id="8389890" method="true" symbol="onSelectable"/>
+<entry field="true" id="18" symbol="ON_BREAK"/>
+<entry id="48" object="true" symbol="MainMenu"/>
+<entry id="8389903" method="true" symbol="setState"/>
+<entry field="true" id="60" symbol="currentDictKey"/>
+<entry id="13" object="true" symbol="ClockOutButton"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="70" method="true" symbol="getTime"/>
+<entry field="true" id="8389897" symbol="stateDefault"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="67" method="true" symbol="printOneHistory"/>
+<entry id="75" method="true" symbol="getButtons"/>
+<entry field="true" id="44" symbol="break_default"/>
+<entry id="57" method="true" symbol="onBreak"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="22" object="true" symbol="MyView"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="16" symbol="OFF_CLOCK"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="31" symbol="counter"/>
+<entry field="true" id="47" symbol="LauncherIcon"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry field="true" id="17" symbol="ON_CLOCK"/>
+<entry id="12" object="true" symbol="ClockInButton"/>
+<entry field="true" id="32" symbol="updateTimer"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="30" method="true" symbol="performAction"/>
+<entry id="61" method="true" symbol="getTimeWorked"/>
+<entry id="8388702" method="true" symbol="initialize"/>
 <entry id="23" object="true" symbol="ClockInView"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="43" symbol="clockOut_highlighted"/>
+<entry id="8389902" method="true" symbol="getState"/>
+<entry id="8388641" module="true" symbol="Math"/>
+<entry id="9" object="true" symbol="WorkTimerView"/>
+<entry field="true" id="34" symbol="drawLayer"/>
+<entry field="true" id="74" symbol="myTimeDisplay"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389109" method="true" symbol="onMenuItem"/>
+<entry id="8389347" symbol="color"/>
+<entry id="14" object="true" symbol="BreakButton"/>
+<entry field="true" id="8389900" symbol="stateDisabled"/>
+<entry field="true" id="72" symbol="myClockOutButton"/>
+<entry id="37" module="true" symbol="Layouts"/>
+<entry field="true" id="8389487" symbol="state"/>
+<entry id="8388636" module="true" symbol="Attention"/>
+<entry field="true" id="11" symbol="myTime"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry id="69" method="true" symbol="setTime"/>
+<entry field="true" id="52" symbol="menu_label_2"/>
+<entry field="true" id="51" symbol="menu_label_1"/>
+<entry id="62" method="true" symbol="secToClockTime"/>
+<entry field="true" id="71" symbol="myClockInButton"/>
 </symbolTable>
 <localVars>
 <entry endPc="268435521" name="dc" stackId="1" startPc="268435479"/>
@@ -373,64 +427,90 @@
 <entry endPc="268437149" name="state" stackId="1" startPc="268437124"/>
 <entry endPc="268437149" name="time" stackId="2" startPc="268437124"/>
 <entry endPc="268437235" name="startTime" stackId="1" startPc="268437149"/>
-<entry endPc="268437424" name="i" stackId="1" startPc="268437239"/>
-<entry endPc="268437629" name="newTime" stackId="1" startPc="268437614"/>
-<entry endPc="268437760" name="newState" stackId="1" startPc="268437643"/>
-<entry endPc="268437899" name="dc" stackId="1" startPc="268437774"/>
-<entry endPc="268438413" name="clockLayerDc" stackId="2" startPc="268437986"/>
-<entry endPc="268438414" name="dc" stackId="1" startPc="268437982"/>
-<entry endPc="268438496" name="dc" stackId="1" startPc="268438414"/>
-<entry endPc="268438661" name="dc" stackId="1" startPc="268438542"/>
-<entry endPc="268438858" name="clockTime" stackId="2" startPc="268438670"/>
-<entry endPc="268438859" name="dc" stackId="1" startPc="268438666"/>
-<entry endPc="268438885" name="dc" stackId="1" startPc="268438859"/>
-<entry endPc="268439004" name="item" stackId="1" startPc="268438908"/>
-<entry endPc="268440285" name="instance" stackId="2" startPc="268439146"/>
-<entry endPc="268440286" name="event" stackId="1" startPc="268439142"/>
-<entry endPc="268440436" name="state" stackId="1" startPc="268440431"/>
-<entry endPc="268440441" name="state" stackId="1" startPc="268440436"/>
-<entry endPc="268440620" name="dc" stackId="1" startPc="268440542"/>
-<entry endPc="268440727" name="dc" stackId="1" startPc="268440649"/>
-<entry endPc="268441577" name="rez_cmp_local_custom_selectable_98357264653488713993" stackId="4" startPc="268440739"/>
-<entry endPc="268441577" name="rez_cmp_local_custom_selectable_19852195427111265471" stackId="3" startPc="268440739"/>
-<entry endPc="268441577" name="rez_cmp_local_custom_selectable_18917760971226642538" stackId="2" startPc="268440739"/>
-<entry endPc="268441578" name="dc" stackId="1" startPc="268440727"/>
-<entry endPc="268442300" name="rez_cmp_local_text_7857638082" stackId="7" startPc="268441590"/>
-<entry endPc="268442300" name="rez_cmp_local_text_5471863682" stackId="5" startPc="268441590"/>
-<entry endPc="268442300" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268441590"/>
-<entry endPc="268442300" name="rez_cmp_local_text_1640374236" stackId="2" startPc="268441590"/>
-<entry endPc="268442300" name="rez_cmp_local_custom_drawable_ClockInButton" stackId="4" startPc="268441590"/>
-<entry endPc="268442300" name="rez_cmp_local_custom_drawable_ClockOutButton" stackId="6" startPc="268441590"/>
-<entry endPc="268442301" name="dc" stackId="1" startPc="268441578"/>
+<entry endPc="268437692" name="lastState" stackId="4" startPc="268437239"/>
+<entry endPc="268437692" name="timeWorked" stackId="1" startPc="268437239"/>
+<entry endPc="268437692" name="i" stackId="2" startPc="268437239"/>
+<entry endPc="268437692" name="currentHist" stackId="3" startPc="268437239"/>
+<entry endPc="268437692" name="curTime" stackId="7" startPc="268437239"/>
+<entry endPc="268437692" name="curState" stackId="6" startPc="268437239"/>
+<entry endPc="268437692" name="lastTime" stackId="5" startPc="268437239"/>
+<entry endPc="268437827" name="clockTime" stackId="2" startPc="268437697"/>
+<entry endPc="268437828" name="seconds" stackId="1" startPc="268437693"/>
+<entry endPc="268437872" name="clockTime" stackId="1" startPc="268437828"/>
+<entry endPc="268437927" name="timeDifference" stackId="5" startPc="268437876"/>
+<entry endPc="268437927" name="timeInSec2" stackId="4" startPc="268437876"/>
+<entry endPc="268437927" name="timeInSec1" stackId="3" startPc="268437876"/>
+<entry endPc="268437928" name="time2" stackId="2" startPc="268437872"/>
+<entry endPc="268437928" name="time1" stackId="1" startPc="268437872"/>
+<entry endPc="268437983" name="timeSum" stackId="5" startPc="268437932"/>
+<entry endPc="268437983" name="timeInSec2" stackId="4" startPc="268437932"/>
+<entry endPc="268437983" name="timeInSec1" stackId="3" startPc="268437932"/>
+<entry endPc="268437984" name="time2" stackId="2" startPc="268437928"/>
+<entry endPc="268437984" name="time1" stackId="1" startPc="268437928"/>
+<entry endPc="268438085" name="i" stackId="1" startPc="268437988"/>
+<entry endPc="268438447" name="stateString" stackId="4" startPc="268438104"/>
+<entry endPc="268438447" name="timeString" stackId="3" startPc="268438104"/>
+<entry endPc="268438447" name="clockTime" stackId="2" startPc="268438104"/>
+<entry endPc="268438451" name="key" stackId="1" startPc="268438086"/>
+<entry endPc="268438655" name="newTime" stackId="1" startPc="268438640"/>
+<entry endPc="268438786" name="newState" stackId="1" startPc="268438669"/>
+<entry endPc="268438925" name="dc" stackId="1" startPc="268438800"/>
+<entry endPc="268439443" name="clockLayerDc" stackId="2" startPc="268439012"/>
+<entry endPc="268439444" name="dc" stackId="1" startPc="268439008"/>
+<entry endPc="268439519" name="dc" stackId="1" startPc="268439444"/>
+<entry endPc="268439706" name="dc" stackId="1" startPc="268439583"/>
+<entry endPc="268439903" name="clockTime" stackId="2" startPc="268439715"/>
+<entry endPc="268439904" name="dc" stackId="1" startPc="268439711"/>
+<entry endPc="268439930" name="dc" stackId="1" startPc="268439904"/>
+<entry endPc="268440049" name="timeString" stackId="2" startPc="268439942"/>
+<entry endPc="268440050" name="clockTime" stackId="1" startPc="268439930"/>
+<entry endPc="268440169" name="item" stackId="1" startPc="268440073"/>
+<entry endPc="268440825" name="instance" stackId="2" startPc="268440311"/>
+<entry endPc="268440826" name="event" stackId="1" startPc="268440307"/>
+<entry endPc="268440976" name="state" stackId="1" startPc="268440971"/>
+<entry endPc="268440981" name="state" stackId="1" startPc="268440976"/>
+<entry endPc="268441160" name="dc" stackId="1" startPc="268441082"/>
+<entry endPc="268441267" name="dc" stackId="1" startPc="268441189"/>
+<entry endPc="268442117" name="rez_cmp_local_custom_selectable_19954916375648775320" stackId="3" startPc="268441279"/>
+<entry endPc="268442117" name="rez_cmp_local_custom_selectable_27055088389193995814" stackId="2" startPc="268441279"/>
+<entry endPc="268442117" name="rez_cmp_local_custom_selectable_39429522011269117112" stackId="4" startPc="268441279"/>
+<entry endPc="268442118" name="dc" stackId="1" startPc="268441267"/>
+<entry endPc="268442840" name="rez_cmp_local_text_1793074575" stackId="5" startPc="268442130"/>
+<entry endPc="268442840" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268442130"/>
+<entry endPc="268442840" name="rez_cmp_local_text_1049037414" stackId="7" startPc="268442130"/>
+<entry endPc="268442840" name="rez_cmp_local_text_1198828487" stackId="2" startPc="268442130"/>
+<entry endPc="268442840" name="rez_cmp_local_custom_drawable_ClockInButton" stackId="4" startPc="268442130"/>
+<entry endPc="268442840" name="rez_cmp_local_custom_drawable_ClockOutButton" stackId="6" startPc="268442130"/>
+<entry endPc="268442841" name="dc" stackId="1" startPc="268442118"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
 <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
-<dataEntry offset="294" parentId="globals" symbolId="ClockOutButton" type="class"/>
-<dataEntry offset="349" parentId="globals" symbolId="WorkTimerApp" type="class"/>
-<dataEntry offset="420" parentId="globals" symbolId="MyViewDelegate" type="class"/>
-<dataEntry offset="475" parentId="globals" symbolId="ClockInView" type="class"/>
-<dataEntry offset="570" parentId="globals" symbolId="MyTimeHistoryUnit" type="class"/>
-<dataEntry offset="633" parentId="globals" symbolId="ClockInButton" type="class"/>
-<dataEntry offset="688" parentId="globals" symbolId="MyView" type="class"/>
-<dataEntry offset="783" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry offset="862" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="981" parentId="Drawables" symbolId="ClockInButton" type="class"/>
-<dataEntry offset="1036" parentId="Drawables" symbolId="ClockOutButton" type="class"/>
-<dataEntry offset="1091" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="1130" parentId="Menus" symbolId="MainMenu" type="class"/>
-<dataEntry offset="1177" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="1208" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="1255" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="1286" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="1349" parentId="globals" symbolId="BreakButton" type="class"/>
-<dataEntry offset="1404" parentId="globals" symbolId="WorkTimerView" type="class"/>
-<dataEntry offset="1483" parentId="globals" symbolId="ClockInDelegate" type="class"/>
-<dataEntry offset="1554" parentId="globals" symbolId="MyTimeDisplay" type="class"/>
-<dataEntry offset="1625" parentId="globals" symbolId="MyTime" type="class"/>
-<dataEntry offset="1752" parentId="globals" symbolId="WorkTimerMenuDelegate" type="class"/>
-<dataEntry offset="1807" parentId="globals" symbolId="MyButtons" type="class"/>
-<dataEntry offset="1894" parentId="globals" symbolId="WorkTimerDelegate" type="class"/>
+<dataEntry offset="302" parentId="globals" symbolId="ClockOutButton" type="class"/>
+<dataEntry offset="357" parentId="globals" symbolId="WorkTimerApp" type="class"/>
+<dataEntry offset="428" parentId="globals" symbolId="MyViewDelegate" type="class"/>
+<dataEntry offset="483" parentId="globals" symbolId="ClockInView" type="class"/>
+<dataEntry offset="578" parentId="globals" symbolId="MyTimeHistoryUnit" type="class"/>
+<dataEntry offset="641" parentId="globals" symbolId="ClockInButton" type="class"/>
+<dataEntry offset="696" parentId="globals" symbolId="MyView" type="class"/>
+<dataEntry offset="791" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="870" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="989" parentId="Drawables" symbolId="ClockInButton" type="class"/>
+<dataEntry offset="1044" parentId="Drawables" symbolId="ClockOutButton" type="class"/>
+<dataEntry offset="1099" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="1138" parentId="Menus" symbolId="MainMenu" type="class"/>
+<dataEntry offset="1185" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="1216" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="1263" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="1294" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="1357" parentId="globals" symbolId="BreakButton" type="class"/>
+<dataEntry offset="1412" parentId="globals" symbolId="WorkTimerView" type="class"/>
+<dataEntry offset="1491" parentId="globals" symbolId="ClockInDelegate" type="class"/>
+<dataEntry offset="1562" parentId="globals" symbolId="MyTimeDisplay" type="class"/>
+<dataEntry offset="1633" parentId="globals" symbolId="MyTime" type="class"/>
+<dataEntry offset="1808" parentId="globals" symbolId="WorkTimerMenuDelegate" type="class"/>
+<dataEntry offset="1863" parentId="globals" symbolId="MyButtons" type="class"/>
+<dataEntry offset="1950" parentId="globals" symbolId="WorkTimerDelegate" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" name="initialize" parent="WorkTimerView">
@@ -488,7 +568,32 @@
 <param id="startTime"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="printHistory" parent="MyTime">
+<functionEntry accessMode="public" name="getTimeWorked" parent="MyTime">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="secToClockTime" parent="MyTime">
+<param id="seconds"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="clockTimeToSec" parent="MyTime">
+<param id="clockTime"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="subtractTimes" parent="MyTime">
+<param id="time1"/>
+<param id="time2"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="addTimes" parent="MyTime">
+<param id="time1"/>
+<param id="time2"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="printEntireHistory" parent="MyTime">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="printOneHistory" parent="MyTime">
+<param id="key"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="increment" parent="MyTime">
@@ -542,6 +647,10 @@
 </functionEntry>
 <functionEntry accessMode="public" name="onPartialUpdate" parent="ClockInView">
 <param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getTimeReadable">
+<param id="clockTime"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="WorkTimerMenuDelegate">
