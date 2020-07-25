@@ -1,0 +1,11 @@
+<resources>
+    <!-- <bitmap id="LauncherIcon" filename="images/icon.png" /> -->
+    <bitmap id="clockIn_default" filename="images/clockIn_default.png" dithering="none" />
+	<bitmap id="clockIn_highlighted" filename="images/clockIn_highlighted.png" dithering="none" />
+	<bitmap id="clockIn_disabled" filename="images/clockIn_disabled.png" dithering="none" />
+    <bitmap id="clockOut_default" filename="images/clockOut_default.png" dithering="none" />
+	<bitmap id="clockOut_highlighted" filename="images/clockOut_highlighted.png" dithering="none" />
+    <bitmap id="break_default" filename="images/break_default.png" dithering="none" />
+	<bitmap id="break_highlighted" filename="images/break_highlighted.png" dithering="none" />
+	<bitmap id="break_disabled" filename="images/break_disabled.png" dithering="none" />
+</resources>

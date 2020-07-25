@@ -1,0 +1,4 @@
+<drawable-list id="ClockInButton">
+<shape type="rectangle" x="20" y="100" width="90" height="50" corner_radius="5" color="Gfx.COLOR_GREEN"/>
+</drawable-list>
+

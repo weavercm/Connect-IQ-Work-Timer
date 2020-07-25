@@ -1,0 +1,3 @@
+<drawable-list id="ClockOutButton">
+<shape type="rectangle" x="right" y="100" width="90" height="50" corner_radius="5" color="Gfx.COLOR_RED"/>
+</drawable-list>
