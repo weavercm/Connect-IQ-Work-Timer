@@ -93,22 +93,13 @@ class MyView extends WatchUi.View
 	
 	function onUpdate(dc)
 	{
-		//System.println("Current time is: " + myTime.getTime());
-		//myTime.increment();
 		System.println("WorkTime: " + getTimeReadable(myTime.getTimeWorked()));
 		
-//		var temp = new Rez.Drawables.WorkTimeTextLayout();
-//		temp.draw(dc);
-//		dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-//		dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_SMALL, "test", Graphics.TEXT_JUSTIFY_CENTER);	
 		View.onUpdate(dc);
-		
-		//dc.setColor( Graphics.COLOR_BLACK, Graphics.COLOR_BLACK );
-        //dc.clear();
+
         dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-        var string = "WorkTime:\n" + getTimeReadable(myTime.getTimeWorked());
-        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 30, Graphics.FONT_SMALL, string, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
-		
+        var currentWorkTimestring = "Work Time:\n" + getTimeReadable(myTime.getTimeWorked());
+        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 30, Graphics.FONT_SMALL, currentWorkTimestring, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
 }
 

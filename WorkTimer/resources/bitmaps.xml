@@ -8,4 +8,8 @@
     <bitmap id="break_default" filename="images/break_default.png" dithering="none" />
 	<bitmap id="break_highlighted" filename="images/break_highlighted.png" dithering="none" />
 	<bitmap id="break_disabled" filename="images/break_disabled.png" dithering="none" />
+	<bitmap id="arrowUp" filename="images/arrowUp.png" dithering="none" />
+	<bitmap id="arrowUp_highlighted" filename="images/arrowUp_highlighted.png" dithering="none" />
+	<bitmap id="arrowDown" filename="images/arrowDown.png" dithering="none" />
+	<bitmap id="arrowDown_highlighted" filename="images/arrowDown_highlighted.png" dithering="none" />
 </resources>

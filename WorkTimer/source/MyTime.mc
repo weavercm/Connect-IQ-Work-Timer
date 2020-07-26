@@ -25,7 +25,7 @@ class MyTime
 	hidden var time;
 	hidden var state = OFF_CLOCK;
 	hidden var timeHistoryDict = {0=>1};
-	hidden var currentDictKey = 0;
+	public var currentDictKey = 0;
 	
 	
 	function initialize(startTime)
@@ -99,23 +99,70 @@ class MyTime
 	
 	function printEntireHistory()
 	{
-		var i = 0;
-		System.println("History:");
-		for(i = 0; i <= currentDictKey; i++)
-		{
-			System.print("\t");
-			printOneHistory(i);
-		}
+		System.println(getEntireHistoryString());
 	}
 	
 	function printOneHistory(key)
 	{
+		System.println(getOneHistoryString(key));
+	}
+	
+	function getEntireHistoryString()
+	{
+		var i = 0;
+		var entireHistoryString = "History:\n";
+		for(i = 0; i <= currentDictKey; i++)
+		{
+			entireHistoryString += "\t" + getOneHistoryString(i) + "\n";
+		}
+		
+		return entireHistoryString;
+	}
+	
+	function getStateAt(key)
+	{
+		var stateString = "";
+		
+		if(key <= currentDictKey)
+		{	
+			switch(timeHistoryDict.get(key).state)
+			{
+				case ON_CLOCK:
+					stateString = "ON_CLOCK";
+					break;
+				case OFF_CLOCK:
+					stateString = "OFF_CLOCK";
+					break;
+				case ON_BREAK:
+					stateString = "ON_BREAK";
+					break;
+			}
+		}
+		
+		return stateString;
+	}
+	
+	function getTimeAt(key)
+	{
+		var timeString = "";
+		
 		if(key <= currentDictKey)
 		{
-			System.print("History_" + key + ": ");
+			var clockTime = timeHistoryDict.get(key).time;
+			timeString = Lang.format("$1$:$2$:$3$", [clockTime.hour, clockTime.min.format("%02d"), clockTime.sec.format("%02d")]);		
+		}
+		
+		return timeString;
+	}
+	
+	function getOneHistoryString(key)
+	{
+		var oneHistoryString = "";
+		
+		if(key <= currentDictKey)
+		{
 			var clockTime = timeHistoryDict.get(key).time;
 			var timeString = Lang.format("$1$:$2$:$3$", [clockTime.hour, clockTime.min.format("%02d"), clockTime.sec.format("%02d")]);		
-			System.print("Time: " + timeString);
 			
 			var stateString;
 			switch(timeHistoryDict.get(key).state)
@@ -130,8 +177,10 @@ class MyTime
 					stateString = "ON_BREAK";
 					break;
 			}
-			System.println(", State: " + stateString);
+			oneHistoryString = "History_" + key + ": " + "Time: " + timeString + ", State: " + stateString;
 		}
+		
+		return oneHistoryString;
 	}
 	
 	function increment()
