@@ -1,15 +1,21 @@
 <resources>
-    <!-- <bitmap id="LauncherIcon" filename="images/icon.png" /> -->
-    <bitmap id="clockIn_default" filename="images/clockIn_default.png" dithering="none" />
-	<bitmap id="clockIn_highlighted" filename="images/clockIn_highlighted.png" dithering="none" />
-	<bitmap id="clockIn_disabled" filename="images/clockIn_disabled.png" dithering="none" />
-    <bitmap id="clockOut_default" filename="images/clockOut_default.png" dithering="none" />
-	<bitmap id="clockOut_highlighted" filename="images/clockOut_highlighted.png" dithering="none" />
-    <bitmap id="break_default" filename="images/break_default.png" dithering="none" />
-	<bitmap id="break_highlighted" filename="images/break_highlighted.png" dithering="none" />
-	<bitmap id="break_disabled" filename="images/break_disabled.png" dithering="none" />
-	<bitmap id="arrowUp" filename="images/arrowUp.png" dithering="none" />
-	<bitmap id="arrowUp_highlighted" filename="images/arrowUp_highlighted.png" dithering="none" />
-	<bitmap id="arrowDown" filename="images/arrowDown.png" dithering="none" />
-	<bitmap id="arrowDown_highlighted" filename="images/arrowDown_highlighted.png" dithering="none" />
+    <!-- History controls -->
+    <bitmap id="arrowUpButton_default" filename="images/arrowUpButton_default.png" dithering="none" />
+	<bitmap id="arrowUpButton_highlighted" filename="images/arrowUpButton_highlighted.png" dithering="none" />
+	
+	<bitmap id="arrowDownButton_default" filename="images/arrowDownButton_default.png" dithering="none" />
+	<bitmap id="arrowDownButton_highlighted" filename="images/arrowDownButton_highlighted.png" dithering="none" />
+	
+	<!-- Timer Controls -->
+    <bitmap id="clockInButton_default" filename="images/clockInButton_default.png" dithering="none" />
+	<bitmap id="clockInButton_highlighted" filename="images/clockInButton_highlighted.png" dithering="none" />
+	<bitmap id="clockInButton_disabled" filename="images/clockInButton_default.png" dithering="none" />
+	
+    <bitmap id="clockOutButton_default" filename="images/clockOutButton_default.png" dithering="none" />
+	<bitmap id="clockOutButton_highlighted" filename="images/clockOutButton_highlighted.png" dithering="none" />
+	<bitmap id="clockOutButton_disabled" filename="images/clockOutButton_default.png" dithering="none" />
+	
+    <bitmap id="breakButton_default" filename="images/breakButton_default.png" dithering="none" />
+	<bitmap id="breakButton_highlighted" filename="images/breakButton_highlighted.png" dithering="none" />
+	<bitmap id="breakButton_disabled" filename="images/breakButton_default.png" dithering="none" />
 </resources>

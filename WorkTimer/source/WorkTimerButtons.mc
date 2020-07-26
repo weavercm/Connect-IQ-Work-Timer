@@ -5,10 +5,10 @@ class ClockInButton extends WatchUi.Selectable
 {
 	function initialize()
 	{
-		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockIn_default});
-		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockIn_highlighted});
-		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockIn_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.clockIn_disabled});
+		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockInButton_default});
+		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockInButton_highlighted});
+		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockInButton_highlighted});
+		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.clockInButton_disabled});
 		
 		var settings = {
 			:stateDefault=>buttonDefault,
@@ -36,10 +36,10 @@ class ClockOutButton extends WatchUi.Selectable
 {
 	function initialize()
 	{
-		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOut_default});
-		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOut_highlighted});
-		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOut_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.clockIn_disabled});
+		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOutButton_default});
+		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOutButton_highlighted});
+		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOutButton_highlighted});
+		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.clockOutButton_disabled});
 		
 		var settings = {
 			:stateDefault=>buttonDefault,
@@ -65,10 +65,10 @@ class BreakButton extends WatchUi.Selectable
 {
 	function initialize()
 	{
-		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.break_default});
-		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.break_highlighted});
-		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.break_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.break_disabled});
+		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_default});
+		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_highlighted});
+		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_highlighted});
+		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.breakButton_disabled});
 		
 		var settings = {
 			:stateDefault=>buttonDefault,

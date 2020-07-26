@@ -121,7 +121,7 @@ class ClockInDelegate extends WatchUi.BehaviorDelegate
 	{
 		//currentView.setState(:stateDisabled);
 	
-		System.println("Clocking in" + currentView.counter);
+		//System.println("Clocking in" + currentView.counter);
 	}
 	
 	function onClockOut()

@@ -55,12 +55,14 @@ class MyButtons
 	}
 }
 
+var updateTimer = null;
+
 class MyView extends WatchUi.View
 {
 	var drawLayer = null;
 	var clockLayer = null;
 	var myButtons = null;
-	var updateTimer = null;
+	//var updateTimer = null;
 	
 	function initialize()
 	{
@@ -69,10 +71,16 @@ class MyView extends WatchUi.View
 	
 	function onLayout(dc)
 	{
-		myTime = new MyTime(0);
-	
-		updateTimer = new System.Timer.Timer();
-		updateTimer.start(method(:requestUpdate), 500, true);
+		if(myTime == null)
+		{
+			myTime = new MyTime(0);
+		}
+		
+		if(updateTimer == null)
+		{	
+			updateTimer = new System.Timer.Timer();
+			updateTimer.start(method(:requestUpdate), 500, true);
+		}
 		
 		myButtons = new MyButtons(dc);
 		setLayout(myButtons.getButtons());
@@ -104,54 +112,54 @@ class MyView extends WatchUi.View
 }
 
 
-class ClockInView extends WatchUi.View
-{
-	var counter = 0;
-	var updateTimer;
-	
-    function initialize() {
-        WatchFace.initialize();
-        counter = 1;
-        currentView = self;
-        View.initialize();
-    }
-	
-	function onLayout(dc)
-	{
-		
-        
-		updateTimer = new System.Timer.Timer();
-		updateTimer.start(method(:requestUpdate), 500, true);
-		
-		setLayout(Rez.Layouts.myButtonLayout(dc));
-	}
-	
-	function onShow() {
-    }
-	
-	function onUpdate(dc)
-	{
-		// Get and show the current time
-        var clockTime = System.getClockTime();
-        
-        System.println("updating" + counter);
-        
-        dc.clear();
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(100, 100, Graphics.FONT_MEDIUM, counter, Graphics.TEXT_JUSTIFY_LEFT);
-
-        // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
-        counter++;
-		
-		
-	}
-	
-	function onPartialUpdate(dc)
-	{
-		System.println("Updating");
-	}
-}
+//class ClockInView extends WatchUi.View
+//{
+//	var counter = 0;
+//	var updateTimer;
+//	
+//    function initialize() {
+//        WatchFace.initialize();
+//        counter = 1;
+//        currentView = self;
+//        View.initialize();
+//    }
+//	
+//	function onLayout(dc)
+//	{
+//		
+//        
+//		updateTimer = new System.Timer.Timer();
+//		updateTimer.start(method(:requestUpdate), 500, true);
+//		
+//		setLayout(Rez.Layouts.myButtonLayout(dc));
+//	}
+//	
+//	function onShow() {
+//    }
+//	
+//	function onUpdate(dc)
+//	{
+//		// Get and show the current time
+//        var clockTime = System.getClockTime();
+//        
+//        System.println("updating" + counter);
+//        
+//        dc.clear();
+//        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+//        dc.drawText(100, 100, Graphics.FONT_MEDIUM, counter, Graphics.TEXT_JUSTIFY_LEFT);
+//
+//        // Call the parent onUpdate function to redraw the layout
+//        View.onUpdate(dc);
+//        counter++;
+//		
+//		
+//	}
+//	
+//	function onPartialUpdate(dc)
+//	{
+//		System.println("Updating");
+//	}
+//}
 
 function getTimeReadable(clockTime)
 {

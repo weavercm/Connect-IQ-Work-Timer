@@ -64,10 +64,10 @@ class ArrowUpButton extends WatchUi.Selectable
 {
 	function initialize()
 	{
-		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUp});
-		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUp_highlighted});
-		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUp});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowUp});
+		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_default});
+		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_highlighted});
+		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_highlighted});
+		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowUpButton_default});
 		
 		var settings = {
 			:stateDefault=>buttonDefault,
@@ -94,10 +94,10 @@ class ArrowDownButton extends WatchUi.Selectable
 {
 	function initialize()
 	{
-		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDown});
-		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDown_highlighted});
-		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDown});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowDown});
+		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_default});
+		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_highlighted});
+		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_highlighted});
+		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowDownButton_default});
 		
 		var settings = {
 			:stateDefault=>buttonDefault,
