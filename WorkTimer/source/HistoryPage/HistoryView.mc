@@ -5,9 +5,11 @@ var globalHistoryView = null;
 class HistoryView extends WatchUi.View
 {
 	hidden var topOfVisibleList = 0;
-	public var numItemsDisplayed = 6;
+	public var numItemsDisplayed = 5;
 	var arrowUpButton;
 	var arrowDownButton;
+	var backButton;
+	var xButton;
 	
 	function initialize()
 	{
@@ -18,7 +20,9 @@ class HistoryView extends WatchUi.View
 	{
 		arrowUpButton = new ArrowUpButton();
 		arrowDownButton = new ArrowDownButton();
-		setLayout([arrowUpButton, arrowDownButton]);
+		backButton = new BackButton();
+		xButton = new XButton();
+		setLayout([arrowUpButton, arrowDownButton, backButton, xButton]);
 	}
 	
 	function onUpdate(dc)
@@ -36,7 +40,7 @@ class HistoryView extends WatchUi.View
 			if(listItem <= myTime.currentDictKey)
 			{
 		        currentWorkTimeString = myTime.getStateAt(listItem) + "-" + myTime.getTimeAt(listItem);
-	        	dc.drawText( dc.getWidth() / 2, 60 + 20 * screenPos, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
+	        	dc.drawText( dc.getWidth() / 2, 90 + 20 * screenPos, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
 				screenPos++;
 			}
 		}

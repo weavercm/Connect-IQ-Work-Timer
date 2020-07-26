@@ -63,6 +63,48 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate
 //					System.println("\tnull");
 			}
 		}
+		else if(instance instanceof BackButton)
+		{
+			switch(instance.getState())
+			{
+				case :stateDefault:
+//					System.println("\tDefault");
+					break;
+				case :stateHighlighted:
+//					System.println("\tHighlighted");
+					break;
+				case :stateSelected:
+//					System.println("\tSelected");
+					instance.performAction();
+					break;
+				case :stateDisabled:
+//					System.println("\tDisabled");
+					break;
+				default:
+//					System.println("\tnull");
+			}
+		}
+		else if(instance instanceof XButton)
+		{
+			switch(instance.getState())
+			{
+				case :stateDefault:
+//					System.println("\tDefault");
+					break;
+				case :stateHighlighted:
+//					System.println("\tHighlighted");
+					break;
+				case :stateSelected:
+//					System.println("\tSelected");
+					instance.performAction();
+					break;
+				case :stateDisabled:
+//					System.println("\tDisabled");
+					break;
+				default:
+//					System.println("\tnull");
+			}
+		}
 		else
 		{
 			System.println("Did not recognize button");
@@ -71,9 +113,14 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate
 	
 	function onMenu()
 	{
-		var view = new WorkTimerView();
-        var delegate = new WorkTimerDelegate();
-        WatchUi.pushView(view, delegate, WatchUi.SLIDE_IMMEDIATE);
+		returnToWorkTimerPage();
         return true;
 	}
+}
+
+function returnToWorkTimerPage()
+{
+	var view = new WorkTimerView();
+    var delegate = new WorkTimerDelegate();
+    WatchUi.pushView(view, delegate, WatchUi.SLIDE_IMMEDIATE);
 }

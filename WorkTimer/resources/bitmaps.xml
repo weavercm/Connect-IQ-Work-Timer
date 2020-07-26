@@ -6,6 +6,12 @@
 	<bitmap id="arrowDownButton_default" filename="images/arrowDownButton_default.png" dithering="none" />
 	<bitmap id="arrowDownButton_highlighted" filename="images/arrowDownButton_highlighted.png" dithering="none" />
 	
+	<bitmap id="backButton_default" filename="images/backButton_default.png" dithering="none" />
+	<bitmap id="backButton_highlighted" filename="images/backButton_highlighted.png" dithering="none" />
+	
+	<bitmap id="xButton_default" filename="images/xButton_default.png" dithering="none" />
+	<bitmap id="xButton_highlighted" filename="images/xButton_highlighted.png" dithering="none" />
+	
 	<!-- Timer Controls -->
     <bitmap id="clockInButton_default" filename="images/clockInButton_default.png" dithering="none" />
 	<bitmap id="clockInButton_highlighted" filename="images/clockInButton_highlighted.png" dithering="none" />
