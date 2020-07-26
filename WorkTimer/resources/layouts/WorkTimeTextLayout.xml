@@ -1,0 +1,5 @@
+<layout id="WorkTimeTextLayout">
+    <label x="center" y="20" text="Work Time:" justification="Graphics.TEXT_JUSTIFY_CENTER" />   
+    <label id="TimeLabel" x="center" y="40" text="Test" justification="Graphics.TEXT_JUSTIFY_CENTER" /> 
+    <label x="170" y="110" text="Clock out" color="Gfx.COLOR_BLACK" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+</layout>

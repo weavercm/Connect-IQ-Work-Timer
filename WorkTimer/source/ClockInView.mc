@@ -64,11 +64,7 @@ class MyView extends WatchUi.View
 	
 	function initialize()
 	{
-
-		
 		View.initialize();
-		
-		
 	}
 	
 	function onLayout(dc)
@@ -79,7 +75,8 @@ class MyView extends WatchUi.View
 		updateTimer.start(method(:requestUpdate), 500, true);
 		
 		myButtons = new MyButtons(dc);
-		setLayout(myButtons.getButtons());	
+		setLayout(myButtons.getButtons());
+		//setLayout(Rez.Layouts.WorkTimeTextLayout(dc));	
 		//setLayout(dc);
 		
 		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_WHITE);
@@ -100,7 +97,18 @@ class MyView extends WatchUi.View
 		//myTime.increment();
 		System.println("WorkTime: " + getTimeReadable(myTime.getTimeWorked()));
 		
+//		var temp = new Rez.Drawables.WorkTimeTextLayout();
+//		temp.draw(dc);
+//		dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
+//		dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_SMALL, "test", Graphics.TEXT_JUSTIFY_CENTER);	
 		View.onUpdate(dc);
+		
+		//dc.setColor( Graphics.COLOR_BLACK, Graphics.COLOR_BLACK );
+        //dc.clear();
+        dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
+        var string = "WorkTime:\n" + getTimeReadable(myTime.getTimeWorked());
+        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 30, Graphics.FONT_SMALL, string, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
+		
 	}
 }
 
