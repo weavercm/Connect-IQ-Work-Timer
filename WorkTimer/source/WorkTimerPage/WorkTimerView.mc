@@ -40,6 +40,7 @@ class MyButtons
 	var myClockOutButton = null;
 	var myBreakButton = null;
 	var myTimeDisplay = null;
+	var myHistoryButton = null;
 	
 	function initialize(dc)
 	{
@@ -47,11 +48,12 @@ class MyButtons
 		myClockOutButton = new ClockOutButton();
 		myBreakButton = new BreakButton();
 		myTimeDisplay = new MyTimeDisplay();
+		myHistoryButton = new HistoryButton();
 	}
 	
 	function getButtons()
 	{
-		return [myClockInButton, myClockOutButton, myBreakButton];
+		return [myClockInButton, myClockOutButton, myBreakButton, myHistoryButton];
 	}
 }
 
@@ -88,16 +90,16 @@ class WorkTimerView extends WatchUi.View
 		//setLayout(Rez.Layouts.WorkTimeTextLayout(dc));	
 		//setLayout(dc);
 		
-		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_WHITE);
-        //dc.clear();
-		
-		//var myBitResource = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockIn_default});
-		clockLayer = new WatchUi.Layer({:locX=>50, :locY=>50, :width=>110, :height=>110});
-		var clockLayerDc = clockLayer.getDc();
-		clockLayerDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-		clockLayerDc.drawText(50, 50, Graphics.FONT_MEDIUM, "time", Graphics.TEXT_JUSTIFY_CENTER);
-	
-		addLayer(clockLayer);
+//		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_WHITE);
+//        //dc.clear();
+//		
+//		//var myBitResource = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockIn_default});
+//		clockLayer = new WatchUi.Layer({:locX=>50, :locY=>50, :width=>110, :height=>110});
+//		var clockLayerDc = clockLayer.getDc();
+//		clockLayerDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+//		clockLayerDc.drawText(50, 50, Graphics.FONT_MEDIUM, "time", Graphics.TEXT_JUSTIFY_CENTER);
+//	
+//		addLayer(clockLayer);
 	}
 	
 	// Called when this View is brought to the foreground. Restore
@@ -109,13 +111,15 @@ class WorkTimerView extends WatchUi.View
 	// Update the view
 	function onUpdate(dc)
 	{
-		System.println("WorkTime: " + getTimeReadable(myTime.getTimeWorked()));
+		//System.println("WorkTime: " + getTimeReadable(myTime.getTimeWorked()));
 		
 		View.onUpdate(dc);
 
         dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-        var currentWorkTimestring = myTime.stateToString(myTime.getState()) + "\n\n" + "Work Time:\n" + getTimeReadable(myTime.getTimeWorked());
-        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 45, Graphics.FONT_SMALL, currentWorkTimestring, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
+        var currentWorkStateString = myTime.stateToString(myTime.getState());
+        dc.drawText( dc.getWidth() / 2, 25, Graphics.FONT_SMALL, currentWorkStateString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
+        var currentWorkTimeString = "Work Time:\n" + getTimeReadable(myTime.getTimeWorked());
+        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 30, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
 	
 	// Called when this View is removed from the screen. Save the

@@ -92,3 +92,33 @@ class BreakButton extends WatchUi.Selectable
 		Storage.setValue("userSave", myTime.getStorageCompatableDict());
 	}
 }
+
+class HistoryButton extends WatchUi.Selectable
+{
+	function initialize()
+	{
+		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.historyButton_default});
+		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.historyButton_highlighted});
+		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.historyButton_default});
+		var buttonDisabled = new WatchUi.Bitmap({:rezId=>Rez.Drawables.historyButton_default});
+		
+		var settings = {
+			:stateDefault=>buttonDefault,
+			:stateHighlighted=>buttonHighlighted,
+			:stateSelected=>buttonHighlighted,
+			:stateDisabled=>buttonDisabled,
+			:locX=>47,
+			:locY=>40,
+			:width=>125,
+			:height=>75
+			};
+		
+		Selectable.initialize(settings);			
+	}
+	
+	function performAction()
+	{
+		System.println("Go to History");
+		goToHistoryPage();
+	}
+}

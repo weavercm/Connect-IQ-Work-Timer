@@ -24,4 +24,7 @@
     <bitmap id="breakButton_default" filename="images/breakButton_default.png" dithering="none" />
 	<bitmap id="breakButton_highlighted" filename="images/breakButton_highlighted.png" dithering="none" />
 	<bitmap id="breakButton_disabled" filename="images/breakButton_default.png" dithering="none" />
+	
+	<bitmap id="historyButton_default" filename="images/historyButton_default.png" dithering="none" />
+	<bitmap id="historyButton_highlighted" filename="images/historyButton_highlighted.png" dithering="none" />
 </resources>
