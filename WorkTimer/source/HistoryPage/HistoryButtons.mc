@@ -117,6 +117,7 @@ class XButton extends WatchUi.Selectable
 	function performAction()
 	{
 		System.println("Clear");
+		myTime.clear();
 	}
 }
 
