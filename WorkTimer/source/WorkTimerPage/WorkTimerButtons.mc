@@ -28,8 +28,7 @@ class ClockInButton extends WatchUi.Selectable
 	function performAction()
 	{
 		myTime.setState(ON_CLOCK);
-		//setState(:stateDisabled);
-		//System.println("\tTest: The current state is " + getState());
+		Storage.setValue("userSave", myTime.getStorageCompatableDict());
 	}
 }
 
@@ -59,6 +58,7 @@ class ClockOutButton extends WatchUi.Selectable
 	function performAction()
 	{
 		myTime.setState(OFF_CLOCK);
+		Storage.setValue("userSave", myTime.getStorageCompatableDict());
 	}
 }
 
@@ -88,11 +88,7 @@ class BreakButton extends WatchUi.Selectable
 	function performAction()
 	{
 		myTime.setState(ON_BREAK);
-		myTime.printEntireHistory();
+		//myTime.printEntireHistory();
 		Storage.setValue("userSave", myTime.getStorageCompatableDict());
-		myTime.clear();
-		myTime.printEntireHistory();
-		myTime.setFromStorageCompatableDict(Storage.getValue("userSave"));
-		myTime.printEntireHistory();
 	}
 }

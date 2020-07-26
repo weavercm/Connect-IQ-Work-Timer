@@ -74,7 +74,7 @@ class WorkTimerView extends WatchUi.View
 	{
 		if(myTime == null)
 		{
-			myTime = new MyTime(0);
+			myTime = new MyTime();
 		}
 		
 		if(updateTimer == null)

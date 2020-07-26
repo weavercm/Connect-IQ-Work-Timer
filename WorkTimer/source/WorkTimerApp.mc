@@ -12,16 +12,16 @@ class WorkTimerApp extends Application.AppBase {
     // onStart() is called on application start up
     function onStart(state) {
     	//load in history data
-    	
-    	
-
+    	myTime = new MyTime();
+    	//myTime.setFromStorageCompatableDict(Storage.getValue("userSave"));
+    	//myTime.printEntireHistory();
     }
 
     // onStop() is called when your application is exiting
     function onStop(state) {
     	//store history data
-    	myTime.printEntireHistory();
     	Storage.setValue("userSave", myTime.getStorageCompatableDict());
+    	myTime.printEntireHistory();
     }
 
     // Return the initial view of your application here

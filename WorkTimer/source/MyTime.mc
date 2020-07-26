@@ -66,7 +66,7 @@ class MyTime {
 	hidden var timeHistoryDict = {0=>1};
 	public var currentDictKey = 0;
 	
-	function initialize(startTime)
+	function initialize()
 	{
 		timeHistoryDict.put(currentDictKey, 
 			new MyTimeHistoryUnit(OFF_CLOCK, System.getClockTime()));
