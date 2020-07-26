@@ -1,5 +1,6 @@
 using Toybox.System;
 using Toybox.WatchUi;
+using Toybox.Application.Storage;
 
 class ClockInButton extends WatchUi.Selectable
 {
@@ -87,6 +88,11 @@ class BreakButton extends WatchUi.Selectable
 	function performAction()
 	{
 		myTime.setState(ON_BREAK);
+		myTime.printEntireHistory();
+		Storage.setValue("userSave", myTime.getStorageCompatableDict());
+		myTime.clear();
+		myTime.printEntireHistory();
+		myTime.setFromStorageCompatableDict(Storage.getValue("userSave"));
 		myTime.printEntireHistory();
 	}
 }

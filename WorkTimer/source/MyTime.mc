@@ -1,37 +1,109 @@
 using Toybox.System;
 
-public enum
-	{
-		OFF_CLOCK,
-		ON_CLOCK,
-		ON_BREAK
-	}
 
+//States the work timer can be in
+public enum {
 
-class MyTimeHistoryUnit
-{	
-	var state;
-	var time;
-	
-	function initialize(state, time)
+	OFF_CLOCK,
+	ON_CLOCK,
+	ON_BREAK
+}
+
+function intToStateEnum(int)
+{
+	switch(int)
 	{
-		self.state = state;
-		self.time = time;
+		case 0:
+			return OFF_CLOCK;
+		case 1:
+			return ON_CLOCK;
+		case 2:
+			return ON_BREAK;
+		default:
+			return null;
 	}
 }
 
-class MyTime
-{	
-	hidden var time;
+//Stores one history entry
+class MyTimeHistoryUnit {
+
+	var state;
+	var time = new System.ClockTime();
+	
+	function initialize(state, time) {
+		self.state = state;
+		self.time = time;
+	}
+	
+	function getStorageCompatableForm()
+	{
+		return [state, time.hour, time.min, time.sec];
+	}
+	
+	function setFromStorageCompatableForm(storageCompatableArray)
+	{
+		state = storageCompatableArray[0];
+		time.hour = storageCompatableArray[1];
+		time.min = storageCompatableArray[2];
+		time.sec = storageCompatableArray[3];
+	}
+	
+	function getCopy()
+	{
+		var timeCopy = new System.ClockTime();
+		timeCopy.hour = time.hour;
+		timeCopy.min = time.min;
+		timeCopy.sec = time.sec;
+		
+		return new MyTimeHistoryUnit(state, timeCopy);
+	}
+}
+
+//manages the Work Timer's business logic
+class MyTime {
+	
 	hidden var state = OFF_CLOCK;
 	hidden var timeHistoryDict = {0=>1};
 	public var currentDictKey = 0;
 	
-	
 	function initialize(startTime)
 	{
-		time = startTime;
-		timeHistoryDict.put(currentDictKey, new MyTimeHistoryUnit(OFF_CLOCK, System.getClockTime()));
+		timeHistoryDict.put(currentDictKey, 
+			new MyTimeHistoryUnit(OFF_CLOCK, System.getClockTime()));
+	}
+	
+	function clear()
+	{
+		timeHistoryDict = {0=>new MyTimeHistoryUnit(OFF_CLOCK, System.getClockTime())};
+		currentDictKey = 0;
+	}
+	
+	function getStorageCompatableDict()
+	{
+		var i;
+		var storageCompatableDict = {};
+		
+		for( i = 0; i <= currentDictKey; i++)
+		{
+			storageCompatableDict.put(i, timeHistoryDict.get(i).getStorageCompatableForm());
+		}
+		
+		return storageCompatableDict;
+	}
+	
+	function setFromStorageCompatableDict(StorageCompatableDict)
+	{
+		var i;
+		var singleHistoryEntry = new MyTimeHistoryUnit(OFF_CLOCK, new System.ClockTime());
+		
+		currentDictKey = StorageCompatableDict.size() - 1;
+		timeHistoryDict = {};
+		
+		for( i = 0; i <= currentDictKey; i++)
+		{
+			singleHistoryEntry.setFromStorageCompatableForm(StorageCompatableDict.get(i));			
+			timeHistoryDict.put(i, singleHistoryEntry.getCopy());
+		}
 	}
 	
 	function getTimeWorked()
@@ -91,9 +163,9 @@ class MyTime
 		return timeWorked;
 	}
 	
-//	function getTimeOnBreak()
-//	{
-//	}
+	hidden function getTimeOnBreak()
+	{
+	}
 	
 	
 	
@@ -125,21 +197,25 @@ class MyTime
 		
 		if(key <= currentDictKey)
 		{	
-			switch(timeHistoryDict.get(key).state)
-			{
-				case ON_CLOCK:
-					stateString = "ON_CLOCK";
-					break;
-				case OFF_CLOCK:
-					stateString = "OFF_CLOCK";
-					break;
-				case ON_BREAK:
-					stateString = "ON_BREAK";
-					break;
-			}
+			stateString = stateToString(timeHistoryDict.get(key).state);
 		}
 		
 		return stateString;
+	}
+	
+	function stateToString(state)
+	{
+		switch(state)
+		{
+			case ON_CLOCK:
+				return "ON CLOCK";
+			case OFF_CLOCK:
+				return "OFF CLOCK";
+			case ON_BREAK:
+				return "ON BREAK";
+		}
+		
+		return "null";
 	}
 	
 	function getTimeAt(key)
@@ -183,35 +259,7 @@ class MyTime
 		return oneHistoryString;
 	}
 	
-	function increment()
-	{
-		switch(state)
-		{
-			case OFF_CLOCK:
-				System.println("Off the clock; will not increment");
-				break;
-			case ON_CLOCK:
-				System.println("On the clock; will increment");
-				time++;
-				break;
-			case ON_BREAK:
-				System.println("On break; will not increment");
-				break;
-			default:
-				break;
-		}
-	}
-	
-	function setTime(newTime)
-	{
-		time = newTime;
-	}
-	
-	function getTime()
-	{
-		return time;
-	}
-	
+	///// Getters and Setters /////	
 	function setState(newState)
 	{
 		if(newState == state)

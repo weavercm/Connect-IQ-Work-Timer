@@ -114,8 +114,8 @@ class WorkTimerView extends WatchUi.View
 		View.onUpdate(dc);
 
         dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-        var currentWorkTimestring = "Work Time:\n" + getTimeReadable(myTime.getTimeWorked());
-        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 30, Graphics.FONT_SMALL, currentWorkTimestring, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
+        var currentWorkTimestring = myTime.stateToString(myTime.getState()) + "\n\n" + "Work Time:\n" + getTimeReadable(myTime.getTimeWorked());
+        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 45, Graphics.FONT_SMALL, currentWorkTimestring, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
 	
 	// Called when this View is removed from the screen. Save the
