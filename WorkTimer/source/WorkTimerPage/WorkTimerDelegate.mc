@@ -1,7 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Attention;
 
-class HistoryDelegate extends WatchUi.BehaviorDelegate
+class WorkTimerDelegate extends WatchUi.BehaviorDelegate
 {
 	function initialize()
 	{
@@ -12,8 +12,9 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate
 	{
 		var instance = event.getInstance();
 		
-		if(instance instanceof ArrowUpButton)
+		if(instance instanceof ClockInButton)
 		{
+			//System.println("Clock In:");
 			switch(instance.getState())
 			{
 				case :stateDefault:
@@ -42,8 +43,31 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate
 				
 			}
 		}
-		else if(instance instanceof ArrowDownButton)
+		else if(instance instanceof ClockOutButton)
 		{
+			//System.println("Clock Out:");
+			switch(instance.getState())
+			{
+				case :stateDefault:
+//					System.println("\tDefault");
+					break;
+				case :stateHighlighted:
+//					System.println("\tHighlighted");
+					break;
+				case :stateSelected:
+//					System.println("\tSelected");
+					instance.performAction();
+					break;
+				case :stateDisabled:
+//					System.println("\tDisabled");
+					break;
+				default:
+//					System.println("\tnull");
+			}
+		}
+		else if(instance instanceof BreakButton)
+		{
+			//System.println("Break:");
 			switch(instance.getState())
 			{
 				case :stateDefault:
@@ -71,9 +95,9 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate
 	
 	function onMenu()
 	{
-		var view = new MyView();
-        var delegate = new MyViewDelegate();
-        WatchUi.pushView(view, delegate, WatchUi.SLIDE_IMMEDIATE);
+		globalHistoryView = new HistoryView();
+        var delegate = new HistoryDelegate();
+        WatchUi.pushView(globalHistoryView, delegate, WatchUi.SLIDE_IMMEDIATE);
         return true;
 	}
 }

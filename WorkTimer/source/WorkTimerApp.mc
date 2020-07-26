@@ -9,16 +9,17 @@ class WorkTimerApp extends Application.AppBase {
 
     // onStart() is called on application start up
     function onStart(state) {
+    	//load in history data
     }
 
     // onStop() is called when your application is exiting
     function onStop(state) {
+    	//store history data
     }
 
     // Return the initial view of your application here
     function getInitialView() {
-    	return [ new MyView(), new MyViewDelegate() ];
-        //return [ new ClockInView(), new ClockInDelegate() ];
+    	return [ new WorkTimerView(), new WorkTimerDelegate() ];
     }
 
 }
