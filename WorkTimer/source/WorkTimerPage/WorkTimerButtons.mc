@@ -4,7 +4,7 @@ using Toybox.Application.Storage;
 
 class ClockInButton extends WatchUi.Selectable
 {
-	function initialize()
+	function initialize(dc)
 	{
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockInButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockInButton_highlighted});
@@ -17,9 +17,9 @@ class ClockInButton extends WatchUi.Selectable
 			:stateSelected=>buttonHighlighted,
 			:stateDisabled=>buttonDisabled,
 			:locX=>10,
-			:locY=>120,
-			:width=>100,
-			:height=>50
+			:locY=>dc.getHeight() - 2 * buttonDefault.height - 5,
+			:width=>buttonDefault.width,
+			:height=>buttonDefault.height
 			};
 		
 		Selectable.initialize(settings);			
@@ -34,7 +34,7 @@ class ClockInButton extends WatchUi.Selectable
 
 class ClockOutButton extends WatchUi.Selectable
 {
-	function initialize()
+	function initialize(dc)
 	{
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOutButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOutButton_highlighted});
@@ -46,10 +46,10 @@ class ClockOutButton extends WatchUi.Selectable
 			:stateHighlighted=>buttonHighlighted,
 			:stateSelected=>buttonHighlighted,
 			:stateDisabled=>buttonDisabled,
-			:locX=>110,
-			:locY=>120,
-			:width=>100,
-			:height=>50
+			:locX=>dc.getWidth() - buttonDefault.width - 10,
+			:locY=>dc.getHeight() - 2 * buttonDefault.height - 5,
+			:width=>buttonDefault.width,
+			:height=>buttonDefault.height
 			};
 		
 		Selectable.initialize(settings);			
@@ -64,7 +64,7 @@ class ClockOutButton extends WatchUi.Selectable
 
 class BreakButton extends WatchUi.Selectable
 {
-	function initialize()
+	function initialize(dc)
 	{
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_highlighted});
@@ -76,10 +76,10 @@ class BreakButton extends WatchUi.Selectable
 			:stateHighlighted=>buttonHighlighted,
 			:stateSelected=>buttonHighlighted,
 			:stateDisabled=>buttonDisabled,
-			:locX=>60,
-			:locY=>165,
-			:width=>100,
-			:height=>50
+			:locX=>(dc.getWidth() - buttonDefault.width) / 2,
+			:locY=>dc.getHeight() - buttonDefault.height - 5,
+			:width=>buttonDefault.width,
+			:height=>buttonDefault.height
 			};
 		
 		Selectable.initialize(settings);			
@@ -95,7 +95,7 @@ class BreakButton extends WatchUi.Selectable
 
 class HistoryButton extends WatchUi.Selectable
 {
-	function initialize()
+	function initialize(dc)
 	{
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.historyButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.historyButton_highlighted});
@@ -107,10 +107,10 @@ class HistoryButton extends WatchUi.Selectable
 			:stateHighlighted=>buttonHighlighted,
 			:stateSelected=>buttonHighlighted,
 			:stateDisabled=>buttonDisabled,
-			:locX=>47,
-			:locY=>40,
-			:width=>125,
-			:height=>75
+			:locX=>(dc.getWidth() - buttonDefault.width) / 2,
+			:locY=>(dc.getHeight() / 2) - buttonDefault.height + 5,
+			:width=>buttonDefault.width,
+			:height=>buttonDefault.height
 			};
 		
 		Selectable.initialize(settings);			

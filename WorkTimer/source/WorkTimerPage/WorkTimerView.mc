@@ -44,11 +44,11 @@ class MyButtons
 	
 	function initialize(dc)
 	{
-		myClockInButton = new ClockInButton();
-		myClockOutButton = new ClockOutButton();
-		myBreakButton = new BreakButton();
-		myTimeDisplay = new MyTimeDisplay();
-		myHistoryButton = new HistoryButton();
+		myClockInButton = new ClockInButton(dc);
+		myClockOutButton = new ClockOutButton(dc);
+		myBreakButton = new BreakButton(dc);
+		//myTimeDisplay = new MyTimeDisplay(dc);
+		myHistoryButton = new HistoryButton(dc);
 	}
 	
 	function getButtons()
@@ -119,7 +119,7 @@ class WorkTimerView extends WatchUi.View
         var currentWorkStateString = myTime.stateToString(myTime.getState());
         dc.drawText( dc.getWidth() / 2, 25, Graphics.FONT_SMALL, currentWorkStateString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
         var currentWorkTimeString = "Work Time:\n" + getTimeReadable(myTime.getTimeWorked());
-        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 30, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
+        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 35, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
 	
 	// Called when this View is removed from the screen. Save the

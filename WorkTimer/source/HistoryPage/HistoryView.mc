@@ -8,6 +8,7 @@ class HistoryView extends WatchUi.View
 	hidden var MY_COLOR_GREEN = 0x00ff15;
 	hidden var MY_COLOR_YELLOW = 0xffff00;
 	hidden var topOfVisibleList = 0;
+	hidden var spaceBetweenEntries = 20;
 	public var numItemsDisplayed = 4;
 	var arrowUpButton;
 	var arrowDownButton;
@@ -21,11 +22,13 @@ class HistoryView extends WatchUi.View
 	
 	function onLayout(dc)
 	{
-		arrowUpButton = new ArrowUpButton();
-		arrowDownButton = new ArrowDownButton();
-		backButton = new BackButton();
-		xButton = new XButton();
+		arrowUpButton = new ArrowUpButton(dc);
+		arrowDownButton = new ArrowDownButton(dc);
+		backButton = new BackButton(dc);
+		xButton = new XButton(dc);
 		setLayout([arrowUpButton, arrowDownButton, backButton, xButton]);
+		
+		numItemsDisplayed = (dc.getHeight() - arrowUpButton.getDistanceFromTop() - arrowDownButton.getDistanceFromBottom()) / spaceBetweenEntries;
 	}
 	
 	function onUpdate(dc)
@@ -59,17 +62,17 @@ class HistoryView extends WatchUi.View
 	function displayHistoryEntryColor(dc, listItem, screenPos) {
 		var stateString = myTime.getStateStringAt(listItem);
 		dc.setColor( getColorByState(myTime.getStateAt(listItem)), Graphics.COLOR_TRANSPARENT );
-		dc.drawText( dc.getWidth() / 2, 90 + 20 * screenPos, Graphics.FONT_SMALL, stateString, Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER );
+		dc.drawText( dc.getWidth() / 2, 90 + spaceBetweenEntries * screenPos, Graphics.FONT_SMALL, stateString, Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER );
 		
 		var currentWorkTimeString = "-" + myTime.getTimeAt(listItem);
 		dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-		dc.drawText( dc.getWidth() / 2 + 5, 90 + 20 * screenPos, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER );
+		dc.drawText( dc.getWidth() / 2 + 5, 90 + spaceBetweenEntries * screenPos, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
 	
 	function displayHistoryEntryBW(dc, listItem, screenPos) {
 		var currentWorkTimeString = myTime.getStateStringAt(listItem) + "-" + myTime.getTimeAt(listItem);
 		dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-	    dc.drawText( dc.getWidth() / 2, 90 + 20 * screenPos, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
+	    dc.drawText( dc.getWidth() / 2, 90 + spaceBetweenEntries * screenPos, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
 	
 	function getColorByState(state) {
