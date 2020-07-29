@@ -1,5 +1,4 @@
 using Toybox.WatchUi;
-using Toybox.Application.Storage;
 
 
 class ArrowUpButton extends WatchUi.Selectable
@@ -118,8 +117,12 @@ class XButton extends WatchUi.Selectable
 	function performAction()
 	{
 		//System.println("Clear");
-		myTime.clear();
-		Storage.setValue("userSave", myTime.getStorageCompatableDict());
+		//myTime.clear();
+		//Storage.setValue("userSave", myTime.getStorageCompatableDict());
+		
+		var message = "Clear History?";
+		var dialog = new WatchUi.Confirmation(message);
+		WatchUi.pushView(dialog, new ClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);	
 	}
 }
 
