@@ -24,7 +24,7 @@ class ClearHistoryConfirmationDelegate extends WatchUi.ConfirmationDelegate {
     }
     
     function confirmAction() {
-    	myTime.clear();
-		Storage.setValue("userSave", myTime.getStorageCompatableDict());
+    	globalMyTime.clear();
+		Storage.setValue("userSave", globalMyTime.getStorageCompatableDict());
     }
 }

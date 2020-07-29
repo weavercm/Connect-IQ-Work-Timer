@@ -111,16 +111,63 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate
 		}
 	}
 	
+	function onBack()
+	{
+		System.println("Back pressed");
+	}
+	
 	function onMenu()
 	{
 		returnToWorkTimerPage();
         return true;
 	}
+	
+	function onNextMode()
+	{
+		System.println("Next Mode pressed");
+		
+		return true;
+	}
+	
+	function onNextPage()
+	{
+		System.println("Next Page pressed");
+		
+		return true;
+	}
+	
+	function onPreviousMode()
+	{
+		System.println("Previous Mode pressed");
+		
+		return true;
+	}
+	
+	function onPreviousPage()
+	{
+		System.println("Previous Page pressed");
+		
+		return true;
+	}
+
+	
+	function onSelect()
+	{
+		System.println("Select pressed");
+		
+		XButton.performAction();
+
+		return true;	
+	}
 }
 
 function returnToWorkTimerPage()
 {
-	var view = new WorkTimerView();
-    var delegate = new WorkTimerDelegate();
-    WatchUi.pushView(view, delegate, WatchUi.SLIDE_IMMEDIATE);
+	if(globalWorkTimeView == null) {
+		globalWorkTimeView = new WorkTimerView();
+	}
+	if(globalWorkTimeDelegate == null) {
+    	globalWorkTimeDelegate = new WorkTimerDelegate();
+    }
+    WatchUi.pushView(globalWorkTimeView, globalWorkTimeDelegate, WatchUi.SLIDE_IMMEDIATE);
 }

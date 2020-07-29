@@ -6,9 +6,6 @@ using Toybox.Lang;
 using Toybox.Graphics as Gfx;
 using Toybox.Attention as Attention;
 
-var currentView = null;
-var myTime = null;
-
 
 class MyTimeDisplay extends WatchUi.View
 {
@@ -57,7 +54,6 @@ class MyButtons
 	}
 }
 
-var updateTimer = null;
 
 class WorkTimerView extends WatchUi.View
 {
@@ -74,18 +70,20 @@ class WorkTimerView extends WatchUi.View
 	// Load your resources here
 	function onLayout(dc)
 	{
-		if(myTime == null)
+		if(globalMyTime == null)
 		{
-			myTime = new MyTime();
+			globalMyTime = new MyTime();
 		}
 		
-		if(updateTimer == null)
+		if(globalUpdateTimer == null)
 		{	
-			updateTimer = new System.Timer.Timer();
-			updateTimer.start(method(:requestUpdate), 500, true);
+			globalUpdateTimer = new System.Timer.Timer();
+			globalUpdateTimer.start(method(:requestUpdate), 500, true);
 		}
 		
-		myButtons = new MyButtons(dc);
+		if(myButtons == null) {
+			myButtons = new MyButtons(dc);
+		}
 		setLayout(myButtons.getButtons());
 		//setLayout(Rez.Layouts.WorkTimeTextLayout(dc));	
 		//setLayout(dc);
@@ -116,9 +114,9 @@ class WorkTimerView extends WatchUi.View
 		View.onUpdate(dc);
 
         dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-        var currentWorkStateString = myTime.stateToString(myTime.getState());
+        var currentWorkStateString = globalMyTime.stateToString(globalMyTime.getState());
         dc.drawText( dc.getWidth() / 2, 25, Graphics.FONT_SMALL, currentWorkStateString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
-        var currentWorkTimeString = "Work Time:\n" + getTimeReadable(myTime.getTimeWorked());
+        var currentWorkTimeString = "Work Time:\n" + getTimeReadable(globalMyTime.getTimeWorked());
         dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 35, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
 	

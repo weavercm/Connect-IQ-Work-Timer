@@ -1,6 +1,5 @@
 using Toybox.WatchUi;
 
-var globalHistoryView = null;
 
 class HistoryView extends WatchUi.View
 {
@@ -10,10 +9,10 @@ class HistoryView extends WatchUi.View
 	hidden var topOfVisibleList = 0;
 	hidden var spaceBetweenEntries = 20;
 	public var numItemsDisplayed = 4;
-	var arrowUpButton;
-	var arrowDownButton;
-	var backButton;
-	var xButton;
+	var arrowUpButton = null;
+	var arrowDownButton = null;
+	var backButton = null;
+	var xButton = null;
 	
 	function initialize()
 	{
@@ -22,10 +21,22 @@ class HistoryView extends WatchUi.View
 	
 	function onLayout(dc)
 	{
-		arrowUpButton = new ArrowUpButton(dc);
-		arrowDownButton = new ArrowDownButton(dc);
-		backButton = new BackButton(dc);
-		xButton = new XButton(dc);
+		if(arrowUpButton == null) {
+			arrowUpButton = new ArrowUpButton(dc);
+		}
+		
+		if(arrowDownButton == null) {
+			arrowDownButton = new ArrowDownButton(dc);
+		}
+		
+		if(backButton == null) {
+			backButton = new BackButton(dc);
+		}
+		
+		if(xButton == null)	{
+			xButton = new XButton(dc);
+		}
+		
 		setLayout([arrowUpButton, arrowDownButton, backButton, xButton]);
 		
 		numItemsDisplayed = (dc.getHeight() - arrowUpButton.getDistanceFromTop() - arrowDownButton.getDistanceFromBottom()) / spaceBetweenEntries;
@@ -42,7 +53,7 @@ class HistoryView extends WatchUi.View
 		
         dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
         
-        if(myTime.currentDictKey <= 0)
+        if(globalMyTime.currentDictKey <= 0)
         {
         	dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_SMALL, "No History", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
         }
@@ -50,7 +61,7 @@ class HistoryView extends WatchUi.View
         {
 			for(listItem = topOfVisibleList + 1; listItem < topOfVisibleList + numItemsDisplayed + 1; listItem++)
 			{
-				if(listItem <= myTime.currentDictKey)
+				if(listItem <= globalMyTime.currentDictKey)
 				{
 					displayHistoryEntryColor(dc, listItem, screenPos);
 					screenPos++;
@@ -60,17 +71,17 @@ class HistoryView extends WatchUi.View
 	}
 	
 	function displayHistoryEntryColor(dc, listItem, screenPos) {
-		var stateString = myTime.getStateStringAt(listItem);
-		dc.setColor( getColorByState(myTime.getStateAt(listItem)), Graphics.COLOR_TRANSPARENT );
+		var stateString = globalMyTime.getStateStringAt(listItem);
+		dc.setColor( getColorByState(globalMyTime.getStateAt(listItem)), Graphics.COLOR_TRANSPARENT );
 		dc.drawText( dc.getWidth() / 2, 90 + spaceBetweenEntries * screenPos, Graphics.FONT_SMALL, stateString, Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER );
 		
-		var currentWorkTimeString = "-" + myTime.getTimeAt(listItem);
+		var currentWorkTimeString = "-" + globalMyTime.getTimeAt(listItem);
 		dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
 		dc.drawText( dc.getWidth() / 2 + 5, 90 + spaceBetweenEntries * screenPos, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
 	
 	function displayHistoryEntryBW(dc, listItem, screenPos) {
-		var currentWorkTimeString = myTime.getStateStringAt(listItem) + "-" + myTime.getTimeAt(listItem);
+		var currentWorkTimeString = globalMyTime.getStateStringAt(listItem) + "-" + globalMyTime.getTimeAt(listItem);
 		dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
 	    dc.drawText( dc.getWidth() / 2, 90 + spaceBetweenEntries * screenPos, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
@@ -98,7 +109,7 @@ class HistoryView extends WatchUi.View
 	
 	function moveListDown()
 	{
-		if(topOfVisibleList + 1 <= myTime.currentDictKey - numItemsDisplayed)
+		if(topOfVisibleList + 1 <= globalMyTime.currentDictKey - numItemsDisplayed)
 		{
 			topOfVisibleList++;
 		}

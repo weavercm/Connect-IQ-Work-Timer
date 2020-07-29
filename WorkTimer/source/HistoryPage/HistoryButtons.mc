@@ -7,6 +7,8 @@ class ArrowUpButton extends WatchUi.Selectable
 	
 	function initialize(dc)
 	{
+		System.println("Initializing ArrowUpButton");
+		
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_highlighted});
@@ -133,7 +135,7 @@ class XButton extends WatchUi.Selectable
 		Selectable.initialize(settings);			
 	}
 	
-	function performAction()
+	static function performAction()
 	{
 		//System.println("Clear");
 

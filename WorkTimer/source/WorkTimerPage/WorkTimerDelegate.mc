@@ -1,5 +1,6 @@
 using Toybox.WatchUi;
 using Toybox.Attention;
+using Toybox.Application.Storage;
 
 class WorkTimerDelegate extends WatchUi.BehaviorDelegate
 {
@@ -12,36 +13,9 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate
 	{
 		var instance = event.getInstance();
 		
-		if(instance instanceof ClockInButton)
+		if(instance instanceof ClockInButton && instance.getState() == :stateSelected)
 		{
-			//System.println("Clock In:");
-			switch(instance.getState())
-			{
-				case :stateDefault:
-//					System.println("Default");
-//					System.println("\tThe previous state was " + event.getPreviousState());
-//					System.println("\tThe current state is " + instance.getState());
-					break;
-				case :stateHighlighted:
-//					System.println("Highlighted");
-//					System.println("\tThe previous state was " + event.getPreviousState());
-//					System.println("\tThe current state is " + instance.getState());
-					break;
-				case :stateSelected:
-//					System.println("Selected");
-//					System.println("\tThe previous state was " + event.getPreviousState());
-//					System.println("\tThe current state is " + instance.getState());
-					instance.performAction();
-					break;
-				case :stateDisabled:
-//					System.println("Disabled");
-//					System.println("\tThe previous state was " + event.getPreviousState());
-//					System.println("\tThe current state is " + instance.getState());
-					break;
-				default:
-//					System.println("null");
-				
-			}
+			instance.performAction();
 		}
 		else if(instance instanceof ClockOutButton)
 		{
@@ -115,16 +89,75 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate
 		}
 	}
 	
+	function onBack()
+	{
+		System.println("Back pressed");
+		
+		return true;
+	}
+
 	function onMenu()
 	{
+		System.println("Menu pressed");
 		goToHistoryPage();
+		
         return true;
+	}
+	
+	function onNextMode()
+	{
+		System.println("Next Mode pressed");
+		
+		return true;
+	}
+	
+	function onNextPage()
+	{
+		System.println("Next Page pressed");
+		
+		return true;
+	}
+	
+	function onPreviousMode()
+	{
+		System.println("Previous Mode pressed");
+		
+		return true;
+	}
+	
+	function onPreviousPage()
+	{
+		System.println("Previous Page pressed");
+		
+		return true;
+	}
+	
+	function onSelect()
+	{
+		System.println("Select pressed");
+		
+		switch(globalMyTime.getState())
+		{
+			case OFF_CLOCK:
+			case ON_BREAK:
+				ClockInButton.performAction();
+				break;
+			case ON_CLOCK:
+				ClockOutButton.performAction();
+				break;
+		}
+		
+		return true;
 	}
 }
 
 function goToHistoryPage()
 {
-	globalHistoryView = new HistoryView();
-    var delegate = new HistoryDelegate();
-    WatchUi.pushView(globalHistoryView, delegate, WatchUi.SLIDE_IMMEDIATE);
+	if(globalHistoryView == null) {
+		globalHistoryView = new HistoryView();
+	}
+	if(globalHistoryDelegate == null) {
+    	globalHistoryDelegate = new HistoryDelegate();
+    }
+    WatchUi.pushView(globalHistoryView, globalHistoryDelegate, WatchUi.SLIDE_IMMEDIATE);
 }

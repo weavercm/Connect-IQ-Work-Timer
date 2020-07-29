@@ -12,21 +12,23 @@ class WorkTimerApp extends Application.AppBase {
     // onStart() is called on application start up
     function onStart(state) {
     	//load in history data
-    	myTime = new MyTime();
-    	myTime.setFromStorageCompatableDict(Storage.getValue("userSave"));
-    	myTime.printEntireHistory();
+    	globalMyTime = new MyTime();
+    	globalMyTime.setFromStorageCompatableDict(Storage.getValue("userSave"));
+    	globalMyTime.printEntireHistory();
     }
 
     // onStop() is called when your application is exiting
     function onStop(state) {
     	//store history data
-    	Storage.setValue("userSave", myTime.getStorageCompatableDict());
-    	myTime.printEntireHistory();
+    	Storage.setValue("userSave", globalMyTime.getStorageCompatableDict());
+    	globalMyTime.printEntireHistory();
     }
 
     // Return the initial view of your application here
     function getInitialView() {
-    	return [ new WorkTimerView(), new WorkTimerDelegate() ];
+    	globalWorkTimeView = new WorkTimerView();
+    	globalWorkTimeDelegate = new WorkTimerDelegate();
+    	return [ globalWorkTimeView, globalWorkTimeDelegate];
     }
 
 }
