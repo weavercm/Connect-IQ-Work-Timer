@@ -118,7 +118,7 @@ class HistoryButton extends WatchUi.Selectable
 	
 	function performAction()
 	{
-		System.println("Go to History");
+		//System.println("Go to History");
 		goToHistoryPage();
 	}
 }

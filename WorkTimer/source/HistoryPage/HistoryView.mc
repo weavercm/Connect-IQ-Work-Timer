@@ -5,7 +5,7 @@ var globalHistoryView = null;
 class HistoryView extends WatchUi.View
 {
 	hidden var topOfVisibleList = 0;
-	public var numItemsDisplayed = 5;
+	public var numItemsDisplayed = 4;
 	var arrowUpButton;
 	var arrowDownButton;
 	var backButton;
@@ -35,7 +35,7 @@ class HistoryView extends WatchUi.View
 		
         dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
         
-		for(listItem = topOfVisibleList; listItem < topOfVisibleList + numItemsDisplayed; listItem++)
+		for(listItem = topOfVisibleList + 1; listItem < topOfVisibleList + numItemsDisplayed; listItem++)
 		{
 			if(listItem <= myTime.currentDictKey)
 			{

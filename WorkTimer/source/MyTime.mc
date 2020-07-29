@@ -75,6 +75,7 @@ class MyTime {
 	function clear()
 	{
 		timeHistoryDict = {0=>new MyTimeHistoryUnit(OFF_CLOCK, System.getClockTime())};
+		state = OFF_CLOCK;
 		currentDictKey = 0;
 	}
 	
@@ -104,6 +105,8 @@ class MyTime {
 			singleHistoryEntry.setFromStorageCompatableForm(StorageCompatableDict.get(i));			
 			timeHistoryDict.put(i, singleHistoryEntry.getCopy());
 		}
+		
+		state = timeHistoryDict.get(currentDictKey).state;
 	}
 	
 	function getTimeWorked()

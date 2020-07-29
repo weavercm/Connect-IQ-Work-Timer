@@ -26,7 +26,7 @@ class ArrowUpButton extends WatchUi.Selectable
 	
 	function performAction()
 	{
-		System.println("Scroll up");
+		//System.println("Scroll up");
 		globalHistoryView.moveListUp();
 	}
 }
@@ -46,7 +46,7 @@ class ArrowDownButton extends WatchUi.Selectable
 			:stateSelected=>buttonHighlighted,
 			:stateDisabled=>buttonDisabled,
 			:locX=>60,
-			:locY=>180,
+			:locY=>160,
 			:width=>100,
 			:height=>50
 			};
@@ -56,7 +56,7 @@ class ArrowDownButton extends WatchUi.Selectable
 	
 	function performAction()
 	{
-		System.println("Scroll down");
+		//System.println("Scroll down");
 		globalHistoryView.moveListDown();
 	}
 }
@@ -86,7 +86,7 @@ class BackButton extends WatchUi.Selectable
 	
 	function performAction()
 	{
-		System.println("Go back");
+		//System.println("Go back");
 		returnToWorkTimerPage();
 	}
 }
@@ -116,7 +116,7 @@ class XButton extends WatchUi.Selectable
 	
 	function performAction()
 	{
-		System.println("Clear");
+		//System.println("Clear");
 		myTime.clear();
 	}
 }
