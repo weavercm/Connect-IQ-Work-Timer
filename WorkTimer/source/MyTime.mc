@@ -1,4 +1,5 @@
 using Toybox.System;
+using Toybox.Time;
 
 
 //States the work timer can be in
@@ -23,6 +24,7 @@ function intToStateEnum(int)
 			return null;
 	}
 }
+
 
 //Stores one history entry
 class MyTimeHistoryUnit {
@@ -195,6 +197,16 @@ class MyTime {
 	}
 	
 	function getStateAt(key)
+	{
+		if(key <= currentDictKey)
+		{	
+			return timeHistoryDict.get(key).state;
+		}
+		
+		return null;
+	}
+	
+	function getStateStringAt(key)
 	{
 		var stateString = "";
 		

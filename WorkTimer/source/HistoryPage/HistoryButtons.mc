@@ -1,4 +1,5 @@
 using Toybox.WatchUi;
+using Toybox.Application.Storage;
 
 
 class ArrowUpButton extends WatchUi.Selectable
@@ -15,10 +16,10 @@ class ArrowUpButton extends WatchUi.Selectable
 			:stateHighlighted=>buttonHighlighted,
 			:stateSelected=>buttonHighlighted,
 			:stateDisabled=>buttonDisabled,
-			:locX=>60,
-			:locY=>30,
-			:width=>100,
-			:height=>50
+			:locX=>80,
+			:locY=>40,
+			:width=>60,
+			:height=>30
 			};
 		
 		Selectable.initialize(settings);			
@@ -45,10 +46,10 @@ class ArrowDownButton extends WatchUi.Selectable
 			:stateHighlighted=>buttonHighlighted,
 			:stateSelected=>buttonHighlighted,
 			:stateDisabled=>buttonDisabled,
-			:locX=>60,
-			:locY=>160,
-			:width=>100,
-			:height=>50
+			:locX=>80,
+			:locY=>170,
+			:width=>60,
+			:height=>30
 			};
 		
 		Selectable.initialize(settings);			
@@ -118,6 +119,7 @@ class XButton extends WatchUi.Selectable
 	{
 		//System.println("Clear");
 		myTime.clear();
+		Storage.setValue("userSave", myTime.getStorageCompatableDict());
 	}
 }
 
