@@ -13,74 +13,27 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate
 	{
 		var instance = event.getInstance();
 		
-		if(instance instanceof ClockInButton && instance.getState() == :stateSelected)
-		{
-			instance.performAction();
+		if(instance instanceof ClockInButton) {
+			if(instance.getState() == :stateSelected) {
+				instance.performAction();
+			}
 		}
 		else if(instance instanceof ClockOutButton)
 		{
-			//System.println("Clock Out:");
-			switch(instance.getState())
-			{
-				case :stateDefault:
-//					System.println("\tDefault");
-					break;
-				case :stateHighlighted:
-//					System.println("\tHighlighted");
-					break;
-				case :stateSelected:
-//					System.println("\tSelected");
-					instance.performAction();
-					break;
-				case :stateDisabled:
-//					System.println("\tDisabled");
-					break;
-				default:
-//					System.println("\tnull");
+			if(instance.getState() == :stateSelected) {
+				instance.performAction();
 			}
 		}
 		else if(instance instanceof BreakButton)
 		{
-			//System.println("Break:");
-			switch(instance.getState())
-			{
-				case :stateDefault:
-//					System.println("\tDefault");
-					break;
-				case :stateHighlighted:
-//					System.println("\tHighlighted");
-					break;
-				case :stateSelected:
-//					System.println("\tSelected");
-					instance.performAction();
-					break;
-				case :stateDisabled:
-//					System.println("\tDisabled");
-					break;
-				default:
-//					System.println("\tnull");
+			if(instance.getState() == :stateSelected) {
+				instance.performAction();
 			}
 		}
 		else if(instance instanceof HistoryButton)
 		{
-			//System.println("Break:");
-			switch(instance.getState())
-			{
-				case :stateDefault:
-//					System.println("\tDefault");
-					break;
-				case :stateHighlighted:
-//					System.println("\tHighlighted");
-					break;
-				case :stateSelected:
-//					System.println("\tSelected");
-					instance.performAction();
-					break;
-				case :stateDisabled:
-//					System.println("\tDisabled");
-					break;
-				default:
-//					System.println("\tnull");
+			if(instance.getState() == :stateSelected) {
+				instance.performAction();
 			}
 		}
 		else
@@ -93,7 +46,7 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate
 	{
 		System.println("Back pressed");
 		
-		return true;
+		//return true;
 	}
 
 	function onMenu()

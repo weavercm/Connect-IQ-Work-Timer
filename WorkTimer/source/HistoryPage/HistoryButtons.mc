@@ -1,10 +1,8 @@
 using Toybox.WatchUi;
 
-
-class ArrowUpButton extends WatchUi.Selectable
-{
+class ArrowUpButton extends WatchUi.Selectable {
 	hidden var distanceFromTop;
-	
+
 	function initialize(dc)
 	{
 		System.println("Initializing ArrowUpButton");
@@ -29,23 +27,20 @@ class ArrowUpButton extends WatchUi.Selectable
 		
 		distanceFromTop = locY + height;
 	}
-	
-	function getDistanceFromTop()
-	{
+
+	function getDistanceFromTop() {
 		return distanceFromTop;
 	}
-	
-	function performAction()
-	{
-		//System.println("Scroll up");
+
+	function performAction() {
+		// System.println("Scroll up");
 		globalHistoryView.moveListUp();
 	}
 }
 
-class ArrowDownButton extends WatchUi.Selectable
-{
+class ArrowDownButton extends WatchUi.Selectable {
 	hidden var distanceFromBottom;
-	
+
 	function initialize(dc)
 	{
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_default});
@@ -68,21 +63,18 @@ class ArrowDownButton extends WatchUi.Selectable
 
 		distanceFromBottom = dc.getHeight() - locY;			
 	}
-	
-	function getDistanceFromBottom()
-	{
+
+	function getDistanceFromBottom() {
 		return distanceFromBottom;
 	}
-	
-	function performAction()
-	{
-		//System.println("Scroll down");
+
+	function performAction() {
+		// System.println("Scroll down");
 		globalHistoryView.moveListDown();
 	}
 }
 
-class BackButton extends WatchUi.Selectable
-{
+class BackButton extends WatchUi.Selectable {
 	function initialize(dc)
 	{
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.backButton_default});
@@ -103,17 +95,15 @@ class BackButton extends WatchUi.Selectable
 		
 		Selectable.initialize(settings);			
 	}
-	
-	function performAction()
-	{
-		//System.println("Go back");
+
+	function performAction() {
+		// System.println("Go back");
 		returnToWorkTimerPage();
 	}
 }
 
-class XButton extends WatchUi.Selectable
-{
-	
+class XButton extends WatchUi.Selectable {
+
 	function initialize(dc)
 	{
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.xButton_default});
@@ -134,14 +124,12 @@ class XButton extends WatchUi.Selectable
 		
 		Selectable.initialize(settings);			
 	}
-	
-	static function performAction()
-	{
-		//System.println("Clear");
+
+	static function performAction() {
+		// System.println("Clear");
 
 		var message = "Clear History?";
 		var dialog = new WatchUi.Confirmation(message);
-		WatchUi.pushView(dialog, new ClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);	
+		WatchUi.pushView(dialog, new ClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
 	}
 }
-

@@ -155,7 +155,7 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate
 	{
 		System.println("Select pressed");
 		
-		XButton.performAction();
+		//XButton.performAction();
 
 		return true;	
 	}

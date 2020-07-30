@@ -13,8 +13,13 @@ class WorkTimerApp extends Application.AppBase {
     function onStart(state) {
     	//load in history data
     	globalMyTime = new MyTime();
-    	globalMyTime.setFromStorageCompatableDict(Storage.getValue("userSave"));
-    	globalMyTime.printEntireHistory();
+    	try {
+    		globalMyTime.setFromStorageCompatableDict(Storage.getValue("userSave"));
+    		globalMyTime.printEntireHistory();
+    	}
+    	catch(ex) {
+    		System.println("Error loading in user save data; Skipping load.");
+    	}
     }
 
     // onStop() is called when your application is exiting
