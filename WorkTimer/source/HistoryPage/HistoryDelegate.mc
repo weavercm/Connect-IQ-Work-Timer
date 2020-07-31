@@ -1,173 +1,100 @@
 using Toybox.WatchUi;
-using Toybox.Attention;
 
-class HistoryDelegate extends WatchUi.BehaviorDelegate
-{
-	function initialize()
-	{
+//Handle input from History View
+class HistoryDelegate extends WatchUi.BehaviorDelegate {
+
+	//Constructor
+	public function initialize() {
 		BehaviorDelegate.initialize();
 	}
-	
-	function onSelectable(event)
-	{
+
+	//Called when touch input is received
+	public function onSelectable(event) {
 		var instance = event.getInstance();
-		
-		if(instance instanceof ArrowUpButton)
-		{
-			switch(instance.getState())
-			{
-				case :stateDefault:
-//					System.println("Default");
-//					System.println("\tThe previous state was " + event.getPreviousState());
-//					System.println("\tThe current state is " + instance.getState());
-					break;
-				case :stateHighlighted:
-//					System.println("Highlighted");
-//					System.println("\tThe previous state was " + event.getPreviousState());
-//					System.println("\tThe current state is " + instance.getState());
-					break;
-				case :stateSelected:
-//					System.println("Selected");
-//					System.println("\tThe previous state was " + event.getPreviousState());
-//					System.println("\tThe current state is " + instance.getState());
-					instance.performAction();
-					break;
-				case :stateDisabled:
-//					System.println("Disabled");
-//					System.println("\tThe previous state was " + event.getPreviousState());
-//					System.println("\tThe current state is " + instance.getState());
-					break;
-				default:
-//					System.println("null");
-				
+
+		if(instance instanceof ArrowUpButton) {
+			if(instance.getState() == :stateSelected) {
+				instance.performAction();
 			}
 		}
-		else if(instance instanceof ArrowDownButton)
-		{
-			switch(instance.getState())
-			{
-				case :stateDefault:
-//					System.println("\tDefault");
-					break;
-				case :stateHighlighted:
-//					System.println("\tHighlighted");
-					break;
-				case :stateSelected:
-//					System.println("\tSelected");
-					instance.performAction();
-					break;
-				case :stateDisabled:
-//					System.println("\tDisabled");
-					break;
-				default:
-//					System.println("\tnull");
+		else if(instance instanceof ArrowDownButton) {
+			if(instance.getState() == :stateSelected) {
+				instance.performAction();
 			}
 		}
-		else if(instance instanceof BackButton)
-		{
-			switch(instance.getState())
-			{
-				case :stateDefault:
-//					System.println("\tDefault");
-					break;
-				case :stateHighlighted:
-//					System.println("\tHighlighted");
-					break;
-				case :stateSelected:
-//					System.println("\tSelected");
-					instance.performAction();
-					break;
-				case :stateDisabled:
-//					System.println("\tDisabled");
-					break;
-				default:
-//					System.println("\tnull");
+		else if(instance instanceof BackButton)	{
+			if(instance.getState() == :stateSelected) {
+				instance.performAction();
 			}
 		}
-		else if(instance instanceof XButton)
-		{
-			switch(instance.getState())
-			{
-				case :stateDefault:
-//					System.println("\tDefault");
-					break;
-				case :stateHighlighted:
-//					System.println("\tHighlighted");
-					break;
-				case :stateSelected:
-//					System.println("\tSelected");
-					instance.performAction();
-					break;
-				case :stateDisabled:
-//					System.println("\tDisabled");
-					break;
-				default:
-//					System.println("\tnull");
+		else if(instance instanceof XButton) {
+			if(instance.getState() == :stateSelected) {
+				instance.performAction();
 			}
 		}
 		else
 		{
-			System.println("Did not recognize button");
+			System.println("History View: Did not recognize button");
 		}
 	}
-	
-	function onBack()
-	{
+
+	//Called when back action is performed
+	public function onBack() {
 		System.println("Back pressed");
 	}
-	
-	function onMenu()
-	{
-		returnToWorkTimerPage();
-        return true;
+
+	//Called when menu action is performed
+	public function onMenu() {
+		returnToWorkTimerView();
+
+		return true;
 	}
-	
-	function onNextMode()
-	{
+
+	//Called when next mode action is performed
+	public function onNextMode() {
 		System.println("Next Mode pressed");
-		
+
 		return true;
 	}
-	
-	function onNextPage()
-	{
+
+	//Called when next page action is performed
+	public function onNextPage() {
 		System.println("Next Page pressed");
-		
+
 		return true;
 	}
-	
-	function onPreviousMode()
-	{
+
+	//Called when previous mode action is performed
+	public function onPreviousMode() {
 		System.println("Previous Mode pressed");
-		
+
 		return true;
 	}
-	
-	function onPreviousPage()
-	{
+
+	//Called when previous page action is performed
+	public function onPreviousPage() {
 		System.println("Previous Page pressed");
-		
+
 		return true;
 	}
 
-	
-	function onSelect()
-	{
+	//Called when selection action is performed
+	public function onSelect() {
 		System.println("Select pressed");
-		
-		//XButton.performAction();
 
-		return true;	
-	}
-}
+		// XButton.performAction();
 
-function returnToWorkTimerPage()
-{
-	if(globalWorkTimeView == null) {
-		globalWorkTimeView = new WorkTimerView();
+		return true;
 	}
-	if(globalWorkTimeDelegate == null) {
-    	globalWorkTimeDelegate = new WorkTimerDelegate();
-    }
-    WatchUi.pushView(globalWorkTimeView, globalWorkTimeDelegate, WatchUi.SLIDE_IMMEDIATE);
+
+	//Brings the Work Timer View to the front
+	public function returnToWorkTimerView() {
+		if(globalWorkTimeView == null) {
+			globalWorkTimeView = new WorkTimerView();
+		}
+		if(globalWorkTimeDelegate == null) {
+	    	globalWorkTimeDelegate = new WorkTimerDelegate();
+	    }
+	    WatchUi.pushView(globalWorkTimeView, globalWorkTimeDelegate, WatchUi.SLIDE_IMMEDIATE);
+	}
 }

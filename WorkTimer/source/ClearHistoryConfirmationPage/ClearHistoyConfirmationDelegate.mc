@@ -2,29 +2,24 @@ using Toybox.WatchUi;
 using Toybox.System;
 using Toybox.Application.Storage;
 
+//Handles confirmation dialogue asking if user wants to clear the history
 class ClearHistoryConfirmationDelegate extends WatchUi.ConfirmationDelegate {
 
-	hidden var historyView;
-	
-    function initialize() {
-    	//self.historyView = historyView;
-        ConfirmationDelegate.initialize();
-    }
+	//Constructor
+	public function initialize() {
+		ConfirmationDelegate.initialize();
+	}
 
-    function onResponse(response) {
-        if (response == WatchUi.CONFIRM_NO) {
-            cancelAction();
-        } else {
-            confirmAction();
+	//Called in response to user confirming or canceling
+	public function onResponse(response) {
+        if (response == WatchUi.CONFIRM_YES) {
+            clearHistory();
         }
     }
-    
-    function cancelAction() {
-    	//do nothing
-    }
-    
-    function confirmAction() {
-    	globalMyTime.clear();
-		Storage.setValue("userSave", globalMyTime.getStorageCompatableDict());
-    }
+
+	//Clears Work Timer history
+	hidden function clearHistory() {
+		globalMyTime.clear();
+		Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
+	}
 }

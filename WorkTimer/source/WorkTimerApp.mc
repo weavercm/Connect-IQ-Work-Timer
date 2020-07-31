@@ -2,35 +2,34 @@ using Toybox.Application;
 using Toybox.Application.Storage;
 using Toybox.WatchUi;
 
-
+//Starting point for the app
 class WorkTimerApp extends Application.AppBase {
 
-    function initialize() {
-        AppBase.initialize();
-    }
+	//Constructor
+	public function initialize() {
+		AppBase.initialize();
+	}
 
-    // onStart() is called on application start up
-    function onStart(state) {
+	//Called on application start up
+	function onStart(state) {
     	//load in history data
     	globalMyTime = new MyTime();
     	try {
-    		globalMyTime.setFromStorageCompatableDict(Storage.getValue("userSave"));
-    		globalMyTime.printEntireHistory();
+    		globalMyTime.setFromStorageCompatableDict(Storage.getValue(USER_SAVE_ID));
     	}
     	catch(ex) {
     		System.println("Error loading in user save data; Skipping load.");
     	}
     }
 
-    // onStop() is called when your application is exiting
-    function onStop(state) {
+	//Called when application is exiting
+	function onStop(state) {
     	//store history data
-    	Storage.setValue("userSave", globalMyTime.getStorageCompatableDict());
-    	globalMyTime.printEntireHistory();
+    	Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
     }
 
-    // Return the initial view of your application here
-    function getInitialView() {
+	// Return the initial view of application here
+	function getInitialView() {
     	globalWorkTimeView = new WorkTimerView();
     	globalWorkTimeDelegate = new WorkTimerDelegate();
     	return [ globalWorkTimeView, globalWorkTimeDelegate];

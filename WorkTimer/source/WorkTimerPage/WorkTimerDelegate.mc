@@ -1,18 +1,18 @@
 using Toybox.WatchUi;
-using Toybox.Attention;
 using Toybox.Application.Storage;
 
-class WorkTimerDelegate extends WatchUi.BehaviorDelegate
-{
-	function initialize()
-	{
+//Handle input from Work Timer View
+class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
+
+	//Constructor
+	public function initialize() {
 		BehaviorDelegate.initialize();
 	}
-	
-	function onSelectable(event)
-	{
+
+	//Called when touch input is received
+	public function onSelectable(event) {
 		var instance = event.getInstance();
-		
+
 		if(instance instanceof ClockInButton) {
 			if(instance.getState() == :stateSelected) {
 				instance.performAction();
@@ -41,76 +41,74 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate
 			System.println("Did not recognize button");
 		}
 	}
-	
-	function onBack()
-	{
+
+	//Called when back action is performed
+	public function onBack() {
 		System.println("Back pressed");
-		
-		//return true;
 	}
 
-	function onMenu()
-	{
+	//Called when menu action is performed
+	function onMenu() {
 		System.println("Menu pressed");
-		goToHistoryPage();
-		
-        return true;
+		goToHistoryView();
+
+		return true;
 	}
-	
-	function onNextMode()
-	{
+
+	//Called when next mode action is performed
+	public function onNextMode() {
 		System.println("Next Mode pressed");
-		
+
 		return true;
 	}
-	
-	function onNextPage()
-	{
+
+	//Called when next page action is performed
+	public function onNextPage() {
 		System.println("Next Page pressed");
-		
+
 		return true;
 	}
-	
-	function onPreviousMode()
-	{
+
+	//Called when previous mode action is performed
+	public function onPreviousMode() {
 		System.println("Previous Mode pressed");
-		
+
 		return true;
 	}
-	
-	function onPreviousPage()
-	{
+
+	//Called when previous page action is performed
+	public function onPreviousPage() {
 		System.println("Previous Page pressed");
-		
+
 		return true;
 	}
-	
-	function onSelect()
-	{
-		System.println("Select pressed");
-		
-		switch(globalMyTime.getState())
-		{
-			case OFF_CLOCK:
-			case ON_BREAK:
-				ClockInButton.performAction();
-				break;
-			case ON_CLOCK:
-				ClockOutButton.performAction();
-				break;
+
+	//Called when selection action is performed
+	function onSelect() {
+		switch (globalMyTime.getState()) {
+		case OFF_CLOCK:
+		case ON_BREAK:
+			ClockInButton.performAction();
+			break;
+		case ON_CLOCK:
+			ClockOutButton.performAction();
+			break;
 		}
-		
+
 		return true;
+	}
+
+	//Brings the History View to the front
+	public static function goToHistoryView()
+	{
+		if(globalHistoryView == null) {
+			globalHistoryView = new HistoryView();
+		}
+		if(globalHistoryDelegate == null) {
+	    	globalHistoryDelegate = new HistoryDelegate();
+	    }
+	    WatchUi.pushView(globalHistoryView, globalHistoryDelegate, WatchUi.SLIDE_IMMEDIATE);
 	}
 }
 
-function goToHistoryPage()
-{
-	if(globalHistoryView == null) {
-		globalHistoryView = new HistoryView();
-	}
-	if(globalHistoryDelegate == null) {
-    	globalHistoryDelegate = new HistoryDelegate();
-    }
-    WatchUi.pushView(globalHistoryView, globalHistoryDelegate, WatchUi.SLIDE_IMMEDIATE);
-}
+

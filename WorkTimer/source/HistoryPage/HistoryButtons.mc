@@ -1,17 +1,17 @@
 using Toybox.WatchUi;
 
+//Handles the up arrow button in the History View
 class ArrowUpButton extends WatchUi.Selectable {
+
 	hidden var distanceFromTop;
 
-	function initialize(dc)
-	{
-		System.println("Initializing ArrowUpButton");
-		
+	//Constructor
+	public function initialize(dc) {
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowUpButton_default});
-		
+		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowUpButton_highlighted});
+
 		var settings = {
 			:stateDefault=>buttonDefault,
 			:stateHighlighted=>buttonHighlighted,
@@ -22,32 +22,36 @@ class ArrowUpButton extends WatchUi.Selectable {
 			:width=>buttonDefault.width,
 			:height=>buttonDefault.height
 			};
-		
+
 		Selectable.initialize(settings);
-		
+
 		distanceFromTop = locY + height;
 	}
 
-	function getDistanceFromTop() {
+	//Returns the distance from the top of the display to the
+	//bottom of the button
+	public function getDistanceFromTop() {
 		return distanceFromTop;
 	}
 
-	function performAction() {
-		// System.println("Scroll up");
-		globalHistoryView.moveListUp();
+	//Performs an action when button is pressed
+	public function performAction() {
+		globalHistoryView.scrollListUp();
 	}
 }
 
+//Handles the down arrow button in the History View
 class ArrowDownButton extends WatchUi.Selectable {
+
 	hidden var distanceFromBottom;
 
-	function initialize(dc)
-	{
+	//Constructor
+	public function initialize(dc) {
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowDownButton_default});
-		
+		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowDownButton_highlighted});
+
 		var settings = {
 			:stateDefault=>buttonDefault,
 			:stateHighlighted=>buttonHighlighted,
@@ -58,30 +62,34 @@ class ArrowDownButton extends WatchUi.Selectable {
 			:width=>buttonDefault.width,
 			:height=>buttonDefault.height
 			};
-		
+
 		Selectable.initialize(settings);
 
-		distanceFromBottom = dc.getHeight() - locY;			
+		distanceFromBottom = dc.getHeight() - locY;
 	}
 
-	function getDistanceFromBottom() {
+	//Returns the distance from the bottom of the display to the
+	//top of the button
+	public function getDistanceFromBottom() {
 		return distanceFromBottom;
 	}
 
-	function performAction() {
-		// System.println("Scroll down");
-		globalHistoryView.moveListDown();
+	//Performs an action when button is pressed
+	public function performAction() {
+		globalHistoryView.scrollListDown();
 	}
 }
 
+//Handles the back button in the History View
 class BackButton extends WatchUi.Selectable {
-	function initialize(dc)
-	{
+
+	//Constructor
+	public function initialize(dc) {
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.backButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.backButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.backButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.backButton_default});
-		
+		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.backButton_highlighted});
+
 		var settings = {
 			:stateDefault=>buttonDefault,
 			:stateHighlighted=>buttonHighlighted,
@@ -92,25 +100,26 @@ class BackButton extends WatchUi.Selectable {
 			:width=>buttonDefault.width,
 			:height=>buttonDefault.height
 			};
-		
-		Selectable.initialize(settings);			
+
+		Selectable.initialize(settings);
 	}
 
-	function performAction() {
-		// System.println("Go back");
-		returnToWorkTimerPage();
+	//Performs an action when button is pressed
+	public function performAction() {
+		HistoryDelegate.returnToWorkTimerView();
 	}
 }
 
+//Handles the clear button in the History View
 class XButton extends WatchUi.Selectable {
 
-	function initialize(dc)
-	{
+	//Constructor
+	public function initialize(dc) {
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.xButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.xButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.xButton_highlighted});
 		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.xButton_highlighted});
-		
+
 		var settings = {
 			:stateDefault=>buttonDefault,
 			:stateHighlighted=>buttonHighlighted,
@@ -121,13 +130,12 @@ class XButton extends WatchUi.Selectable {
 			:width=>buttonDefault.width,
 			:height=>buttonDefault.height
 			};
-		
-		Selectable.initialize(settings);			
+
+		Selectable.initialize(settings);
 	}
 
-	static function performAction() {
-		// System.println("Clear");
-
+	//Performs an action when button is pressed
+	public static function performAction() {
 		var message = "Clear History?";
 		var dialog = new WatchUi.Confirmation(message);
 		WatchUi.pushView(dialog, new ClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);

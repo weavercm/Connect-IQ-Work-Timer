@@ -1,181 +1,74 @@
 using Toybox.WatchUi;
 using Toybox.Graphics;
 using Toybox.System;
-using Toybox.Math;
 using Toybox.Lang;
-using Toybox.Graphics as Gfx;
-using Toybox.Attention as Attention;
 
+//Holds all of the buttons for the Work Timer View
+class MyButtons {
 
-class MyTimeDisplay extends WatchUi.View
-{
-	var timeToDisplay;
+	hidden var myClockInButton = null;
+	hidden var myClockOutButton = null;
+	hidden var myBreakButton = null;
+	hidden var myTimeDisplay = null;
+	hidden var myHistoryButton = null;
 
-	function initialize()
-	{
-		View.initialize();
-	}
-	
-	function onLayout(dc)
-	{
-		timeToDisplay = System.getClockTime();
-		var timeString = Lang.format("$1$:$2$", [timeToDisplay.hour, timeToDisplay.min.format("%02d")]);
-		
-		View.setLayout(dc);
-	}
-	
-	function onUpdate(dc)
-	{
-		View.onUpdate(dc);
-	}
-}
-
-
-class MyButtons
-{
-	var myClockInButton = null;
-	var myClockOutButton = null;
-	var myBreakButton = null;
-	var myTimeDisplay = null;
-	var myHistoryButton = null;
-	
-	function initialize(dc)
-	{
+	//Constructor
+	public function initialize(dc) {
 		myClockInButton = new ClockInButton(dc);
 		myClockOutButton = new ClockOutButton(dc);
 		myBreakButton = new BreakButton(dc);
-		//myTimeDisplay = new MyTimeDisplay(dc);
 		myHistoryButton = new HistoryButton(dc);
 	}
-	
-	function getButtons()
-	{
+
+	//Returns an array of Work Timer buttons
+	public function getButtons() {
 		return [myClockInButton, myClockOutButton, myBreakButton, myHistoryButton];
 	}
 }
 
+//Handles the Work Timer View
+class WorkTimerView extends WatchUi.View {
 
-class WorkTimerView extends WatchUi.View
-{
-	var drawLayer = null;
-	var clockLayer = null;
-	var myButtons = null;
-	//var updateTimer = null;
-	
-	function initialize()
-	{
+	hidden var myButtons = null;
+
+	//Constructor
+	function initialize() {
 		View.initialize();
 	}
-	
-	// Load your resources here
-	function onLayout(dc)
-	{
-		if(globalMyTime == null)
-		{
+
+	//Called before displaying graphics. Loads resources here.
+	function onLayout(dc) {
+		if(globalMyTime == null) {
 			globalMyTime = new MyTime();
 		}
-		
-		if(globalUpdateTimer == null)
-		{	
+		//set up a timer to call onUpdate() every 0.5 sec
+		if(globalUpdateTimer == null) {
 			globalUpdateTimer = new System.Timer.Timer();
 			globalUpdateTimer.start(method(:requestUpdate), 500, true);
 		}
-		
 		if(myButtons == null) {
 			myButtons = new MyButtons(dc);
 		}
+
 		setLayout(myButtons.getButtons());
-		//setLayout(Rez.Layouts.WorkTimeTextLayout(dc));	
-		//setLayout(dc);
-		
-//		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_WHITE);
-//        //dc.clear();
-//		
-//		//var myBitResource = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockIn_default});
-//		clockLayer = new WatchUi.Layer({:locX=>50, :locY=>50, :width=>110, :height=>110});
-//		var clockLayerDc = clockLayer.getDc();
-//		clockLayerDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-//		clockLayerDc.drawText(50, 50, Graphics.FONT_MEDIUM, "time", Graphics.TEXT_JUSTIFY_CENTER);
-//	
-//		addLayer(clockLayer);
 	}
-	
-	// Called when this View is brought to the foreground. Restore
-    // the state of this View and prepare it to be shown. This includes
-    // loading resources into memory.
-    function onShow() {
-    }
-	
-	// Update the view
-	function onUpdate(dc)
-	{
-		//System.println("WorkTime: " + getTimeReadable(myTime.getTimeWorked()));
-		
+
+	//Updates the view
+	function onUpdate(dc) {
 		View.onUpdate(dc);
 
-        dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-        var currentWorkStateString = globalMyTime.stateToString(globalMyTime.getState());
-        dc.drawText( dc.getWidth() / 2, 25, Graphics.FONT_SMALL, currentWorkStateString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
-        var currentWorkTimeString = "Work Time:\n" + getTimeReadable(globalMyTime.getTimeWorked());
-        dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 35, Graphics.FONT_SMALL, currentWorkTimeString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
+	    dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
+	    var currentWorkStateString = stateToString(globalMyTime.getState());
+
+	    dc.drawText( dc.getWidth() / 2, 25, Graphics.FONT_SMALL,
+	    	currentWorkStateString, Graphics.TEXT_JUSTIFY_CENTER |
+	    	Graphics.TEXT_JUSTIFY_VCENTER );
+
+	    var currentWorkTimeString = "Work Time:\n" +
+	    	getTimeReadable(globalMyTime.getTimeWorked());
+
+	    dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 35,
+	    	Graphics.FONT_SMALL, currentWorkTimeString,
+	    	Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
 	}
-	
-	// Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
-    // memory.
-    function onHide() {
-    }
 }
-
-
-//class ClockInView extends WatchUi.View
-//{
-//	var counter = 0;
-//	var updateTimer;
-//	
-//    function initialize() {
-//        WatchFace.initialize();
-//        counter = 1;
-//        currentView = self;
-//        View.initialize();
-//    }
-//	
-//	function onLayout(dc)
-//	{
-//		
-//        
-//		updateTimer = new System.Timer.Timer();
-//		updateTimer.start(method(:requestUpdate), 500, true);
-//		
-//		setLayout(Rez.Layouts.myButtonLayout(dc));
-//	}
-//	
-//	function onShow() {
-//    }
-//	
-//	function onUpdate(dc)
-//	{
-//		// Get and show the current time
-//        var clockTime = System.getClockTime();
-//        
-//        System.println("updating" + counter);
-//        
-//        dc.clear();
-//        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-//        dc.drawText(100, 100, Graphics.FONT_MEDIUM, counter, Graphics.TEXT_JUSTIFY_LEFT);
-//
-//        // Call the parent onUpdate function to redraw the layout
-//        View.onUpdate(dc);
-//        counter++;
-//		
-//		
-//	}
-//	
-//	function onPartialUpdate(dc)
-//	{
-//		System.println("Updating");
-//	}
-//}
-
-
-
