@@ -20,6 +20,7 @@ class ClearHistoryConfirmationDelegate extends WatchUi.ConfirmationDelegate {
 	//Clears Work Timer history
 	hidden function clearHistory() {
 		globalMyTime.clear();
-		Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
+		globalMyTime.save();
+		//Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
 	}
 }

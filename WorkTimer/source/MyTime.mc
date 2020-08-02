@@ -1,6 +1,7 @@
 using Toybox.System;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
+using Toybox.Application.Storage;
 
 //States the Work Timer can be in
 public enum {
@@ -23,7 +24,7 @@ function stateToString(state) {
 }
 
 //Stores one history entry
-class MyTimeHistoryUnit {
+class TimeLogEntry {
 
 	public var state;
 	public var moment = new Time.Moment(0);
@@ -39,14 +40,14 @@ class MyTimeHistoryUnit {
 		return moment.value();
 	}
 
-	//Sets the moment
-	public function setTime(newTime) {
+	//Sets the time in seconds
+	public function setTimeSec(newTime) {
 		moment = new Time.Moment(newTime);
 	}
 
 	//Returns a copy of self
 	public function getCopy() {
-		return new MyTimeHistoryUnit(state, new Time.Moment(moment.value()));
+		return new TimeLogEntry(state, new Time.Moment(moment.value()));
 	}
 
 	//Returns the state and moment in a form that can be stored
@@ -54,42 +55,67 @@ class MyTimeHistoryUnit {
 		return [state, moment.value()];
 	}
 
-	//Sets the state adn moment using a form that can be stored
+	//Sets the state and moment from a form that can be stored
 	public function setFromStorageCompatableForm(storageCompatableArray) {
 		state = storageCompatableArray[0];
-		setTime(storageCompatableArray[1]);
+		setTimeSec(storageCompatableArray[1]);
 	}
 }
 
-//Manages the Work Timer's business logic
-class MyTime {
+class TimeLogManager {
+	hidden var timeLogBook;
 
-	hidden var state = OFF_CLOCK;
-	hidden var timeHistoryDict = {0=>1};
-	hidden var currentDictKey = 0;
-
-	//Constructor
 	public function initialize() {
-		timeHistoryDict.put(currentDictKey, new MyTimeHistoryUnit(OFF_CLOCK, Time.now()));
+		timeLogBook = new TimeLogBook();
 	}
 
-	//Clears the history
 	public function clear() {
-		timeHistoryDict = {0=>new MyTimeHistoryUnit(OFF_CLOCK, Time.now())};
-		state = OFF_CLOCK;
-		currentDictKey = 0;
+		timeLogBook.clear();
 	}
 
-	//Returns the number of recorded history entries
-	public function getNumHistoryEntries() {
-		return timeHistoryDict.size() - 1;
+	public function getLogBook() {
+		return timeLogBook;
+	}
+
+	public function load() {
+		timeLogBook.setFromStorageCompatableDict(Storage.getValue(USER_SAVE_ID));
+	}
+
+	public function save() {
+		Storage.setValue(USER_SAVE_ID, timeLogBook.getStorageCompatableDict());
+	}
+
+	public function getSize() {
+		return timeLogBook.getNumHistoryEntries();
+	}
+
+	public function setState(state) {
+		timeLogBook.setState(state);
+	}
+
+	public function getState(key) {
+		if(key != null && timeLogBook.isKeyValid(key)) {
+			return timeLogBook.getStateAt(key);
+		}
+		else {
+			return timeLogBook.getCurState();
+		}
+	}
+
+	public function getTime(key) {
+		if(key != null && timeLogBook.isKeyValid(key)) {
+			return timeLogBook.getTimeAt(key);
+		}
+		else {
+			return timeLogBook.getCurTime();
+		}
 	}
 
 	//Returns a string
 	public function getEntireHistoryString() {
 		var i = 0;
 		var entireHistoryString = "History:\n";
-		for (i = 0; i <= currentDictKey; i++) {
+		for (i = 0; i <= curDictKey; i++) {
 			entireHistoryString += "\t" + getOneHistoryString(i) + "\n";
 		}
 
@@ -99,56 +125,125 @@ class MyTime {
 	public function getOneHistoryString(key) {
 		var oneHistoryString = "";
 
-		if(key <= currentDictKey) {
-			var moment = timeHistoryDict.get(key).moment;
+		if(timeLogBook.isKeyValid(key)) {
+			var moment = timeLogBook.getTimeAt(key);
 			var timeInfo = Gregorian.info(moment, Time.FORMAT_SHORT);
 			var timeString = Lang.format("$1$:$2$:$3$", [timeInfo.hour, timeInfo.min.format("%02d"), timeInfo.sec.format("%02d")]);
 
-			var stateString;
-			switch(timeHistoryDict.get(key).state) {
-				case ON_CLOCK:
-					stateString = "ON_CLOCK";
-					break;
-				case OFF_CLOCK:
-					stateString = "OFF_CLOCK";
-					break;
-				case ON_BREAK:
-					stateString = "ON_BREAK";
-					break;
-			}
+			var stateString = stateToString(timeLogBook.getStateAt(key));
+
 			oneHistoryString = "History_" + key + ": " + "Time: " + timeString + ", State: " + stateString;
 		}
 
 		return oneHistoryString;
 	}
 
-	public function getState() {
+	public function getStateStringAt(key) {
+		var stateString = "";
+
+		if(timeLogBook.isKeyValid(key)) {
+			stateString = stateToString(timeLogBook.getStateAt(key));
+		}
+
+		return stateString;
+	}
+
+//	public function loadInTestData() {
+//		var options2020 = {:year=>2020};
+//		var options2021 = {:year=>2021};
+//		timeHistoryDict = {
+//			0=>new TimeLogEntry(OFF_CLOCK, Gregorian.moment(options2021)),
+//			1=>new TimeLogEntry(ON_CLOCK, Gregorian.moment(options2021)),
+//			2=>new TimeLogEntry(OFF_CLOCK, Gregorian.moment(options2021)),
+//			3=>new TimeLogEntry(ON_CLOCK, Gregorian.moment(options2021)),
+//			4=>new TimeLogEntry(OFF_CLOCK, Gregorian.moment(options2021)),
+//			5=>new TimeLogEntry(ON_CLOCK, Gregorian.moment(options2021))
+//		};
+//
+//		curDictKey = timeHistoryDict.size() - 1;
+//		state = timeHistoryDict.get(curDictKey).state;
+//	}
+
+	public function getDateStringAt(key) {
+		var timeString = "";
+
+		if(timeLogBook.isKeyValid(key)) {
+			var timeInfo = Gregorian.info(timeLogBook.getTimeAt(key), Time.FORMAT_SHORT);
+
+			timeString = Lang.format("$1$/$2$/$3$", [timeInfo.month, timeInfo.day, timeInfo.year]);
+		}
+
+		return timeString;
+	}
+
+	public function printEntireHistory() {
+		System.println(getEntireHistoryString());
+	}
+
+	public function printOneHistory(key) {
+		System.println(getOneHistoryString(key));
+	}
+
+	public function getTimeStringAt(key) {
+		var timeString = "";
+
+		if(timeLogBook.isKeyValid(key)) {
+			var timeInfo = Gregorian.info(timeLogBook.getTimeAt(key), Time.FORMAT_SHORT);
+			timeString = Lang.format("$1$:$2$:$3$", [timeInfo.hour, timeInfo.min.format("%02d"), timeInfo.sec.format("%02d")]);
+		}
+
+		return timeString;
+	}
+
+
+}
+
+
+//Manages the Work Timer's business logic
+class TimeLogBook {
+
+	hidden var state = OFF_CLOCK;
+	hidden var timeHistoryDict = {0=>1};
+	hidden var curDictKey = 0;
+
+	//Constructor
+	public function initialize() {
+		timeHistoryDict.put(curDictKey, new TimeLogEntry(OFF_CLOCK, Time.now()));
+	}
+
+	public function isKeyValid(key) {
+		return (key <= curDictKey) && (key >= 0);
+	}
+
+	//Clears the history
+	public function clear() {
+		timeHistoryDict = {0=>new TimeLogEntry(OFF_CLOCK, Time.now())};
+		state = OFF_CLOCK;
+		curDictKey = 0;
+	}
+
+	//Returns the number of recorded history entries
+	public function getNumHistoryEntries() {
+		return timeHistoryDict.size() - 1;
+	}
+
+	public function getCurState() {
 		return state;
 	}
 
 	public function getStateAt(key) {
-		if(key <= currentDictKey) {
+		if(key <= curDictKey) {
 			return timeHistoryDict.get(key).state;
 		}
 
 		return null;
 	}
 
-	public function getStateStringAt(key) {
-		var stateString = "";
-
-		if(key <= currentDictKey) {
-			stateString = stateToString(timeHistoryDict.get(key).state);
-		}
-
-		return stateString;
-	}
-
 	public function getStorageCompatableDict() {
 		var i;
 		var storageCompatableDict = {};
 
-		for (i = 0; i <= currentDictKey; i++) {
+		for (i = 0; i <= curDictKey; i++) {
 			storageCompatableDict.put(i, timeHistoryDict.get(i).getStorageCompatableForm());
 		}
 
@@ -156,42 +251,15 @@ class MyTime {
 	}
 
 	public function getTimeAt(key) {
-		var timeString = "";
-
-		if(key <= currentDictKey) {
-			var timeInfo = Gregorian.info(timeHistoryDict.get(key).moment, Time.FORMAT_SHORT);
-			timeString = Lang.format("$1$:$2$:$3$", [timeInfo.hour, timeInfo.min.format("%02d"), timeInfo.sec.format("%02d")]);
+		if(key <= curDictKey) {
+			return timeHistoryDict.get(key).moment;
 		}
 
-		return timeString;
+		return null;
 	}
 
-	public function loadInTestData() {
-		var options2020 = {:year=>2020};
-		var options2021 = {:year=>2021};
-		timeHistoryDict = {
-			0=>new MyTimeHistoryUnit(OFF_CLOCK, Gregorian.moment(options2021)),
-			1=>new MyTimeHistoryUnit(ON_CLOCK, Gregorian.moment(options2021)),
-			2=>new MyTimeHistoryUnit(OFF_CLOCK, Gregorian.moment(options2021)),
-			3=>new MyTimeHistoryUnit(ON_CLOCK, Gregorian.moment(options2021)),
-			4=>new MyTimeHistoryUnit(OFF_CLOCK, Gregorian.moment(options2021)),
-			5=>new MyTimeHistoryUnit(ON_CLOCK, Gregorian.moment(options2021))
-		};
-
-		currentDictKey = timeHistoryDict.size() - 1;
-		state = timeHistoryDict.get(currentDictKey).state;
-	}
-
-	public function getDateStringAt(key) {
-		var timeString = "";
-
-		if(key <= currentDictKey) {
-			var timeInfo = Gregorian.info(timeHistoryDict.get(key).moment, Time.FORMAT_SHORT);
-
-			timeString = Lang.format("$1$/$2$/$3$", [timeInfo.month, timeInfo.day, timeInfo.year]);
-		}
-
-		return timeString;
+	public function getCurTime() {
+		return timeHistoryDict.get(curDictKey).moment;
 	}
 
 	public function getTimeWorked() {
@@ -205,13 +273,13 @@ class MyTime {
 		var curState;
 		var curTime;
 
-		if (currentDictKey >= 0) {
+		if (curDictKey >= 0) {
 
 			currentHist = timeHistoryDict.get(0);
 			lastState = currentHist.state;
 			lastTime = currentHist.moment;
 
-			for (i = 1; i <= currentDictKey; i++) {
+			for (i = 1; i <= curDictKey; i++) {
 				currentHist = timeHistoryDict.get(i);
 				curState = currentHist.state;
 				curTime = currentHist.moment;
@@ -248,27 +316,19 @@ class MyTime {
 		return gregTime;
 	}
 
-	public function printEntireHistory() {
-		System.println(getEntireHistoryString());
-	}
-
-	public function printOneHistory(key) {
-		System.println(getOneHistoryString(key));
-	}
-
 	public function setFromStorageCompatableDict(StorageCompatableDict) {
 		var i;
-		var singleHistoryEntry = new MyTimeHistoryUnit(OFF_CLOCK, new Time.Moment(0));
+		var singleHistoryEntry = new TimeLogEntry(OFF_CLOCK, new Time.Moment(0));
 
-		currentDictKey = StorageCompatableDict.size() - 1;
+		curDictKey = StorageCompatableDict.size() - 1;
 		timeHistoryDict = {};
 
-		for( i = 0; i <= currentDictKey; i++) {
+		for( i = 0; i <= curDictKey; i++) {
 			singleHistoryEntry.setFromStorageCompatableForm(StorageCompatableDict.get(i));
 			timeHistoryDict.put(i, singleHistoryEntry.getCopy());
 		}
 
-		state = timeHistoryDict.get(currentDictKey).state;
+		state = timeHistoryDict.get(curDictKey).state;
 	}
 
 	public function setState(newState) {
@@ -276,8 +336,8 @@ class MyTime {
 			return;
 		}
 
-		currentDictKey++;
-		timeHistoryDict.put(currentDictKey, new MyTimeHistoryUnit(newState, Time.now()));
+		curDictKey++;
+		timeHistoryDict.put(curDictKey, new TimeLogEntry(newState, Time.now()));
 
 		state = newState;
 	}

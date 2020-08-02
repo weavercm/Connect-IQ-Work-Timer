@@ -29,7 +29,8 @@ class ClockInButton extends WatchUi.Selectable {
 	//Performs an action when button is pressed
 	public static function performAction() {
 		globalMyTime.setState(ON_CLOCK);
-		Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
+		globalMyTime.save();
+		//Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
 	}
 }
 
@@ -60,7 +61,8 @@ class ClockOutButton extends WatchUi.Selectable {
 	//Performs an action when button is pressed
 	public static function performAction() {
 		globalMyTime.setState(OFF_CLOCK);
-		Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
+		globalMyTime.save();
+		//Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
 	}
 }
 
@@ -91,7 +93,8 @@ class BreakButton extends WatchUi.Selectable {
 	//Performs an action when button is pressed
 	public static function performAction() {
 		globalMyTime.setState(ON_BREAK);
-		Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
+		globalMyTime.save();
+		//Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
 	}
 }
 

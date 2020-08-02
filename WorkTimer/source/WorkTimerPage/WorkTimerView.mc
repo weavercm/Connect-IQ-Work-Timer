@@ -39,7 +39,7 @@ class WorkTimerView extends WatchUi.View {
 	//Called before displaying graphics. Loads resources here.
 	function onLayout(dc) {
 		if(globalMyTime == null) {
-			globalMyTime = new MyTime();
+			globalMyTime = new TimeLogManager();
 		}
 		//set up a timer to call onUpdate() every 0.5 sec
 		if(globalUpdateTimer == null) {
@@ -58,14 +58,14 @@ class WorkTimerView extends WatchUi.View {
 		View.onUpdate(dc);
 
 	    dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-	    var currentWorkStateString = stateToString(globalMyTime.getState());
+	    var currentWorkStateString = stateToString(globalMyTime.getState(null));
 
 	    dc.drawText( dc.getWidth() / 2, 25, Graphics.FONT_SMALL,
 	    	currentWorkStateString, Graphics.TEXT_JUSTIFY_CENTER |
 	    	Graphics.TEXT_JUSTIFY_VCENTER );
 
 	    var currentWorkTimeString = "Work Time:\n" +
-	    	getTimeReadable(globalMyTime.getTimeWorked());
+	    	getTimeReadable(globalMyTime.getLogBook().getTimeWorked());
 
 	    dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 35,
 	    	Graphics.FONT_SMALL, currentWorkTimeString,

@@ -13,9 +13,10 @@ class WorkTimerApp extends Application.AppBase {
 	//Called on application start up
 	function onStart(state) {
     	//load in history data
-    	globalMyTime = new MyTime();
+    	globalMyTime = new TimeLogManager();
     	try {
-    		globalMyTime.setFromStorageCompatableDict(Storage.getValue(USER_SAVE_ID));
+    		globalMyTime.load();
+    		//globalMyTime.setFromStorageCompatableDict(Storage.getValue(USER_SAVE_ID));
     	}
     	catch(ex) {
     		System.println("Error loading in user save data; Skipping load.");
@@ -25,7 +26,8 @@ class WorkTimerApp extends Application.AppBase {
 	//Called when application is exiting
 	function onStop(state) {
     	//store history data
-    	Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
+    	globalMyTime.save();
+    	//Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
     }
 
 	// Return the initial view of application here

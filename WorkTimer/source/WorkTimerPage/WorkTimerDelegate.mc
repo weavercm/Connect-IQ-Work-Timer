@@ -85,15 +85,15 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 
 	//Called when selection action is performed
 	function onSelect() {
-		switch (globalMyTime.getState()) {
-		case OFF_CLOCK:
-		case ON_BREAK:
-			ClockInButton.performAction();
-			break;
-		case ON_CLOCK:
-			ClockOutButton.performAction();
-			break;
-		}
+//		switch (globalMyTime.getState(null)) {
+//		case OFF_CLOCK:
+//		case ON_BREAK:
+//			ClockInButton.performAction();
+//			break;
+//		case ON_CLOCK:
+//			ClockOutButton.performAction();
+//			break;
+//		}
 
 		return true;
 	}
