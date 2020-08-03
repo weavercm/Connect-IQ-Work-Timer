@@ -109,7 +109,7 @@ class HistoryView extends WatchUi.View {
 	//Displays a single entry in the history list
 	hidden function displayHistoryEntryColor(dc, listItem, screenPos) {
 		var stateString = globalMyTime.getStateStringAt(listItem);
-		dc.setColor( getColorByState(globalMyTime.getState(listItem)),
+		dc.setColor( getColorByState(globalMyTime.getStateAt(listItem)),
 			Graphics.COLOR_TRANSPARENT );
 		dc.drawText( dc.getWidth() / 2, 90 + SPACE_BETWEEN_ENTRIES * screenPos,
 			Graphics.FONT_SMALL, stateString, Graphics.TEXT_JUSTIFY_RIGHT |

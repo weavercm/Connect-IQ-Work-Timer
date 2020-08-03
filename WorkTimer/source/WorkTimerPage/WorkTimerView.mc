@@ -58,14 +58,14 @@ class WorkTimerView extends WatchUi.View {
 		View.onUpdate(dc);
 
 	    dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-	    var currentWorkStateString = stateToString(globalMyTime.getState(null));
+	    var currentWorkStateString = stateToString(globalMyTime.getCurState());
 
 	    dc.drawText( dc.getWidth() / 2, 25, Graphics.FONT_SMALL,
 	    	currentWorkStateString, Graphics.TEXT_JUSTIFY_CENTER |
 	    	Graphics.TEXT_JUSTIFY_VCENTER );
 
 	    var currentWorkTimeString = "Work Time:\n" +
-	    	getTimeReadable(globalMyTime.getLogBook().getTimeWorked());
+	    	getTimeReadable(globalMyTime.getTimeWorked());
 
 	    dc.drawText( dc.getWidth() / 2, dc.getHeight() / 2 - 35,
 	    	Graphics.FONT_SMALL, currentWorkTimeString,

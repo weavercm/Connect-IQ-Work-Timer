@@ -60,6 +60,7 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 	//Called when next page action is performed
 	public function onNextPage() {
 		System.println("Next Page pressed");
+		ArrowDownButton.performAction();
 
 		return true;
 	}
@@ -74,6 +75,7 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 	//Called when previous page action is performed
 	public function onPreviousPage() {
 		System.println("Previous Page pressed");
+		ArrowUpButton.performAction();
 
 		return true;
 	}
