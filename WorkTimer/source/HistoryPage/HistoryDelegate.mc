@@ -11,8 +11,16 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 	//Clear the history list
 	public function clearHistory() {
 		var message = "Clear History?";
-		var dialog = new WatchUi.Confirmation(message);
-		WatchUi.pushView(dialog, new ClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
+		var isDebug = true;
+
+		if(isDebug) {
+			var dialog = new MyConfirmationView(message);
+			WatchUi.pushView(dialog, new MyClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
+		}
+		else {
+			var dialog = new WatchUi.Confirmation(message);
+			WatchUi.pushView(dialog, new ClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
+		}
 	}
 
 	//Brings the Work Timer View to the front

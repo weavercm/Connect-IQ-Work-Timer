@@ -1,5 +1,6 @@
 using Toybox.WatchUi;
 
+
 //Handles the History View
 class HistoryView extends WatchUi.View {
 	hidden const MY_COLOR_RED = 0xff0015;
@@ -37,7 +38,7 @@ class HistoryView extends WatchUi.View {
 		System.println(arrowUpButton.getDistanceFromTop() - arrowDownButton.getDistanceFromBottom());
 
 		numItemsDisplayed = (dc.getHeight() - arrowUpButton.getDistanceFromTop() -
-			arrowDownButton.getDistanceFromBottom() - 10) / SPACE_BETWEEN_ENTRIES;
+			arrowDownButton.getDistanceFromBottom() - 5) / SPACE_BETWEEN_ENTRIES;
 
 		System.println("num items: " + numItemsDisplayed);
 	}
@@ -68,6 +69,7 @@ class HistoryView extends WatchUi.View {
 		var curWorkTimeString = "";
 		var curDateString = "";
 		var nextDateString = "";
+		var areFlagsUpToDate = false;
 
 		for(screenPos = 0; screenPos < numItemsDisplayed; screenPos++) {
 			if(listItem <= globalMyTime.getSize()) {
@@ -116,7 +118,7 @@ class HistoryView extends WatchUi.View {
 			Graphics.FONT_SMALL, stateString, Graphics.TEXT_JUSTIFY_RIGHT |
 			Graphics.TEXT_JUSTIFY_VCENTER );
 
-		var curWorkTimeString = "-" + globalMyTime.getTimeStringAt(listItem);
+		var curWorkTimeString = " " + globalMyTime.getTimeStringAt(listItem);
 		dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
 		dc.drawText( dc.getWidth() / 2 + 5, 80 + SPACE_BETWEEN_ENTRIES * screenPos,
 			Graphics.FONT_SMALL, curWorkTimeString, Graphics.TEXT_JUSTIFY_LEFT |

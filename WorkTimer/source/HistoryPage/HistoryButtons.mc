@@ -53,7 +53,7 @@ class ArrowDownButton extends WatchUi.Selectable {
 			:stateSelected=>buttonHighlighted,
 			:stateDisabled=>buttonDisabled,
 			:locX=>(dc.getWidth() - buttonDefault.width) / 2,
-			:locY=>dc.getHeight() - buttonDefault.height - 20,
+			:locY=>dc.getHeight() - buttonDefault.height - 30,
 			:width=>buttonDefault.width,
 			:height=>buttonDefault.height
 			};
