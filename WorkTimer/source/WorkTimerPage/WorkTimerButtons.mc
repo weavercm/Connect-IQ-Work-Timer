@@ -25,13 +25,6 @@ class ClockInButton extends WatchUi.Selectable {
 
 		Selectable.initialize(settings);
 	}
-
-	//Performs an action when button is pressed
-	public static function performAction() {
-		globalMyTime.addEntry(ON_CLOCK);
-		globalMyTime.save();
-		//Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
-	}
 }
 
 //Handles the clock out button in the Work Timer View
@@ -56,13 +49,6 @@ class ClockOutButton extends WatchUi.Selectable {
 			};
 
 		Selectable.initialize(settings);
-	}
-
-	//Performs an action when button is pressed
-	public static function performAction() {
-		globalMyTime.addEntry(OFF_CLOCK);
-		globalMyTime.save();
-		//Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
 	}
 }
 
@@ -89,13 +75,6 @@ class BreakButton extends WatchUi.Selectable {
 
 		Selectable.initialize(settings);
 	}
-
-	//Performs an action when button is pressed
-	public static function performAction() {
-		globalMyTime.addEntry(ON_BREAK);
-		globalMyTime.save();
-		//Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
-	}
 }
 
 //Handles the history button in the Work Timer View
@@ -120,10 +99,5 @@ class HistoryButton extends WatchUi.Selectable {
 			};
 
 		Selectable.initialize(settings);
-	}
-
-	//Performs an action when button is pressed
-	public static function performAction() {
-		WorkTimerDelegate.goToHistoryView();
 	}
 }

@@ -8,89 +8,15 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 		BehaviorDelegate.initialize();
 	}
 
-	//Called when touch input is received
-	public function onSelectable(event) {
-		var instance = event.getInstance();
-
-		if(instance instanceof ArrowUpButton) {
-			if(instance.getState() == :stateSelected) {
-				instance.performAction();
-			}
-		}
-		else if(instance instanceof ArrowDownButton) {
-			if(instance.getState() == :stateSelected) {
-				instance.performAction();
-			}
-		}
-		else if(instance instanceof BackButton)	{
-			if(instance.getState() == :stateSelected) {
-				instance.performAction();
-			}
-		}
-		else if(instance instanceof XButton) {
-			if(instance.getState() == :stateSelected) {
-				instance.performAction();
-			}
-		}
-		else
-		{
-			System.println("History View: Did not recognize button");
-		}
-	}
-
-	//Called when back action is performed
-	public function onBack() {
-		System.println("Back pressed");
-	}
-
-	//Called when menu action is performed
-	public function onMenu() {
-		returnToWorkTimerView();
-
-		return true;
-	}
-
-	//Called when next mode action is performed
-	public function onNextMode() {
-		System.println("Next Mode pressed");
-
-		return true;
-	}
-
-	//Called when next page action is performed
-	public function onNextPage() {
-		System.println("Next Page pressed");
-		ArrowDownButton.performAction();
-
-		return true;
-	}
-
-	//Called when previous mode action is performed
-	public function onPreviousMode() {
-		System.println("Previous Mode pressed");
-
-		return true;
-	}
-
-	//Called when previous page action is performed
-	public function onPreviousPage() {
-		System.println("Previous Page pressed");
-		ArrowUpButton.performAction();
-
-		return true;
-	}
-
-	//Called when selection action is performed
-	public function onSelect() {
-		System.println("Select pressed");
-
-		// XButton.performAction();
-
-		return true;
+	//Clear the history list
+	public function clearHistory() {
+		var message = "Clear History?";
+		var dialog = new WatchUi.Confirmation(message);
+		WatchUi.pushView(dialog, new ClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
 	}
 
 	//Brings the Work Timer View to the front
-	public function returnToWorkTimerView() {
+	public function goToWorkTimerView() {
 		if(globalWorkTimeView == null) {
 			globalWorkTimeView = new WorkTimerView();
 		}
@@ -98,5 +24,69 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 	    	globalWorkTimeDelegate = new WorkTimerDelegate();
 	    }
 	    WatchUi.pushView(globalWorkTimeView, globalWorkTimeDelegate, WatchUi.SLIDE_IMMEDIATE);
+	}
+
+	//Called when menu action is performed
+	public function onMenu() {
+		goToWorkTimerView();
+
+		return true;
+	}
+
+	//Called when next page action is performed
+	public function onNextPage() {
+		scrollListDown();
+
+		return true;
+	}
+
+	//Called when previous page action is performed
+	public function onPreviousPage() {
+		scrollListUp();
+
+		return true;
+	}
+
+	//Called when selection action is performed
+	public function onSelect() {
+		if(!System.getDeviceSettings().isTouchScreen) {
+			clearHistory();
+		}
+
+		return true;
+	}
+
+	//Called when touch input is received
+	public function onSelectable(event) {
+		var instance = event.getInstance();
+
+		if(instance instanceof ArrowUpButton) {
+			if(instance.getState() == :stateSelected) {
+				scrollListUp();
+			}
+		}
+		else if(instance instanceof ArrowDownButton) {
+			if(instance.getState() == :stateSelected) {
+				scrollListDown();
+			}
+		}
+		else if(instance instanceof TrashButton) {
+			if(instance.getState() == :stateSelected) {
+				clearHistory();
+			}
+		}
+		else {
+			System.println("History View: Did not recognize button");
+		}
+	}
+
+	//Make lower portions of the history list visible
+	public function scrollListDown() {
+		globalHistoryView.scrollListDown();
+	}
+
+	//Make upper portions of the history list visible
+	public function scrollListUp() {
+		globalHistoryView.scrollListUp();
 	}
 }

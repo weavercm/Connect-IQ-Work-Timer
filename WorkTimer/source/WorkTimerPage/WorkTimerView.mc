@@ -22,7 +22,7 @@ class MyButtons {
 
 	//Returns an array of Work Timer buttons
 	public function getButtons() {
-		return [myClockInButton, myClockOutButton, myBreakButton, myHistoryButton];
+		return [myClockInButton, myBreakButton, myClockOutButton, myHistoryButton];
 	}
 }
 
@@ -51,6 +51,10 @@ class WorkTimerView extends WatchUi.View {
 		}
 
 		setLayout(myButtons.getButtons());
+
+		if(!System.getDeviceSettings().isTouchScreen) {
+			setKeyToSelectableInteraction(true);
+		}
 	}
 
 	//Updates the view

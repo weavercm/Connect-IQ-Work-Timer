@@ -23,4 +23,12 @@ class ClearHistoryConfirmationDelegate extends WatchUi.ConfirmationDelegate {
 		globalMyTime.save();
 		//Storage.setValue(USER_SAVE_ID, globalMyTime.getStorageCompatableDict());
 	}
+
+	public function onBack() {
+		System.println("pressed back");
+	}
+
+	public function onMenu() {
+		System.println("menu pressed");
+	}
 }

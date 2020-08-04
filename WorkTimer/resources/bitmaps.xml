@@ -12,6 +12,9 @@
 	<bitmap id="xButton_default" filename="images/xButton_default.png" dithering="none" />
 	<bitmap id="xButton_highlighted" filename="images/xButton_highlighted.png" dithering="none" />
 	
+	<bitmap id="trashButton_default" filename="images/trashButton_default.png" dithering="none" />
+	<bitmap id="trashButton_highlighted" filename="images/trashButton_highlighted.png" dithering="none" />
+	
 	<!-- Timer Controls -->
     <bitmap id="clockInButton_default" filename="images/clockInButton_default.png" dithering="none" />
 	<bitmap id="clockInButton_highlighted" filename="images/clockInButton_highlighted.png" dithering="none" />

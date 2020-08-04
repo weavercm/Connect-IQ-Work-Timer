@@ -12,8 +12,8 @@ class HistoryView extends WatchUi.View {
 	hidden var numItemsDisplayed;
 	hidden var arrowUpButton = null;
 	hidden var arrowDownButton = null;
-	hidden var backButton = null;
-	hidden var xButton = null;
+	//hidden var backButton = null;
+	hidden var trashButton = null;
 
 	//Constructor
 	public function initialize() {
@@ -28,14 +28,14 @@ class HistoryView extends WatchUi.View {
 		if(arrowDownButton == null) {
 			arrowDownButton = new ArrowDownButton(dc);
 		}
-		if(backButton == null) {
-			backButton = new BackButton(dc);
-		}
-		if(xButton == null)	{
-			xButton = new XButton(dc);
+//		if(backButton == null) {
+//			backButton = new BackButton(dc);
+//		}
+		if(trashButton == null)	{
+			trashButton = new TrashButton(dc);
 		}
 
-		setLayout([arrowUpButton, arrowDownButton, backButton, xButton]);
+		setLayout([arrowUpButton, arrowDownButton, /*backButton,*/ trashButton]);
 
 		numItemsDisplayed = (dc.getHeight() - arrowUpButton.getDistanceFromTop() -
 			arrowDownButton.getDistanceFromBottom()) / SPACE_BETWEEN_ENTRIES;
