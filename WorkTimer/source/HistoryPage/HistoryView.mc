@@ -69,7 +69,6 @@ class HistoryView extends WatchUi.View {
 		var curWorkTimeString = "";
 		var curDateString = "";
 		var nextDateString = "";
-		var areFlagsUpToDate = false;
 
 		for(screenPos = 0; screenPos < numItemsDisplayed; screenPos++) {
 			if(listItem <= globalMyTime.getSize()) {
@@ -141,6 +140,7 @@ class HistoryView extends WatchUi.View {
 
 	//Scrolls the history list so that the upper portions are visible
 	public function scrollListUp() {
+		WatchUi.requestUpdate(); //ensure 'reachedTopOfList' is updated
 		if (!reachedTopOfList) {
 			topOfVisibleList--;
 		}
@@ -148,6 +148,7 @@ class HistoryView extends WatchUi.View {
 
 	//Scrolls the history list so that the lower portions are visible
 	public function scrollListDown() {
+		WatchUi.requestUpdate(); //ensure 'reachedBottomOfList' is updated
 		if (!reachedBottomOfList) {
 			topOfVisibleList++;
 		}
