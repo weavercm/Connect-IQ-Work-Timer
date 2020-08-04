@@ -12,7 +12,6 @@ class HistoryView extends WatchUi.View {
 	hidden var numItemsDisplayed;
 	hidden var arrowUpButton = null;
 	hidden var arrowDownButton = null;
-	//hidden var backButton = null;
 	hidden var trashButton = null;
 
 	//Constructor
@@ -28,17 +27,19 @@ class HistoryView extends WatchUi.View {
 		if(arrowDownButton == null) {
 			arrowDownButton = new ArrowDownButton(dc);
 		}
-//		if(backButton == null) {
-//			backButton = new BackButton(dc);
-//		}
 		if(trashButton == null)	{
 			trashButton = new TrashButton(dc);
 		}
 
-		setLayout([arrowUpButton, arrowDownButton, /*backButton,*/ trashButton]);
+		setLayout([arrowUpButton, arrowDownButton, trashButton]);
+
+		System.println("Height: " + dc.getHeight());
+		System.println(arrowUpButton.getDistanceFromTop() - arrowDownButton.getDistanceFromBottom());
 
 		numItemsDisplayed = (dc.getHeight() - arrowUpButton.getDistanceFromTop() -
-			arrowDownButton.getDistanceFromBottom()) / SPACE_BETWEEN_ENTRIES;
+			arrowDownButton.getDistanceFromBottom() - 10) / SPACE_BETWEEN_ENTRIES;
+
+		System.println("num items: " + numItemsDisplayed);
 	}
 
 	//Updates the view
@@ -76,7 +77,7 @@ class HistoryView extends WatchUi.View {
 					curDateString = nextDateString;
 					dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
 					dc.drawText( dc.getWidth() / 2,
-						90 + SPACE_BETWEEN_ENTRIES * screenPos, Graphics.FONT_SMALL,
+						80 + SPACE_BETWEEN_ENTRIES * screenPos, Graphics.FONT_SMALL,
 						curDateString, Graphics.TEXT_JUSTIFY_CENTER |
 						Graphics.TEXT_JUSTIFY_VCENTER );
 				}
@@ -111,13 +112,13 @@ class HistoryView extends WatchUi.View {
 		var stateString = globalMyTime.getStateStringAt(listItem);
 		dc.setColor( getColorByState(globalMyTime.getStateAt(listItem)),
 			Graphics.COLOR_TRANSPARENT );
-		dc.drawText( dc.getWidth() / 2, 90 + SPACE_BETWEEN_ENTRIES * screenPos,
+		dc.drawText( dc.getWidth() / 2, 80 + SPACE_BETWEEN_ENTRIES * screenPos,
 			Graphics.FONT_SMALL, stateString, Graphics.TEXT_JUSTIFY_RIGHT |
 			Graphics.TEXT_JUSTIFY_VCENTER );
 
 		var curWorkTimeString = "-" + globalMyTime.getTimeStringAt(listItem);
 		dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-		dc.drawText( dc.getWidth() / 2 + 5, 90 + SPACE_BETWEEN_ENTRIES * screenPos,
+		dc.drawText( dc.getWidth() / 2 + 5, 80 + SPACE_BETWEEN_ENTRIES * screenPos,
 			Graphics.FONT_SMALL, curWorkTimeString, Graphics.TEXT_JUSTIFY_LEFT |
 			Graphics.TEXT_JUSTIFY_VCENTER );
 	}

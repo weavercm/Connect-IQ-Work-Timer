@@ -18,7 +18,7 @@ class ArrowUpButton extends WatchUi.Selectable {
 			:stateSelected=>buttonHighlighted,
 			:stateDisabled=>buttonDisabled,
 			:locX=>(dc.getWidth() - buttonDefault.width) / 2,
-			:locY=>40,
+			:locY=>35,
 			:width=>buttonDefault.width,
 			:height=>buttonDefault.height
 			};
