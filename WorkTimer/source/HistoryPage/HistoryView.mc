@@ -132,11 +132,11 @@ class HistoryView extends WatchUi.View {
 	//Returns the color that corresponds to the state
 	public function getColorByState(state) {
 		switch(state) {
-			case OFF_CLOCK:
+			case TimeLogEntry.OFF_CLOCK:
 				return MY_COLOR_RED;
-			case ON_CLOCK:
+			case TimeLogEntry.ON_CLOCK:
 				return MY_COLOR_GREEN;
-			case ON_BREAK:
+			case TimeLogEntry.ON_BREAK:
 				return MY_COLOR_YELLOW;
 			default:
 				return Graphics.COLOR_WHITE;

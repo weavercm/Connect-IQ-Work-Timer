@@ -3,28 +3,16 @@ using Toybox.Time;
 using Toybox.Time.Gregorian;
 using Toybox.Application.Storage;
 
-//States the Work Timer can be in
-public enum {
-	OFF_CLOCK,
-	ON_CLOCK,
-	ON_BREAK
-}
-
-function timeStateToString(state) {
-	switch(state) {
-		case ON_CLOCK:
-			return "ON CLOCK";
-		case OFF_CLOCK:
-			return "OFF CLOCK";
-		case ON_BREAK:
-			return "ON BREAK";
-	}
-
-	return "null";
-}
 
 //Stores one log entry
 class TimeLogEntry {
+
+	//States the Work Timer can be in
+	public enum {
+		OFF_CLOCK,
+		ON_CLOCK,
+		ON_BREAK
+	}
 
 	public var state;
 	public var moment = new Time.Moment(0);
@@ -43,6 +31,20 @@ class TimeLogEntry {
 	//Sets the time in seconds
 	public function setTimeSec(newTime) {
 		moment = new Time.Moment(newTime);
+	}
+
+	//Returns a string representing a 'state'
+	public static function timeStateToString(state) {
+		switch(state) {
+			case TimeLogEntry.ON_CLOCK:
+				return "ON CLOCK";
+			case TimeLogEntry.OFF_CLOCK:
+				return "OFF CLOCK";
+			case TimeLogEntry.ON_BREAK:
+				return "ON BREAK";
+		}
+
+		return "null";
 	}
 
 	//Returns a copy of self
@@ -122,7 +124,7 @@ class TimeLogManager {
 			var timeInfo = Gregorian.info(moment, Time.FORMAT_SHORT);
 			var timeString = Lang.format("$1$:$2$:$3$", [timeInfo.hour, timeInfo.min.format("%02d"), timeInfo.sec.format("%02d")]);
 
-			var stateString = timeStateToString(timeLogBook.getStateAt(key));
+			var stateString = TimeLogEntry.timeStateToString(timeLogBook.getStateAt(key));
 
 			logEntryString = key + ": " + "Time: " + timeString + ", State: " + stateString;
 		}
@@ -145,7 +147,7 @@ class TimeLogManager {
 		var stateString = "";
 
 		if(timeLogBook.isKeyValid(key)) {
-			stateString = timeStateToString(timeLogBook.getStateAt(key));
+			stateString = TimeLogEntry.timeStateToString(timeLogBook.getStateAt(key));
 		}
 
 		return stateString;
@@ -172,9 +174,9 @@ class TimeLogManager {
 	public function getTimeWorked() {
 		var timeWorked = new Time.Duration(0);
 		var i;
-		var lastState = OFF_CLOCK;
+		var lastState = TimeLogEntry.OFF_CLOCK;
 		var lastTime = new Time.Moment(0);
-		var curState = OFF_CLOCK;
+		var curState = TimeLogEntry.OFF_CLOCK;
 		var curTime = new Time.Moment(0);
 
 		for (i = 1; i <= timeLogBook.getNumLogEntries(); i++) {
@@ -182,16 +184,16 @@ class TimeLogManager {
 			curTime = timeLogBook.getTimeAt(i);
 
 			switch (lastState) {
-				case ON_CLOCK:
-					if (curState == OFF_CLOCK || curState == ON_BREAK) {
+				case TimeLogEntry.ON_CLOCK:
+					if (curState == TimeLogEntry.OFF_CLOCK || curState == TimeLogEntry.ON_BREAK) {
 						timeWorked = timeWorked.add(curTime.subtract(lastTime));
 						lastState = curState;
 						lastTime = curTime;
 					}
 					break;
-				case OFF_CLOCK:
-				case ON_BREAK:
-					if (curState == ON_CLOCK) {
+				case TimeLogEntry.OFF_CLOCK:
+				case TimeLogEntry.ON_BREAK:
+					if (curState == TimeLogEntry.ON_CLOCK) {
 						lastState = curState;
 						lastTime = curTime;
 					}
@@ -199,7 +201,7 @@ class TimeLogManager {
 			}
 		}
 
-		if (curState == ON_CLOCK) {
+		if (curState == TimeLogEntry.ON_CLOCK) {
 			timeWorked = timeWorked.add(Time.now().subtract(curTime));
 		}
 
@@ -258,19 +260,19 @@ class TimeLogManager {
 //Contains and manages a number of TimeLogEntries
 class TimeLogBook {
 
-	hidden var state = OFF_CLOCK;
+	hidden var state = TimeLogEntry.OFF_CLOCK;
 	hidden var logEntryDict = {0=>1};
 	hidden var curDictKey = 0;
 
 	//Constructor
 	public function initialize() {
-		logEntryDict.put(curDictKey, new TimeLogEntry(OFF_CLOCK, Time.now()));
+		logEntryDict.put(curDictKey, new TimeLogEntry(TimeLogEntry.OFF_CLOCK, Time.now()));
 	}
 
 	//Clears the log book
 	public function clear() {
-		logEntryDict = {0=>new TimeLogEntry(OFF_CLOCK, Time.now())};
-		state = OFF_CLOCK;
+		logEntryDict = {0=>new TimeLogEntry(TimeLogEntry.OFF_CLOCK, Time.now())};
+		state = TimeLogEntry.OFF_CLOCK;
 		curDictKey = 0;
 	}
 
@@ -327,7 +329,7 @@ class TimeLogBook {
 	//Populates the logBook from a Dictionary containing the entire log in a format that can be stored
 	public function setFromStorageCompatableDict(StorageCompatableDict) {
 		var i;
-		var logEntry = new TimeLogEntry(OFF_CLOCK, new Time.Moment(0));
+		var logEntry = new TimeLogEntry(TimeLogEntry.OFF_CLOCK, new Time.Moment(0));
 
 		curDictKey = StorageCompatableDict.size() - 1;
 		logEntryDict = {};

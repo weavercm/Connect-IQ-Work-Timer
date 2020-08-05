@@ -28,17 +28,17 @@ class WorkTimerViewButtons {
 	//Disables the button whose state is currently active
 	public function updateState(workState) {
 		switch(workState) {
-			case ON_CLOCK:
+			case TimeLogEntry.ON_CLOCK:
 				myClockInButton.setEnable(false);
 				myClockOutButton.setEnable(true);
 				myBreakButton.setEnable(true);
 				break;
-			case OFF_CLOCK:
+			case TimeLogEntry.OFF_CLOCK:
 				myClockInButton.setEnable(true);
 				myClockOutButton.setEnable(false);
 				myBreakButton.setEnable(true);
 				break;
-			case ON_BREAK:
+			case TimeLogEntry.ON_BREAK:
 				myClockInButton.setEnable(true);
 				myClockOutButton.setEnable(true);
 				myBreakButton.setEnable(false);
@@ -84,7 +84,7 @@ class WorkTimerView extends WatchUi.View {
 		View.onUpdate(dc);
 
 	    dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
-	    var currentWorkStateString = timeStateToString(timeLogManager.getCurState());
+	    var currentWorkStateString = TimeLogEntry.timeStateToString(timeLogManager.getCurState());
 
 	    dc.drawText( dc.getWidth() / 2, 25, Graphics.FONT_SMALL,
 	    	currentWorkStateString, Graphics.TEXT_JUSTIFY_CENTER |

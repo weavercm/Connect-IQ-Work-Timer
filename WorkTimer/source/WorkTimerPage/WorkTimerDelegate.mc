@@ -14,19 +14,19 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 
 	//Clock in
 	public function clockIn() {
-		timeLogManager.addEntry(ON_CLOCK);
+		timeLogManager.addEntry(TimeLogEntry.ON_CLOCK);
 		timeLogManager.save();
 	}
 
 	//Clock out
 	public function clockOut() {
-		timeLogManager.addEntry(OFF_CLOCK);
+		timeLogManager.addEntry(TimeLogEntry.OFF_CLOCK);
 		timeLogManager.save();
 	}
 
 	//Go on break
 	public function goOnBreak() {
-		timeLogManager.addEntry(ON_BREAK);
+		timeLogManager.addEntry(TimeLogEntry.ON_BREAK);
 		timeLogManager.save();
 	}
 
