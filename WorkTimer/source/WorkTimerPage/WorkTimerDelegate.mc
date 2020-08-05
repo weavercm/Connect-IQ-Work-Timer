@@ -30,13 +30,15 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 	//Brings the History View to the front
 	public static function goToHistoryView()
 	{
-		if(globalHistoryView == null) {
-			globalHistoryView = new HistoryView();
-		}
-		if(globalHistoryDelegate == null) {
-	    	globalHistoryDelegate = new HistoryDelegate();
-	    }
-	    WatchUi.pushView(globalHistoryView, globalHistoryDelegate, WatchUi.SLIDE_IMMEDIATE);
+//		if(globalHistoryView == null) {
+//			globalHistoryView = new HistoryView();
+//		}
+		var temp = new HistoryView();
+
+		//if(globalHistoryDelegate == null) {
+	    	//globalHistoryDelegate = new HistoryDelegate(temp);
+	    //}
+	    WatchUi.pushView(temp, new HistoryDelegate(temp), WatchUi.SLIDE_IMMEDIATE);
 	}
 
 	//Called when menu action is performed

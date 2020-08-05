@@ -3,8 +3,11 @@ using Toybox.WatchUi;
 //Handle input from History View
 class HistoryDelegate extends WatchUi.BehaviorDelegate {
 
+	hidden var historyView = null;
+
 	//Constructor
-	public function initialize() {
+	public function initialize(historyView) {
+		self.historyView = historyView;
 		BehaviorDelegate.initialize();
 	}
 
@@ -25,13 +28,13 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 
 	//Brings the Work Timer View to the front
 	public function goToWorkTimerView() {
-		if(globalWorkTimeView == null) {
-			globalWorkTimeView = new WorkTimerView();
-		}
-		if(globalWorkTimeDelegate == null) {
-	    	globalWorkTimeDelegate = new WorkTimerDelegate();
-	    }
-	    WatchUi.pushView(globalWorkTimeView, globalWorkTimeDelegate, WatchUi.SLIDE_IMMEDIATE);
+//		if(globalWorkTimeView == null) {
+//			globalWorkTimeView = new WorkTimerView();
+//		}
+//		if(globalWorkTimeDelegate == null) {
+//	    	globalWorkTimeDelegate = new WorkTimerDelegate();
+//	    }
+	    WatchUi.pushView(new WorkTimerView(), new WorkTimerDelegate(), WatchUi.SLIDE_IMMEDIATE);
 	}
 
 	//Called when menu action is performed
@@ -90,11 +93,11 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 
 	//Make lower portions of the history list visible
 	public function scrollListDown() {
-		globalHistoryView.scrollListDown();
+		historyView.scrollListDown();
 	}
 
 	//Make upper portions of the history list visible
 	public function scrollListUp() {
-		globalHistoryView.scrollListUp();
+		historyView.scrollListUp();
 	}
 }

@@ -28,11 +28,12 @@ class MyButtons {
 
 //Handles the Work Timer View
 class WorkTimerView extends WatchUi.View {
-
+	hidden var globalUpdateTimer = null;
 	hidden var myButtons = null;
 
 	//Constructor
 	function initialize() {
+		System.println("WorkTimerView.initialize()");
 		View.initialize();
 	}
 

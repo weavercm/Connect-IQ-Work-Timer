@@ -32,9 +32,11 @@ class WorkTimerApp extends Application.AppBase {
 
 	// Return the initial view of application here
 	function getInitialView() {
-    	globalWorkTimeView = new WorkTimerView();
-    	globalWorkTimeDelegate = new WorkTimerDelegate();
-    	return [ globalWorkTimeView, globalWorkTimeDelegate];
+//    	globalWorkTimeView = new WorkTimerView();
+//    	globalWorkTimeDelegate = new WorkTimerDelegate();
+//    	return [ globalWorkTimeView, globalWorkTimeDelegate];
+
+    	return [ new WorkTimerView(), new WorkTimerDelegate()];
     }
 
 }
