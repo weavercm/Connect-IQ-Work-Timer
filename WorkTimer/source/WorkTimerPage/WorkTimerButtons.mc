@@ -1,16 +1,46 @@
 using Toybox.System;
 using Toybox.WatchUi;
-using Toybox.Application.Storage;
+using Toybox.Graphics;
 
-//Handles the clock in button in the Work Timer View
-class ClockInButton extends WatchUi.Selectable {
+//Easily handles if a selectable is in the disabled state
+class SelectableWithDisable extends WatchUi.Selectable {
 
 	//Constructor
-	public function initialize(dc)	{
+	public function initialize(settings) {
+		Selectable.initialize(settings);
+	}
+
+	//Will only execute 'methodToCall' if has not recently been in disabled state
+	public function handleEvent(prevState, methodToCall) {
+		if(prevState == :stateDisabled || getState() == :stateDisabled) {
+			setState(:stateDisabled);
+			return;
+		}
+		if(getState() == :stateSelected) {
+			methodToCall.invoke();
+		}
+	}
+
+	//Disables or enables (any state other than :stateDisabled) the selectable
+	public function setEnable(isEnabled) {
+		if(isEnabled && getState() == :stateDisabled) {
+			setState(:stateDefault);
+		}
+		else if(!isEnabled) {
+			setState(:stateDisabled);
+		}
+	}
+}
+
+//Handles the clock in button in the Work Timer View
+class ClockInButton extends SelectableWithDisable {
+
+	//Constructor
+	public function initialize(dc) {
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockInButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockInButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockInButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.clockInButton_disabled});
+		var buttonDisabled = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockInButton_disabled});
 
 		var settings = {
 			:stateDefault=>buttonDefault,
@@ -23,19 +53,19 @@ class ClockInButton extends WatchUi.Selectable {
 			:height=>buttonDefault.height
 			};
 
-		Selectable.initialize(settings);
+		SelectableWithDisable.initialize(settings);
 	}
 }
 
 //Handles the clock out button in the Work Timer View
-class ClockOutButton extends WatchUi.Selectable {
+class ClockOutButton extends SelectableWithDisable {
 
 	//Constructor
 	public function initialize(dc)	{
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOutButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOutButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOutButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.clockOutButton_disabled});
+		var buttonDisabled = new WatchUi.Bitmap({:rezId=>Rez.Drawables.clockOutButton_disabled});
 
 		var settings = {
 			:stateDefault=>buttonDefault,
@@ -48,19 +78,19 @@ class ClockOutButton extends WatchUi.Selectable {
 			:height=>buttonDefault.height
 			};
 
-		Selectable.initialize(settings);
+		SelectableWithDisable.initialize(settings);
 	}
 }
 
 //Handles the break button in the Work Timer View
-class BreakButton extends WatchUi.Selectable {
+class BreakButton extends SelectableWithDisable {
 
 	//Constructor
 	function initialize(dc) {
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.breakButton_disabled});
+		var buttonDisabled = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_disabled});
 
 		var settings = {
 			:stateDefault=>buttonDefault,
@@ -73,7 +103,7 @@ class BreakButton extends WatchUi.Selectable {
 			:height=>buttonDefault.height
 			};
 
-		Selectable.initialize(settings);
+		SelectableWithDisable.initialize(settings);
 	}
 }
 

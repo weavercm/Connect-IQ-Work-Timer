@@ -1,7 +1,8 @@
 using Toybox.WatchUi;
+using Toybox.Graphics;
 
 //Handles the up arrow button in the History View
-class ArrowUpButton extends WatchUi.Selectable {
+class ArrowUpButton extends SelectableWithDisable {
 
 	hidden var distanceFromTop;
 
@@ -10,7 +11,7 @@ class ArrowUpButton extends WatchUi.Selectable {
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowUpButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowUpButton_highlighted});
+		var buttonDisabled = Graphics.COLOR_TRANSPARENT;
 
 		var settings = {
 			:stateDefault=>buttonDefault,
@@ -23,7 +24,7 @@ class ArrowUpButton extends WatchUi.Selectable {
 			:height=>buttonDefault.height
 			};
 
-		Selectable.initialize(settings);
+		SelectableWithDisable.initialize(settings);
 
 		distanceFromTop = locY + height;
 	}
@@ -36,7 +37,7 @@ class ArrowUpButton extends WatchUi.Selectable {
 }
 
 //Handles the down arrow button in the History View
-class ArrowDownButton extends WatchUi.Selectable {
+class ArrowDownButton extends SelectableWithDisable {
 
 	hidden var distanceFromBottom;
 
@@ -45,7 +46,7 @@ class ArrowDownButton extends WatchUi.Selectable {
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.arrowDownButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.arrowDownButton_highlighted});
+		var buttonDisabled = Graphics.COLOR_TRANSPARENT;
 
 		var settings = {
 			:stateDefault=>buttonDefault,
@@ -58,7 +59,7 @@ class ArrowDownButton extends WatchUi.Selectable {
 			:height=>buttonDefault.height
 			};
 
-		Selectable.initialize(settings);
+		SelectableWithDisable.initialize(settings);
 
 		distanceFromBottom = dc.getHeight() - locY;
 	}
@@ -71,14 +72,14 @@ class ArrowDownButton extends WatchUi.Selectable {
 }
 
 //Handles the clear button in the History View
-class TrashButton extends WatchUi.Selectable {
+class TrashButton extends SelectableWithDisable {
 
 	//Constructor
 	public function initialize(dc) {
 		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.trashButton_default});
 		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.trashButton_highlighted});
 		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.trashButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezID=>Rez.Drawables.trashButton_highlighted});
+		var buttonDisabled = Graphics.COLOR_TRANSPARENT;
 
 		var settings = {
 			:stateDefault=>buttonDefault,
@@ -91,6 +92,6 @@ class TrashButton extends WatchUi.Selectable {
 			:height=>buttonDefault.height
 			};
 
-		Selectable.initialize(settings);
+		SelectableWithDisable.initialize(settings);
 	}
 }

@@ -10,7 +10,7 @@ public enum {
 	ON_BREAK
 }
 
-function stateToString(state) {
+function timeStateToString(state) {
 	switch(state) {
 		case ON_CLOCK:
 			return "ON CLOCK";
@@ -122,7 +122,7 @@ class TimeLogManager {
 			var timeInfo = Gregorian.info(moment, Time.FORMAT_SHORT);
 			var timeString = Lang.format("$1$:$2$:$3$", [timeInfo.hour, timeInfo.min.format("%02d"), timeInfo.sec.format("%02d")]);
 
-			var stateString = stateToString(timeLogBook.getStateAt(key));
+			var stateString = timeStateToString(timeLogBook.getStateAt(key));
 
 			logEntryString = key + ": " + "Time: " + timeString + ", State: " + stateString;
 		}
@@ -145,7 +145,7 @@ class TimeLogManager {
 		var stateString = "";
 
 		if(timeLogBook.isKeyValid(key)) {
-			stateString = stateToString(timeLogBook.getStateAt(key));
+			stateString = timeStateToString(timeLogBook.getStateAt(key));
 		}
 
 		return stateString;

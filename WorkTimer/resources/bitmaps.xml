@@ -18,15 +18,15 @@
 	<!-- Timer Controls -->
     <bitmap id="clockInButton_default" filename="images/clockInButton_default.png" dithering="none" />
 	<bitmap id="clockInButton_highlighted" filename="images/clockInButton_highlighted.png" dithering="none" />
-	<bitmap id="clockInButton_disabled" filename="images/clockInButton_default.png" dithering="none" />
+	<bitmap id="clockInButton_disabled" filename="images/clockInButton_disabled.png" dithering="none" />
 	
     <bitmap id="clockOutButton_default" filename="images/clockOutButton_default.png" dithering="none" />
 	<bitmap id="clockOutButton_highlighted" filename="images/clockOutButton_highlighted.png" dithering="none" />
-	<bitmap id="clockOutButton_disabled" filename="images/clockOutButton_default.png" dithering="none" />
+	<bitmap id="clockOutButton_disabled" filename="images/clockOutButton_disabled.png" dithering="none" />
 	
     <bitmap id="breakButton_default" filename="images/breakButton_default.png" dithering="none" />
 	<bitmap id="breakButton_highlighted" filename="images/breakButton_highlighted.png" dithering="none" />
-	<bitmap id="breakButton_disabled" filename="images/breakButton_default.png" dithering="none" />
+	<bitmap id="breakButton_disabled" filename="images/breakButton_disabled.png" dithering="none" />
 	
 	<bitmap id="historyButton_default" filename="images/historyButton_default.png" dithering="none" />
 	<bitmap id="historyButton_highlighted" filename="images/historyButton_highlighted.png" dithering="none" />

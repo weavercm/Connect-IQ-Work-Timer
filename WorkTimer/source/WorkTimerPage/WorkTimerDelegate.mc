@@ -13,25 +13,25 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 	}
 
 	//Clock in
-	public static function clockIn() {
+	public function clockIn() {
 		timeLogManager.addEntry(ON_CLOCK);
 		timeLogManager.save();
 	}
 
 	//Clock out
-	public static function clockOut() {
+	public function clockOut() {
 		timeLogManager.addEntry(OFF_CLOCK);
 		timeLogManager.save();
 	}
 
 	//Go on break
-	public static function goOnBreak() {
+	public function goOnBreak() {
 		timeLogManager.addEntry(ON_BREAK);
 		timeLogManager.save();
 	}
 
 	//Brings the History View to the front
-	public static function goToHistoryView()
+	public function goToHistoryView()
 	{
 		var historyView = new HistoryView(timeLogManager);
 
@@ -39,7 +39,7 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 	}
 
 	//Called when menu action is performed
-	function onMenu() {
+	public function onMenu() {
 		goToHistoryView();
 
 		return true;
@@ -50,19 +50,13 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 		var instance = event.getInstance();
 
 		if(instance instanceof ClockInButton) {
-			if(instance.getState() == :stateSelected) {
-				clockIn();
-			}
+			instance.handleEvent(event.getPreviousState(), method(:clockIn));
 		}
 		else if(instance instanceof ClockOutButton) {
-			if(instance.getState() == :stateSelected) {
-				clockOut();
-			}
+			instance.handleEvent(event.getPreviousState(), method(:clockOut));
 		}
 		else if(instance instanceof BreakButton) {
-			if(instance.getState() == :stateSelected) {
-				goOnBreak();
-			}
+			instance.handleEvent(event.getPreviousState(), method(:goOnBreak));
 		}
 		else if(instance instanceof HistoryButton) {
 			if(instance.getState() == :stateSelected) {

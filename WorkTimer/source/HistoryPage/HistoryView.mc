@@ -36,13 +36,8 @@ class HistoryView extends WatchUi.View {
 
 		setLayout([arrowUpButton, arrowDownButton, trashButton]);
 
-		System.println("Height: " + dc.getHeight());
-		System.println(arrowUpButton.getDistanceFromTop() - arrowDownButton.getDistanceFromBottom());
-
 		numItemsDisplayed = (dc.getHeight() - arrowUpButton.getDistanceFromTop() -
 			arrowDownButton.getDistanceFromBottom() - 5) / SPACE_BETWEEN_ENTRIES;
-
-		System.println("num items: " + numItemsDisplayed);
 	}
 
 	//Updates the view
@@ -58,9 +53,13 @@ class HistoryView extends WatchUi.View {
         		Graphics.FONT_SMALL, "No History",
         		Graphics.TEXT_JUSTIFY_CENTER |
         		Graphics.TEXT_JUSTIFY_VCENTER);
+        	trashButton.setState(:stateDisabled);
+        	arrowUpButton.setState(:stateDisabled);
+        	arrowDownButton.setState(:stateDisabled);
         }
         else {
 			displayList(dc);
+			trashButton.setState(:stateDefault);
 		}
 	}
 
@@ -97,16 +96,20 @@ class HistoryView extends WatchUi.View {
 	hidden function updateListReachedBottomTopFlags(listItem) {
 		if(listItem > timeLogManager.getSize()) {
 				reachedBottomOfList = true;
+				arrowDownButton.setState(:stateDisabled);
 		}
 		else {
 			reachedBottomOfList = false;
+			arrowDownButton.setState(:stateDefault);
 		}
 
 		if(topOfVisibleList - 1 >= 0) {
 			reachedTopOfList = false;
+			arrowUpButton.setState(:stateDefault);
 		}
 		else {
 			reachedTopOfList = true;
+			arrowUpButton.setState(:stateDisabled);
 		}
 	}
 

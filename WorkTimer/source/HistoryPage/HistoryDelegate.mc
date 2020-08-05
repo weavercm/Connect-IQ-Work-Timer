@@ -61,19 +61,13 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 		var instance = event.getInstance();
 
 		if(instance instanceof ArrowUpButton) {
-			if(instance.getState() == :stateSelected) {
-				scrollListUp();
-			}
+			instance.handleEvent(event.getPreviousState(), method(:scrollListUp));
 		}
 		else if(instance instanceof ArrowDownButton) {
-			if(instance.getState() == :stateSelected) {
-				scrollListDown();
-			}
+			instance.handleEvent(event.getPreviousState(), method(:scrollListDown));
 		}
 		else if(instance instanceof TrashButton) {
-			if(instance.getState() == :stateSelected) {
-				clearHistory();
-			}
+			instance.handleEvent(event.getPreviousState(), method(:clearHistory));
 		}
 		else {
 			System.println("History View: Did not recognize button");
