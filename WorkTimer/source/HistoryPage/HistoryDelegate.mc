@@ -4,9 +4,11 @@ using Toybox.WatchUi;
 class HistoryDelegate extends WatchUi.BehaviorDelegate {
 
 	hidden var historyView = null;
+	hidden var timeLogManager = null;
 
 	//Constructor
-	public function initialize(historyView) {
+	public function initialize(timeLogManager, historyView) {
+		self.timeLogManager = timeLogManager;
 		self.historyView = historyView;
 		BehaviorDelegate.initialize();
 	}
@@ -14,26 +16,13 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 	//Clear the history list
 	public function clearHistory() {
 		var message = "Clear History?";
-		var isDebug = true;
+		var dialog = new MyConfirmationView(message);
 
-		if(isDebug) {
-			var dialog = new MyConfirmationView(message);
-			WatchUi.pushView(dialog, new MyClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
-		}
-		else {
-			var dialog = new WatchUi.Confirmation(message);
-			WatchUi.pushView(dialog, new ClearHistoryConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
-		}
+		WatchUi.pushView(dialog, new MyClearHistoryConfirmationDelegate(timeLogManager), WatchUi.SLIDE_IMMEDIATE);
 	}
 
 	//Brings the Work Timer View to the front
 	public function goToWorkTimerView() {
-//		if(globalWorkTimeView == null) {
-//			globalWorkTimeView = new WorkTimerView();
-//		}
-//		if(globalWorkTimeDelegate == null) {
-//	    	globalWorkTimeDelegate = new WorkTimerDelegate();
-//	    }
 	    WatchUi.pushView(new WorkTimerView(), new WorkTimerDelegate(), WatchUi.SLIDE_IMMEDIATE);
 	}
 

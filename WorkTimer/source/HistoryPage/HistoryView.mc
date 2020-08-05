@@ -14,9 +14,11 @@ class HistoryView extends WatchUi.View {
 	hidden var arrowUpButton = null;
 	hidden var arrowDownButton = null;
 	hidden var trashButton = null;
+	hidden var timeLogManager = null;
 
 	//Constructor
-	public function initialize() {
+	public function initialize(timeLogManager) {
+		self.timeLogManager = timeLogManager;
 		View.initialize();
 	}
 
@@ -51,7 +53,7 @@ class HistoryView extends WatchUi.View {
 
         //globalMyTime.loadInTestData();
 
-        if(globalMyTime.getSize() <= 0) {
+        if(timeLogManager.getSize() <= 0) {
         	dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2,
         		Graphics.FONT_SMALL, "No History",
         		Graphics.TEXT_JUSTIFY_CENTER |
@@ -71,8 +73,8 @@ class HistoryView extends WatchUi.View {
 		var nextDateString = "";
 
 		for(screenPos = 0; screenPos < numItemsDisplayed; screenPos++) {
-			if(listItem <= globalMyTime.getSize()) {
-				nextDateString = globalMyTime.getDateStringAt(listItem);
+			if(listItem <= timeLogManager.getSize()) {
+				nextDateString = timeLogManager.getDateStringAt(listItem);
 
 				if(!curDateString.equals(nextDateString)) {
 					curDateString = nextDateString;
@@ -93,7 +95,7 @@ class HistoryView extends WatchUi.View {
 
 	//Sets the flags that indicate if the history list is at the top or bottom
 	hidden function updateListReachedBottomTopFlags(listItem) {
-		if(listItem > globalMyTime.getSize()) {
+		if(listItem > timeLogManager.getSize()) {
 				reachedBottomOfList = true;
 		}
 		else {
@@ -110,14 +112,14 @@ class HistoryView extends WatchUi.View {
 
 	//Displays a single entry in the history list
 	hidden function displayHistoryEntryColor(dc, listItem, screenPos) {
-		var stateString = globalMyTime.getStateStringAt(listItem);
-		dc.setColor( getColorByState(globalMyTime.getStateAt(listItem)),
+		var stateString = timeLogManager.getStateStringAt(listItem);
+		dc.setColor( getColorByState(timeLogManager.getStateAt(listItem)),
 			Graphics.COLOR_TRANSPARENT );
 		dc.drawText( dc.getWidth() / 2, 80 + SPACE_BETWEEN_ENTRIES * screenPos,
 			Graphics.FONT_SMALL, stateString, Graphics.TEXT_JUSTIFY_RIGHT |
 			Graphics.TEXT_JUSTIFY_VCENTER );
 
-		var curWorkTimeString = " " + globalMyTime.getTimeStringAt(listItem);
+		var curWorkTimeString = " " + timeLogManager.getTimeStringAt(listItem);
 		dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
 		dc.drawText( dc.getWidth() / 2 + 5, 80 + SPACE_BETWEEN_ENTRIES * screenPos,
 			Graphics.FONT_SMALL, curWorkTimeString, Graphics.TEXT_JUSTIFY_LEFT |

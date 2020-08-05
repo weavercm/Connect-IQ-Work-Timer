@@ -65,10 +65,12 @@ class TimeLogEntry {
 //This adds extra functionality to the timeLogBook
 class TimeLogManager {
 
+	hidden var saveID = "";
 	hidden var timeLogBook;
 
 	//Constructor
-	public function initialize() {
+	public function initialize(saveID) {
+		self.saveID = saveID;
 		timeLogBook = new TimeLogBook();
 	}
 
@@ -212,7 +214,7 @@ class TimeLogManager {
 
 	//Loads in a TimeLogBook from device storage
 	public function load() {
-		timeLogBook.setFromStorageCompatableDict(Storage.getValue(USER_SAVE_ID));
+		timeLogBook.setFromStorageCompatableDict(Storage.getValue(saveID));
 	}
 
 //	public function loadInTestData() {
@@ -243,7 +245,7 @@ class TimeLogManager {
 
 	//Stores the timeLogBook into device storage
 	public function save() {
-		Storage.setValue(USER_SAVE_ID, timeLogBook.getStorageCompatableDict());
+		Storage.setValue(saveID, timeLogBook.getStorageCompatableDict());
 	}
 
 	//Add TimeLogEntry to timeLogBook

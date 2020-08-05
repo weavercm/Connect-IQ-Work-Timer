@@ -6,15 +6,18 @@ using Toybox.WatchUi;
 //Handle input from Confirmation View
 class MyClearHistoryConfirmationDelegate extends WatchUi.BehaviorDelegate {
 
+	hidden var timeLogManager = null;
+
 	//Constructor
-	public function initialize() {
+	public function initialize(timeLogManager) {
+		self.timeLogManager = timeLogManager;
 		BehaviorDelegate.initialize();
 	}
 
 	//Clears Work Timer history
 	hidden function clearHistory() {
-		globalMyTime.clear();
-		globalMyTime.save();
+		timeLogManager.clear();
+		timeLogManager.save();
 	}
 
 	//Return to the last view

@@ -4,46 +4,42 @@ using Toybox.Application.Storage;
 //Handle input from Work Timer View
 class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 
+	hidden var timeLogManager = null;
+
 	//Constructor
-	public function initialize() {
+	public function initialize(timeLogManager) {
+		self.timeLogManager = timeLogManager;
 		BehaviorDelegate.initialize();
 	}
 
 	//Clock in
 	public static function clockIn() {
-		globalMyTime.addEntry(ON_CLOCK);
-		globalMyTime.save();
+		timeLogManager.addEntry(ON_CLOCK);
+		timeLogManager.save();
 	}
 
 	//Clock out
 	public static function clockOut() {
-		globalMyTime.addEntry(OFF_CLOCK);
-		globalMyTime.save();
+		timeLogManager.addEntry(OFF_CLOCK);
+		timeLogManager.save();
 	}
 
 	//Go on break
 	public static function goOnBreak() {
-		globalMyTime.addEntry(ON_BREAK);
-		globalMyTime.save();
+		timeLogManager.addEntry(ON_BREAK);
+		timeLogManager.save();
 	}
 
 	//Brings the History View to the front
 	public static function goToHistoryView()
 	{
-//		if(globalHistoryView == null) {
-//			globalHistoryView = new HistoryView();
-//		}
-		var temp = new HistoryView();
+		var historyView = new HistoryView(timeLogManager);
 
-		//if(globalHistoryDelegate == null) {
-	    	//globalHistoryDelegate = new HistoryDelegate(temp);
-	    //}
-	    WatchUi.pushView(temp, new HistoryDelegate(temp), WatchUi.SLIDE_IMMEDIATE);
+	    WatchUi.pushView(historyView, new HistoryDelegate(timeLogManager, historyView), WatchUi.SLIDE_IMMEDIATE);
 	}
 
 	//Called when menu action is performed
 	function onMenu() {
-		//System.println("Menu pressed");
 		goToHistoryView();
 
 		return true;
