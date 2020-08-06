@@ -86,6 +86,8 @@ class TimeLogBook {
 		return (key <= curDictKey) && (key > 0);
 	}
 
+	(:debug)
+	//Used for testing
 	public function loadInRandomTestData(numEntries) {
 		Math.srand(Time.now().value());
 		var baseYear = Math.rand() % 5 + 2014;
@@ -355,6 +357,8 @@ class TimeLogManager {
 		timeLogBook.setFromStorageCompatableDict(Storage.getValue(saveID));
 	}
 
+	(:debug)
+	//Used for testing
 	public function loadInRandomTestData(numEntries) {
 		timeLogBook.loadInRandomTestData(numEntries);
 		printLogBook();
