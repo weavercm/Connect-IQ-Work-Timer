@@ -22,7 +22,7 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 
 	//Brings the Work Timer View to the front
 	public function goToWorkTimerView() {
-	    WatchUi.pushView(new WorkTimerView(), new WorkTimerDelegate(), WatchUi.SLIDE_IMMEDIATE);
+	    WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
 	}
 
 	//Called when menu action is performed

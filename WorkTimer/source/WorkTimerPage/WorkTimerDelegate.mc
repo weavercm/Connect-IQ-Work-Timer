@@ -59,8 +59,10 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 			instance.handleEvent(event.getPreviousState(), method(:goOnBreak));
 		}
 		else if(instance instanceof HistoryButton) {
-			if(instance.getState() == :stateSelected) {
-				goToHistoryView();
+			//Without this if-statement upon returning to the Work Timer View,
+			//the History button cannot be immeadiately selected
+			if(instance.handleEvent(event.getPreviousState(), method(:goToHistoryView))) {
+				instance.setState(:stateHighlighted);
 			}
 		}
 		else {

@@ -79,7 +79,7 @@ class ClockOutButton extends SelectableWithDisable {
 }
 
 //Handles the history button in the Work Timer View
-class HistoryButton extends WatchUi.Selectable {
+class HistoryButton extends SelectableWithDisable {
 
 	//Constructor
 	function initialize(dc) {
@@ -99,6 +99,6 @@ class HistoryButton extends WatchUi.Selectable {
 			:height=>buttonDefault.height
 			};
 
-		Selectable.initialize(settings);
+		SelectableWithDisable.initialize(settings);
 	}
 }

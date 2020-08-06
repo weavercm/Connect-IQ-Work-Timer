@@ -13,11 +13,14 @@ class SelectableWithDisable extends WatchUi.Selectable {
 	public function handleEvent(prevState, methodToCall) {
 		if(prevState == :stateDisabled || getState() == :stateDisabled) {
 			setState(:stateDisabled);
-			return;
+			return false;
 		}
 		if(getState() == :stateSelected) {
 			methodToCall.invoke();
+			return true;
 		}
+
+		return false;
 	}
 
 	//Disables or enables (any state other than :stateDisabled) the selectable
