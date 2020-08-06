@@ -22,12 +22,13 @@ class WorkTimerApp extends Application.AppBase {
 	function onStart(state) {
     	//load in history data
     	timeLogManager = new TimeLogManager(USER_SAVE_ID);
-    	try {
-    		timeLogManager.load();
-    	}
-    	catch(ex) {
-    		System.println("WorkTimerApp: Error loading in user save data; Skipping load.");
-    	}
+    	timeLogManager.loadInRandomTestData(3);
+//    	try {
+//    		timeLogManager.load();
+//    	}
+//    	catch(ex) {
+//    		System.println("WorkTimerApp: Error loading in user save data; Skipping load.");
+//    	}
     }
 
 	//Called when application is exiting

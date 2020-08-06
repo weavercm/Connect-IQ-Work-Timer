@@ -1,4 +1,5 @@
 using Toybox.System;
+using Toybox.Math;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
 using Toybox.Application.Storage;
@@ -83,6 +84,43 @@ class TimeLogBook {
 	//Returns true if the key is valid, false otherwise
 	public function isKeyValid(key) {
 		return (key <= curDictKey) && (key > 0);
+	}
+
+	public function loadInRandomTestData(numEntries) {
+		Math.srand(Time.now().value());
+		var baseYear = Math.rand() % 5 + 2014;
+		var baseMonth = Math.rand() % 11 + 1;
+		var baseDay = Math.rand() % 30 + 1;
+		var baseHour = Math.rand() % 23;
+		var baseMin = Math.rand() % 59;
+		var baseSec = Math.rand() % 59;
+		var baseState = TimeLogEntry.OFF_CLOCK;
+
+		var i = 0;
+		var options = {:year=>baseYear, :month=>baseMonth, :day=>baseDay, :hour=>baseHour, :minute=>baseMin, :second=>baseSec};
+		var curMoment = Gregorian.moment(options);
+		var dict = {0=>(new TimeLogEntry(baseState, curMoment))};
+
+
+		for(i = 1; i <= numEntries; i++) {
+			curMoment = new Time.Moment(curMoment.value() + Math.rand() % Gregorian.SECONDS_PER_DAY);
+			switch(Math.rand() % 3) {
+				case 0:
+					baseState = TimeLogEntry.OFF_CLOCK;
+					break;
+				case 1:
+					baseState = TimeLogEntry.ON_CLOCK;
+					break;
+				case 2:
+					baseState = TimeLogEntry.ON_BREAK;
+					break;
+			}
+			dict.put(i, new TimeLogEntry(baseState, curMoment));
+		}
+
+		logEntryDict = dict;
+		curDictKey = logEntryDict.size() - 1;
+		state = logEntryDict.get(curDictKey).state;
 	}
 
 	//Populates the logBook from a Dictionary containing the entire log in a format that can be stored
@@ -211,7 +249,7 @@ class TimeLogManager {
 	public function getLogBookString() {
 		var i = 0;
 		var logBookString = "Log:\n";
-		for (i = 0; i <= curDictKey; i++) {
+		for (i = 0; i <= getSize(); i++) {
 			logBookString += "\t" + getLogEntryStringAt(i) + "\n";
 		}
 
@@ -317,21 +355,10 @@ class TimeLogManager {
 		timeLogBook.setFromStorageCompatableDict(Storage.getValue(saveID));
 	}
 
-//	public function loadInTestData() {
-//		var options2020 = {:year=>2020};
-//		var options2021 = {:year=>2021};
-//		timeHistoryDict = {
-//			0=>new TimeLogEntry(OFF_CLOCK, Gregorian.moment(options2021)),
-//			1=>new TimeLogEntry(ON_CLOCK, Gregorian.moment(options2021)),
-//			2=>new TimeLogEntry(OFF_CLOCK, Gregorian.moment(options2021)),
-//			3=>new TimeLogEntry(ON_CLOCK, Gregorian.moment(options2021)),
-//			4=>new TimeLogEntry(OFF_CLOCK, Gregorian.moment(options2021)),
-//			5=>new TimeLogEntry(ON_CLOCK, Gregorian.moment(options2021))
-//		};
-//
-//		curDictKey = timeHistoryDict.size() - 1;
-//		state = timeHistoryDict.get(curDictKey).state;
-//	}
+	public function loadInRandomTestData(numEntries) {
+		timeLogBook.loadInRandomTestData(numEntries);
+		printLogBook();
+	}
 
 	//Prints out the contents of the timeLogBook in a readable format
 	public function printLogBook() {

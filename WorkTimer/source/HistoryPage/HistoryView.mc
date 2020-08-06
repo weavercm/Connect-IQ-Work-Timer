@@ -109,8 +109,6 @@ class HistoryView extends WatchUi.View {
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 
-        //globalMyTime.loadInTestData();
-
 		//history is empty
         if(timeLogManager.getSize() <= 0) {
         	dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2,
