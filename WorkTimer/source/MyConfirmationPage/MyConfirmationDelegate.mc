@@ -4,20 +4,14 @@ using Toybox.System;
 using Toybox.WatchUi;
 
 //Handle input from Confirmation View
-class MyClearHistoryConfirmationDelegate extends WatchUi.BehaviorDelegate {
+class MyConfirmationDelegate extends WatchUi.BehaviorDelegate {
 
-	hidden var timeLogManager = null;
+	hidden var callbackFunc = null;
 
 	//Constructor
-	public function initialize(timeLogManager) {
-		self.timeLogManager = timeLogManager;
+	public function initialize(callbackFunc) {
+		self.callbackFunc = callbackFunc;
 		BehaviorDelegate.initialize();
-	}
-
-	//Clears Work Timer history
-	hidden function clearHistory() {
-		timeLogManager.clear();
-		timeLogManager.save();
 	}
 
 	//Return to the last view
@@ -26,11 +20,16 @@ class MyClearHistoryConfirmationDelegate extends WatchUi.BehaviorDelegate {
 		return true;
 	}
 
+	//Call callback function when confirm is pressed
+	public function onConfirmation() {
+		callbackFunc.invoke();
+		onBack();
+	}
+
 	//Only clear history if input is recieved and is not touch screen
 	public function onSelect() {
 		if(!System.getDeviceSettings().isTouchScreen) {
-			clearHistory();
-			onBack();
+			onConfirmation();
 		}
 
 		return true;
@@ -47,12 +46,11 @@ class MyClearHistoryConfirmationDelegate extends WatchUi.BehaviorDelegate {
 		}
 		else if(instance instanceof ConfirmButton) {
 			if(instance.getState() == :stateSelected) {
-				clearHistory();
-				onBack();
+				onConfirmation();
 			}
 		}
 		else {
-			System.println("Did not recognize button");
+			System.println("MyConfirmationDelegate: Did not recognize button");
 		}
 	}
 }

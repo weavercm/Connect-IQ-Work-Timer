@@ -1,5 +1,6 @@
 using Toybox.WatchUi;
 
+
 //Handle input from History View
 class HistoryDelegate extends WatchUi.BehaviorDelegate {
 
@@ -13,12 +14,10 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 		BehaviorDelegate.initialize();
 	}
 
-	//Clear the history list
+	//Clears Work Timer history
 	public function clearHistory() {
-		var message = "Clear History?";
-		var dialog = new MyConfirmationView(message);
-
-		WatchUi.pushView(dialog, new MyClearHistoryConfirmationDelegate(timeLogManager), WatchUi.SLIDE_IMMEDIATE);
+		timeLogManager.clear();
+		timeLogManager.save();
 	}
 
 	//Brings the Work Timer View to the front
@@ -50,7 +49,7 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 	//Called when selection action is performed
 	public function onSelect() {
 		if(!System.getDeviceSettings().isTouchScreen) {
-			clearHistory();
+			tryClearHistory();
 		}
 
 		return true;
@@ -67,10 +66,10 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 			instance.handleEvent(event.getPreviousState(), method(:scrollListDown));
 		}
 		else if(instance instanceof TrashButton) {
-			instance.handleEvent(event.getPreviousState(), method(:clearHistory));
+			instance.handleEvent(event.getPreviousState(), method(:tryClearHistory));
 		}
 		else {
-			System.println("History View: Did not recognize button");
+			System.println("HistoryDelegate: Did not recognize button");
 		}
 	}
 
@@ -82,5 +81,11 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 	//Make upper portions of the history list visible
 	public function scrollListUp() {
 		historyView.scrollListUp();
+	}
+
+	public function tryClearHistory() {
+		var message = "Clear History?";
+		var myConfirmationView = new MyConfirmationView(message);
+		WatchUi.pushView(myConfirmationView, new MyConfirmationDelegate(method(:clearHistory)), WatchUi.SLIDE_IMMEDIATE);
 	}
 }
