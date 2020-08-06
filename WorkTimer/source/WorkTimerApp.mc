@@ -1,6 +1,6 @@
 using Toybox.Application;
-using Toybox.Application.Storage;
 using Toybox.WatchUi;
+
 
 //Starting point for the app
 class WorkTimerApp extends Application.AppBase {
@@ -13,6 +13,11 @@ class WorkTimerApp extends Application.AppBase {
 		AppBase.initialize();
 	}
 
+	// Return the initial view of application here
+	function getInitialView() {
+    	return [new WorkTimerView(timeLogManager), new WorkTimerDelegate(timeLogManager)];
+    }
+
 	//Called on application start up
 	function onStart(state) {
     	//load in history data
@@ -21,7 +26,7 @@ class WorkTimerApp extends Application.AppBase {
     		timeLogManager.load();
     	}
     	catch(ex) {
-    		System.println("Error loading in user save data; Skipping load.");
+    		System.println("WorkTimerApp: Error loading in user save data; Skipping load.");
     	}
     }
 
@@ -30,10 +35,4 @@ class WorkTimerApp extends Application.AppBase {
     	//store history data
     	timeLogManager.save();
     }
-
-	// Return the initial view of application here
-	function getInitialView() {
-    	return [ new WorkTimerView(timeLogManager), new WorkTimerDelegate(timeLogManager)];
-    }
-
 }

@@ -3,12 +3,16 @@ using Toybox.Application.Storage;
 using Toybox.System;
 using Toybox.WatchUi;
 
+
 //Handle input from Confirmation View
+//Back is cancel (or tap "cancel")
+//start is confirm (or tap "confirm")
 class MyConfirmationDelegate extends WatchUi.BehaviorDelegate {
 
 	hidden var callbackFunc = null;
 
 	//Constructor
+	//pass a callback to be performed if confirmed
 	public function initialize(callbackFunc) {
 		self.callbackFunc = callbackFunc;
 		BehaviorDelegate.initialize();
@@ -20,13 +24,13 @@ class MyConfirmationDelegate extends WatchUi.BehaviorDelegate {
 		return true;
 	}
 
-	//Call callback function when confirm is pressed
+	//Call callback function when confirm is selected
 	public function onConfirmation() {
 		callbackFunc.invoke();
 		onBack();
 	}
 
-	//Only clear history if input is recieved and is not touch screen
+	//Handle input from non-touch screen devices
 	public function onSelect() {
 		if(!System.getDeviceSettings().isTouchScreen) {
 			onConfirmation();

@@ -3,6 +3,31 @@ using Toybox.WatchUi;
 using Toybox.Graphics;
 
 
+//Handles the break button in the Work Timer View
+class BreakButton extends SelectableWithDisable {
+
+	//Constructor
+	function initialize(dc) {
+		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_default});
+		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_highlighted});
+		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_highlighted});
+		var buttonDisabled = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_disabled});
+
+		var settings = {
+			:stateDefault=>buttonDefault,
+			:stateHighlighted=>buttonHighlighted,
+			:stateSelected=>buttonHighlighted,
+			:stateDisabled=>buttonDisabled,
+			:locX=>(dc.getWidth() - buttonDefault.width) / 2,
+			:locY=>dc.getHeight() - buttonDefault.height - 5,
+			:width=>buttonDefault.width,
+			:height=>buttonDefault.height
+			};
+
+		SelectableWithDisable.initialize(settings);
+	}
+}
+
 //Handles the clock in button in the Work Timer View
 class ClockInButton extends SelectableWithDisable {
 
@@ -45,31 +70,6 @@ class ClockOutButton extends SelectableWithDisable {
 			:stateDisabled=>buttonDisabled,
 			:locX=>dc.getWidth() - buttonDefault.width - 10,
 			:locY=>dc.getHeight() - 2 * buttonDefault.height - 5,
-			:width=>buttonDefault.width,
-			:height=>buttonDefault.height
-			};
-
-		SelectableWithDisable.initialize(settings);
-	}
-}
-
-//Handles the break button in the Work Timer View
-class BreakButton extends SelectableWithDisable {
-
-	//Constructor
-	function initialize(dc) {
-		var buttonDefault = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_default});
-		var buttonHighlighted = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_highlighted});
-		var buttonSelected = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_highlighted});
-		var buttonDisabled = new WatchUi.Bitmap({:rezId=>Rez.Drawables.breakButton_disabled});
-
-		var settings = {
-			:stateDefault=>buttonDefault,
-			:stateHighlighted=>buttonHighlighted,
-			:stateSelected=>buttonHighlighted,
-			:stateDisabled=>buttonDisabled,
-			:locX=>(dc.getWidth() - buttonDefault.width) / 2,
-			:locY=>dc.getHeight() - buttonDefault.height - 5,
 			:width=>buttonDefault.width,
 			:height=>buttonDefault.height
 			};

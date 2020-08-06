@@ -1,5 +1,5 @@
 using Toybox.WatchUi;
-using Toybox.Application.Storage;
+
 
 //Handle input from Work Timer View
 class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
@@ -38,7 +38,7 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 	    WatchUi.pushView(historyView, new HistoryDelegate(timeLogManager, historyView), WatchUi.SLIDE_IMMEDIATE);
 	}
 
-	//Called when menu action is performed
+	//Go to History View when menu action is performed
 	public function onMenu() {
 		goToHistoryView();
 
@@ -64,7 +64,7 @@ class WorkTimerDelegate extends WatchUi.BehaviorDelegate {
 			}
 		}
 		else {
-			System.println("Did not recognize button");
+			System.println("WorkTimerDelegate: Did not recognize button");
 		}
 	}
 }

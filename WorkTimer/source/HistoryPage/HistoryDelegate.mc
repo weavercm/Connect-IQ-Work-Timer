@@ -49,7 +49,7 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 	//Called when selection action is performed
 	public function onSelect() {
 		if(!System.getDeviceSettings().isTouchScreen) {
-			tryClearHistory();
+			askClearHistory();
 		}
 
 		return true;
@@ -66,7 +66,7 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 			instance.handleEvent(event.getPreviousState(), method(:scrollListDown));
 		}
 		else if(instance instanceof TrashButton) {
-			instance.handleEvent(event.getPreviousState(), method(:tryClearHistory));
+			instance.handleEvent(event.getPreviousState(), method(:askClearHistory));
 		}
 		else {
 			System.println("HistoryDelegate: Did not recognize button");
@@ -83,7 +83,8 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
 		historyView.scrollListUp();
 	}
 
-	public function tryClearHistory() {
+	//Confirm with the user to clear history
+	public function askClearHistory() {
 		var message = "Clear History?";
 		var myConfirmationView = new MyConfirmationView(message);
 		WatchUi.pushView(myConfirmationView, new MyConfirmationDelegate(method(:clearHistory)), WatchUi.SLIDE_IMMEDIATE);

@@ -4,10 +4,108 @@ using Toybox.Time.Gregorian;
 using Toybox.Application.Storage;
 
 
+//Contains and manages a number of TimeLogEntries
+class TimeLogBook {
+
+	hidden var state = TimeLogEntry.OFF_CLOCK;
+	hidden var logEntryDict = {0=>1};
+	hidden var curDictKey = 0;
+
+	//Constructor
+	public function initialize() {
+		logEntryDict.put(curDictKey, new TimeLogEntry(TimeLogEntry.OFF_CLOCK, Time.now()));
+	}
+
+	//Adds an entry to the log book
+	public function addState(newState) {
+		if(newState == state) {
+			return;
+		}
+
+		curDictKey++;
+		logEntryDict.put(curDictKey, new TimeLogEntry(newState, Time.now()));
+
+		state = newState;
+	}
+
+	//Clears the log book
+	public function clear() {
+		logEntryDict = {0=>new TimeLogEntry(TimeLogEntry.OFF_CLOCK, Time.now())};
+		state = TimeLogEntry.OFF_CLOCK;
+		curDictKey = 0;
+	}
+
+	//Returns the current state
+	public function getCurState() {
+		return state;
+	}
+
+	//Returns the current Moment
+	public function getCurTime() {
+		return logEntryDict.get(curDictKey).moment;
+	}
+
+	//Returns the number of recorded log entries
+	public function getNumLogEntries() {
+		return logEntryDict.size() - 1;
+	}
+
+	//Returns the state at 'key'
+	public function getStateAt(key) {
+		if(isKeyValid(key)) {
+			return logEntryDict.get(key).state;
+		}
+
+		return null;
+	}
+
+	//Returns a Dictionary containing the entire log in a format that can be stored
+	public function getStorageCompatableDict() {
+		var i;
+		var storageCompatableDict = {};
+
+		for (i = 0; i <= curDictKey; i++) {
+			storageCompatableDict.put(i, logEntryDict.get(i).getStorageCompatableForm());
+		}
+
+		return storageCompatableDict;
+	}
+
+	//Returns the time at 'key'
+	public function getTimeAt(key) {
+		if(isKeyValid(key)) {
+			return logEntryDict.get(key).moment;
+		}
+
+		return null;
+	}
+
+	//Returns true if the key is valid, false otherwise
+	public function isKeyValid(key) {
+		return (key <= curDictKey) && (key > 0);
+	}
+
+	//Populates the logBook from a Dictionary containing the entire log in a format that can be stored
+	public function setFromStorageCompatableDict(StorageCompatableDict) {
+		var i;
+		var logEntry = new TimeLogEntry(TimeLogEntry.OFF_CLOCK, new Time.Moment(0));
+
+		curDictKey = StorageCompatableDict.size() - 1;
+		logEntryDict = {};
+
+		for( i = 0; i <= curDictKey; i++) {
+			logEntry.setFromStorageCompatableForm(StorageCompatableDict.get(i));
+			logEntryDict.put(i, logEntry.getCopy());
+		}
+
+		state = logEntryDict.get(curDictKey).state;
+	}
+}
+
 //Stores one log entry
 class TimeLogEntry {
 
-	//States the Work Timer can be in
+	//States the Time Log Entry can be in
 	public enum {
 		OFF_CLOCK,
 		ON_CLOCK,
@@ -23,9 +121,25 @@ class TimeLogEntry {
 		self.moment = moment;
 	}
 
+	//Returns a copy of self
+	public function getCopy() {
+		return new TimeLogEntry(state, new Time.Moment(moment.value()));
+	}
+
+	//Returns the state and moment in a form that can be stored
+	public function getStorageCompatableForm() {
+		return [state, moment.value()];
+	}
+
 	//Gets the time in seconds
 	public function getTimeSec() {
 		return moment.value();
+	}
+
+	//Sets the state and moment from a form that can be stored
+	public function setFromStorageCompatableForm(storageCompatableArray) {
+		state = storageCompatableArray[0];
+		setTimeSec(storageCompatableArray[1]);
 	}
 
 	//Sets the time in seconds
@@ -46,22 +160,6 @@ class TimeLogEntry {
 
 		return "null";
 	}
-
-	//Returns a copy of self
-	public function getCopy() {
-		return new TimeLogEntry(state, new Time.Moment(moment.value()));
-	}
-
-	//Returns the state and moment in a form that can be stored
-	public function getStorageCompatableForm() {
-		return [state, moment.value()];
-	}
-
-	//Sets the state and moment from a form that can be stored
-	public function setFromStorageCompatableForm(storageCompatableArray) {
-		state = storageCompatableArray[0];
-		setTimeSec(storageCompatableArray[1]);
-	}
 }
 
 //This adds extra functionality to the timeLogBook
@@ -74,6 +172,11 @@ class TimeLogManager {
 	public function initialize(saveID) {
 		self.saveID = saveID;
 		timeLogBook = new TimeLogBook();
+	}
+
+	//Add TimeLogEntry to timeLogBook
+	public function addEntry(state) {
+		timeLogBook.addState(state);
 	}
 
 	//Clears the timeLogBook
@@ -153,12 +256,12 @@ class TimeLogManager {
 		return stateString;
 	}
 
-	//Returns a Moment stored in the timeLogEntry at 'key'
+	//Returns a Moment stored in the timeLogBook at 'key'
 	public function getTime(key) {
 		return timeLogBook.getTimeAt(key);
 	}
 
-	//Returns a string representing a Moment stored in the timeLogEntry at 'key'
+	//Returns a string representing a Moment stored in the timeLogBook at 'key'
 	public function getTimeStringAt(key) {
 		var timeString = "";
 
@@ -170,7 +273,7 @@ class TimeLogManager {
 		return timeString;
 	}
 
-	//Returns the total amount of time that CLOCK_IN has been the current state
+	//Returns the total amount of time that ON_CLOCK has been the current state
 	public function getTimeWorked() {
 		var timeWorked = new Time.Duration(0);
 		var i;
@@ -179,6 +282,7 @@ class TimeLogManager {
 		var curState = TimeLogEntry.OFF_CLOCK;
 		var curTime = new Time.Moment(0);
 
+		//Add up intervals that current state is ON_CLOCK
 		for (i = 1; i <= timeLogBook.getNumLogEntries(); i++) {
 			curState = timeLogBook.getStateAt(i);
 			curTime = timeLogBook.getTimeAt(i);
@@ -205,13 +309,7 @@ class TimeLogManager {
 			timeWorked = timeWorked.add(Time.now().subtract(curTime));
 		}
 
-		var gregTime = new Gregorian.Info();
-		gregTime.day = timeWorked.value() / Gregorian.SECONDS_PER_DAY;
-		gregTime.hour = (timeWorked.value() % Gregorian.SECONDS_PER_DAY) / Gregorian.SECONDS_PER_HOUR;
-		gregTime.min = (timeWorked.value() % Gregorian.SECONDS_PER_HOUR) / Gregorian.SECONDS_PER_MINUTE;
-		gregTime.sec = (timeWorked.value() % Gregorian.SECONDS_PER_MINUTE);
-
-		return gregTime;
+		return timeWorked;
 	}
 
 	//Loads in a TimeLogBook from device storage
@@ -248,109 +346,5 @@ class TimeLogManager {
 	//Stores the timeLogBook into device storage
 	public function save() {
 		Storage.setValue(saveID, timeLogBook.getStorageCompatableDict());
-	}
-
-	//Add TimeLogEntry to timeLogBook
-	public function addEntry(state) {
-		timeLogBook.addState(state);
-	}
-}
-
-
-//Contains and manages a number of TimeLogEntries
-class TimeLogBook {
-
-	hidden var state = TimeLogEntry.OFF_CLOCK;
-	hidden var logEntryDict = {0=>1};
-	hidden var curDictKey = 0;
-
-	//Constructor
-	public function initialize() {
-		logEntryDict.put(curDictKey, new TimeLogEntry(TimeLogEntry.OFF_CLOCK, Time.now()));
-	}
-
-	//Clears the log book
-	public function clear() {
-		logEntryDict = {0=>new TimeLogEntry(TimeLogEntry.OFF_CLOCK, Time.now())};
-		state = TimeLogEntry.OFF_CLOCK;
-		curDictKey = 0;
-	}
-
-	//Returns the current state
-	public function getCurState() {
-		return state;
-	}
-
-	//Returns the current Moment
-	public function getCurTime() {
-		return logEntryDict.get(curDictKey).moment;
-	}
-
-	//Returns the number of recorded log entries
-	public function getNumLogEntries() {
-		return logEntryDict.size() - 1;
-	}
-
-	//Returns the state at 'key'
-	public function getStateAt(key) {
-		if(isKeyValid(key)) {
-			return logEntryDict.get(key).state;
-		}
-
-		return null;
-	}
-
-	//Returns a Dictionary containing the entire log in a format that can be stored
-	public function getStorageCompatableDict() {
-		var i;
-		var storageCompatableDict = {};
-
-		for (i = 0; i <= curDictKey; i++) {
-			storageCompatableDict.put(i, logEntryDict.get(i).getStorageCompatableForm());
-		}
-
-		return storageCompatableDict;
-	}
-
-	//Returns the time at 'key'
-	public function getTimeAt(key) {
-		if(isKeyValid(key)) {
-			return logEntryDict.get(key).moment;
-		}
-
-		return null;
-	}
-
-	//Returns true if the key is valid, false otherwise
-	public function isKeyValid(key) {
-		return (key <= curDictKey) && (key > 0);
-	}
-
-	//Populates the logBook from a Dictionary containing the entire log in a format that can be stored
-	public function setFromStorageCompatableDict(StorageCompatableDict) {
-		var i;
-		var logEntry = new TimeLogEntry(TimeLogEntry.OFF_CLOCK, new Time.Moment(0));
-
-		curDictKey = StorageCompatableDict.size() - 1;
-		logEntryDict = {};
-
-		for( i = 0; i <= curDictKey; i++) {
-			logEntry.setFromStorageCompatableForm(StorageCompatableDict.get(i));
-			logEntryDict.put(i, logEntry.getCopy());
-		}
-
-		state = logEntryDict.get(curDictKey).state;
-	}
-
-	//Adds an entry to the log book
-	public function addState(newState) {
-		if(newState == state) {
-			return;
-		}
-
-		curDictKey++;
-		logEntryDict.put(curDictKey, new TimeLogEntry(newState, Time.now()));
-
-		state = newState;
 	}
 }

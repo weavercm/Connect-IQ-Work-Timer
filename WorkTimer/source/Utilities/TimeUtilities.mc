@@ -1,24 +1,31 @@
 using Toybox.Lang;
+using Toybox.Time.Gregorian;
 
-function stateToString(state) {
-	switch(state) {
-		case :stateDefault:
-			return "stateDefault";
-		case :stateHighlighted:
-			return "stateHighlighted";
-		case :stateSelected:
-			return "stateSelected";
-		case :stateDisabled:
-			return "stateDisabled";
-		default:
-			return "error";
+class TimeUtilities {
+
+	//Returns a string containing GregorianInfo information in a readable format
+	public static function getTimeReadable(moment) {
+		var gregInfo = momentToGregInfo(moment);
+		var timeString = Lang.format("$1$:$2$:$3$", [gregInfo.hour,
+			gregInfo.min.format("%02d"), gregInfo.sec.format("%02d")]);
+
+		return timeString;
 	}
-}
 
-//Returns a string containing GregorianInfo information in a readable format
-function getTimeReadable(gregorianInfo) {
-	var timeString = Lang.format("$1$:$2$:$3$", [gregorianInfo.hour,
-		gregorianInfo.min.format("%02d"), gregorianInfo.sec.format("%02d")]);
+	//Converts a Moment into (days,) hours, mins, and secs
+	public static function momentToGregInfo(moment) {
+		var gregInfo = new Gregorian.Info();
+		/*Uncomment to include days
+		gregInfo.day = moment.value() / Gregorian.SECONDS_PER_DAY;
+		gregInfo.hour = (moment.value() % Gregorian.SECONDS_PER_DAY) / Gregorian.SECONDS_PER_HOUR;
+		*/
+		//Comment to get days
+		gregInfo.hour = moment.value() / Gregorian.SECONDS_PER_HOUR;
+		//
 
-	return timeString;
+		gregInfo.min = (moment.value() % Gregorian.SECONDS_PER_HOUR) / Gregorian.SECONDS_PER_MINUTE;
+		gregInfo.sec = (moment.value() % Gregorian.SECONDS_PER_MINUTE);
+
+		return gregInfo;
+	}
 }
