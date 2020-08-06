@@ -473,22 +473,24 @@
 <entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="118" lineNum="18" pc="268447245" symbol="getInitialView"/>
 <entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="119" lineNum="22" pc="268447329" symbol="onStart"/>
 <entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="119" lineNum="24" pc="268447333" symbol="onStart"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="119" lineNum="25" pc="268447371" symbol="onStart"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="120" lineNum="35" pc="268447395" symbol="onStop"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="120" lineNum="37" pc="268447399" symbol="onStop"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="122" lineNum="14" pc="268447418" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="122" lineNum="15" pc="268447422" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="122" lineNum="16" pc="268447432" symbol="initialize"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="123" lineNum="20" pc="268447451" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="123" lineNum="21" pc="268447455" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="123" lineNum="22" pc="268447487" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="123" lineNum="24" pc="268447519" symbol="onLayout"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="28" pc="268447570" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="29" pc="268447574" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="31" pc="268447594" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="33" pc="268447630" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="37" pc="268447721" symbol="onUpdate"/>
-<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="41" pc="268447809" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="119" lineNum="32" pc="268447371" symbol="onStart"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="119" lineNum="33" pc="268447371" symbol="onStart"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="119" lineNum="36" pc="268447399" symbol="onStart"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="120" lineNum="41" pc="268447435" symbol="onStop"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\WorkTimerApp.mc" id="120" lineNum="43" pc="268447439" symbol="onStop"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="122" lineNum="14" pc="268447458" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="122" lineNum="15" pc="268447462" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="122" lineNum="16" pc="268447472" symbol="initialize"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="123" lineNum="20" pc="268447491" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="123" lineNum="21" pc="268447495" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="123" lineNum="22" pc="268447527" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="123" lineNum="24" pc="268447559" symbol="onLayout"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="28" pc="268447610" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="29" pc="268447614" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="31" pc="268447634" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="33" pc="268447670" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="37" pc="268447761" symbol="onUpdate"/>
+<entry filename="C:\\Users\\7471624\\OneDrive - SDSMT\\Desktop\\ConnectIQ\\ConnectIQChallangeWorkspace\\Connect_IQ_Challange\\WorkTimer\\source\\MyConfirmationPage\\MyConfirmationView.mc" id="124" lineNum="41" pc="268447849" symbol="onUpdate"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -825,11 +827,11 @@
 <entry endPc="268446649" name="dc" stackId="1" startPc="268446364"/>
 <entry endPc="268446931" name="dc" stackId="1" startPc="268446649"/>
 <entry endPc="268447218" name="listItem" stackId="1" startPc="268447041"/>
-<entry endPc="268447395" name="state" stackId="1" startPc="268447329"/>
-<entry endPc="268447418" name="state" stackId="1" startPc="268447395"/>
-<entry endPc="268447451" name="message" stackId="1" startPc="268447418"/>
-<entry endPc="268447570" name="dc" stackId="1" startPc="268447451"/>
-<entry endPc="268447898" name="dc" stackId="1" startPc="268447570"/>
+<entry endPc="268447435" name="state" stackId="1" startPc="268447329"/>
+<entry endPc="268447458" name="state" stackId="1" startPc="268447435"/>
+<entry endPc="268447491" name="message" stackId="1" startPc="268447458"/>
+<entry endPc="268447610" name="dc" stackId="1" startPc="268447491"/>
+<entry endPc="268447938" name="dc" stackId="1" startPc="268447610"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="debug" class="TimeLogBook" module="globals" symbol="loadInRandomTestData"/>
