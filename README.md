@@ -107,10 +107,10 @@ Currently none.
   * **Fix:** In WorkTimerDelegate.mc, force the History Button to :stateHighlighted if it is selected.
   
 ## ToDo:
+* Build unit test suite
 * Add support for more devices
 * Possibly decrease the minimum SDK version required
 * Reduce the number of calculations in the function TimeLogManager.getTimeWorked() in TimeLog.mc, so that only the most recent ON_CLOCK interval is calculated while the other intervals are stored in a variable
-*
 
 ## Resources:
 The developer page for Connect IQ can be found [here](https://developer.garmin.com/connect-iq/overview/). Additionally, their developer forum can be found [here](https://forums.garmin.com/developer/).
