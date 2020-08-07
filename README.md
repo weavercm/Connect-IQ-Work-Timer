@@ -2,7 +2,7 @@
 ![App Icon](Images/workTimerClockIconWithTicks.png)
 
 ## Overview:
-This project is a Garmin Connect IQ watch app that allows you to keep track of your work time. One of the advantages of this app is that the app does not need to be running to keep track of time. (e.g. If you clock in, close the app, work for the entire day, open the app, and then clock out, the app will still accurately record your time). The project was begun as a submission for Garmin's Connect IQ Challange and is written in Monkey C.
+This project is a Garmin Connect IQ watch app that allows you to keep track of your work time. One of the advantages of this app is that the app does not need to be running to keep track of time. (e.g. If you clock in, close the app, work for the entire day, open the app, and then clock out, the app will still accurately record your time). The project was begun as a submission for Garmin's Connect IQ Challenge and is written in Monkey C.
 
 ## To Use:
 This app has two main pages: Work Timer View and History View.
