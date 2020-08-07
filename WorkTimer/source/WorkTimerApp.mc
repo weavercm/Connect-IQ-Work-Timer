@@ -29,12 +29,14 @@ class WorkTimerApp extends Application.AppBase {
     	timeLogManager.loadInRandomTestData(numEntries);
     	*/
 
+		//Comment out this code for the above testing
     	try {
     		timeLogManager.load();
     	}
     	catch(ex) {
     		System.println("WorkTimerApp: Error loading in user save data; Skipping load.");
     	}
+    	//
     }
 
 	//Called when application is exiting
